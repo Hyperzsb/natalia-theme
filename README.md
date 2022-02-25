@@ -10,7 +10,7 @@ As the project is in its early stage, this documentation will update gradually i
 
 - [Introduction](#Introduction)
 - [Features](#Features)
-- [User Guide](#User Guide)
+- [User Guide](#User-Guide)
 - [Troubleshooting](#Troubleshooting)
 - [Contributing](#Contributing)
 - [License](#License)
