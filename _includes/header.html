@@ -1,25 +1,29 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/">hyperzsb</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-lg custom-navbar custom-nav-bg-color p-4" id="navbar">
+        <div class="container-fluid m-2">
+            <a class="navbar-brand ms-2 ms-lg-3 fw-bold custom-navbar-brand-color" href="/">
+                @hyperzsb
+            </a>
+            <button class="navbar-toggler custom-navbar-toggler-color" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+                <i class="bi-arrows-expand custom-navbar-toggler-color"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2 mt-lg-0">
                     {% for nav in site.navigation %}
-                    <li class="nav-item mb-1 mb-lg-0">
-                        {% if nav.url == page.url %}
-                        <a class="nav-link active" aria-current="page" href="{{ nav.url }}">
-                            {{ nav.name }}
-                        </a>
-                        {% else %}
+                    <li class="nav-item mb-1 mb-lg-0 ">
                         <a class="nav-link" href="{{ nav.url }}">
-                            {{ nav.name }}
+                            {% if nav.url == page.url %}
+                            <b class="custom-nav-item custom-nav-item-active custom-nav-item-active-color">
+                                {{ nav.name }}
+                            </b>
+                            {% else %}
+                            <b class="custom-nav-item custom-nav-item-inactive custom-nav-item-inactive-color">
+                                {{ nav.name }}
+                            </b>
+                            {% endif %}
                         </a>
-                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>
