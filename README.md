@@ -37,4 +37,4 @@ As the project is in its early stage, this documentation will update gradually i
 
 ## License
 
-*TBD*
+This project is under [MIT License](https://github.com/Hyperzsb/natalia-theme/blob/master/LICENSE).
