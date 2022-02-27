@@ -11,7 +11,8 @@ $shadow-color: #adb5bd;
 $link-color-lighter: #cc5de8;
 $link-color-light: #ae3ec9;
 $link-color: #862e9c;
-$text-color-lighter: #adb5bd;
+$text-color-extreme-light: #adb5bd;
+$text-color-lighter: #868e96;
 $text-color-light: #495057;
 $text-color: #212529;
 $hint-color: #63e6be;
@@ -37,23 +38,39 @@ $fatal-color: #ffa8a8;
 }
 
 .lighter-text-color {
-  color:$text-color-lighter;
+  color: $text-color-lighter;
 }
 
 .link-color {
   color: $link-color;
+
+  &:hover, &:active {
+    color: $link-color-light;
+  }
 }
 
-.link-color:hover, .link-color:active {
-  color: $link-color-light;
+.gray-link-color {
+  color: $text-color-light;
+
+  &:hover, &:active {
+    color: $text-color-lighter;
+  }
 }
 
 .icon-color {
   color: $link-color;
+
+  &:hover, &:active {
+    color: $link-color-light;
+  }
 }
 
-.icon-color:hover, .icon-color:active {
-  color: $link-color-light;
+.gray-icon-color {
+  color: $text-color-light;
+
+  &:hover, &:active {
+    color: $text-color-lighter;
+  }
 }
 
 /* Loading modal color style */
@@ -82,17 +99,27 @@ $fatal-color: #ffa8a8;
 
 .custom-nav-item-inactive-color {
   color: $link-color;
-}
 
-.custom-nav-item-inactive-color:hover {
-  color: $link-color-light;
-}
+  &:hover {
+    color: $link-color-light;
+  }
 
-.custom-nav-item-inactive-color:hover::after {
-  border-bottom-color: $link-color-light;
+  &:hover::after {
+    border-bottom-color: $link-color-light;
+  }
 }
 
 .custom-navbar-toggler-color {
   color: $link-color;
   border: 0;
+}
+
+/* Footer color style */
+
+.custom-footer-bg-color {
+  background-color: $base-color;
+}
+
+.custom-footer-shadow-color {
+  box-shadow: 0 -10px 20px $shadow-color-light;
 }

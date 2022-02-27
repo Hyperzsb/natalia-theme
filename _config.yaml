@@ -1,5 +1,17 @@
 url: http://127.0.0.1:4000
 
+name: hyperzsb
+
+copyright: 2022 © hyperzsb
+
+socialMedia:
+  email: hyperzsb@qq.com
+  twitter: hyperzsb
+  facebook: hyperzsb
+  instagram: hyperzsb
+  youtube: hyperzsb
+  github: Hyperzsb
+
 navigation:
   - name: Home
     url: /
@@ -9,4 +21,6 @@ navigation:
     url: /contact
 
 setting:
-  enableLoadingModal: false
+  enableLoadingModal: true
+  # Dark mode has not developed completely yet. Please do not turn it on.
+  enableDarkMode: false

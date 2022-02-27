@@ -1,3 +1,76 @@
-<footer>
-    <div>This is the footer</div>
+<footer class="container-fluid custom-footer-bg-color custom-footer-shadow-color">
+    <div class="row justify-content-center align-items-center p-5">
+        <div class="col-lg-6">
+            <div class="d-flex flex-row justify-content-center mb-3">
+                {% if site.socialMedia.email %}
+                <a class="gray-icon-color p-3 fs-4" target="_blank" href="mailto:{{ site.socialMedia.email }}">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.twitter %}
+                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                   href="https://twitter.com/{{ site.socialMedia.twitter }}">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.facebook %}
+                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                   href="https://facebook.com/{{ site.socialMedia.facebook }}">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.instagram %}
+                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                   href="https://instagram.com/{{ site.socialMedia.instagram }}">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.youtube %}
+                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                   href="https://youtube.com/{{ site.socialMedia.youtube }}">
+                    <i class="bi bi-youtube"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.github %}
+                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                   href="https://github.com/{{ site.socialMedia.github }}">
+                    <i class="bi bi-github"></i>
+                </a>
+                {% endif %}
+            </div>
+            <div class="row justify-content-center align-items-center mb-3 pb-3">
+                <div class="col-lg-8">
+                    <ul class="nav justify-content-center align-items-center">
+                        {% for nav in site.navigation %}
+                        <li class="nav-item">
+                            <a class="nav-link link-color" href="{{ nav.url }}">
+                                <b>{{ nav.name }}</b>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% if site.setting.enableDarkMode == true %}
+                <div class="col-lg-4">
+                    <div class="form-check form-switch d-flex justify-content-center align-items-center">
+                        <input class="form-check-input mt-0 me-2" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label light-text-color" for="flexSwitchCheckDefault">Dark Mode</label>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            <div class="row text-center mt-3 pt-4 border-top">
+                <span class="lighter-text-color pt-2">{{ site.copyright }}</span>
+                <span class="lighter-text-color pt-2">
+                    With
+                    <a class="gray-link-color" target="_blank"
+                       href="https://github.com/Hyperzsb/natalia-theme">Natalia</a>,
+                    a theme powered by
+                    <a class="gray-link-color" target="_blank" href="https://jekyllrb.com/">Jekyll</a>
+                    and
+                    <a class="gray-link-color" target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
+                </span>
+            </div>
+        </div>
+    </div>
 </footer>

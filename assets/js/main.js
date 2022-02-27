@@ -36,7 +36,7 @@ document.onreadystatechange = function () {
                 degree--;
                 loadingModal.style.opacity = String(degree / 5);
                 if (degree === 0) {
-                    loadingModal.style.display = "none";
+                    loadingModal.remove();
                     clearInterval(interval);
                 }
             }, 50);
