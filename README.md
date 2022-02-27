@@ -1,6 +1,7 @@
 # natalia-theme
 
-Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered by Jekyll.
+Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered
+by [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/).
 
 ## Special Notes
 
