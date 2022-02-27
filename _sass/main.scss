@@ -3,6 +3,20 @@
   transition: 0.25s;
 }
 
+/* Modal style */
+
+#loading-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  opacity: 1;
+}
+
+#main-content {
+  display: none;
+  opacity: 0;
+}
+
 /* Header style */
 
 .custom-navbar:before {

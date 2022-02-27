@@ -7,3 +7,6 @@ navigation:
     url: /blog
   - name: Contact
     url: /contact
+
+setting:
+  enableLoadingModal: false
