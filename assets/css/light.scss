@@ -91,6 +91,14 @@ $fatal-color: #ffa8a8;
 
 .custom-navbar-brand-color {
   color: $link-color;
+
+  &:hover {
+    color: $link-color-light;
+  }
+
+  &:hover::after {
+    border-bottom-color: $link-color-light;
+  }
 }
 
 .custom-nav-item-active-color {
