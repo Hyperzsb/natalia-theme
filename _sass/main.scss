@@ -1,6 +1,16 @@
+@import "fonts";
+
 /* Global style */
 * {
   transition: 0.25s;
+}
+
+.font-josefin-sans {
+  font-family: "JosefinSans", sans-serif;
+}
+
+.font-lobster {
+  font-family: "Lobster", sans-serif;
 }
 
 /* Modal style */
@@ -75,6 +85,3 @@
     transition: border-color 0.25s ease-out 0.1s, width 0.25s ease-out 0.1s;
   }
 }
-
-/* Footer style */
-
