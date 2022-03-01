@@ -1,18 +1,4 @@
 /* Functions for header behavior */
-function throttle(fn, delay) {
-    let valid = true;
-    return function () {
-        if (!valid) {
-            return false;
-        }
-        valid = false;
-        setTimeout(() => {
-            fn();
-            valid = true;
-        }, delay);
-    }
-}
-
 function changeNavbarShadow() {
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     let classList = document.getElementById("navbar").classList;
@@ -75,7 +61,7 @@ document.onreadystatechange = function () {
     }
 }
 
-window.addEventListener("scroll", throttle(changeNavbarShadow, 200));
+window.addEventListener("scroll", _.throttle(changeNavbarShadow, 200));
 
 /* Load some event listeners */
 window.onload = function () {
