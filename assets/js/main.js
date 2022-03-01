@@ -1,4 +1,18 @@
 /* Functions for header behavior */
+function throttle(fn, delay) {
+    let valid = true;
+    return function () {
+        if (!valid) {
+            return false;
+        }
+        valid = false;
+        setTimeout(() => {
+            fn();
+            valid = true;
+        }, delay);
+    }
+}
+
 function changeNavbarShadow() {
     let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     let classList = document.getElementById("navbar").classList;
@@ -30,31 +44,38 @@ function changeNavbarTogglerIcon() {
 document.onreadystatechange = function () {
     if (document.readyState === "complete") {
         let loadingModal = document.getElementById("loading-modal");
-        if (loadingModal != null) {
-            let degree = 5;
+        setTimeout(() => {
+            if (loadingModal != null) {
+                let degree = 5;
+                let interval = setInterval(function () {
+                    degree--;
+                    loadingModal.style.opacity = String(degree / 5);
+                    if (degree === 0) {
+                        loadingModal.remove();
+                        clearInterval(interval);
+                    }
+                }, 50);
+            }
+            let mainContent = document.getElementById("main-content");
+            mainContent.style.display = "block";
+            let degree = 0;
             let interval = setInterval(function () {
-                degree--;
-                loadingModal.style.opacity = String(degree / 5);
-                if (degree === 0) {
-                    loadingModal.remove();
+                degree++;
+                mainContent.style.opacity = String(degree / 5);
+                if (degree === 5) {
                     clearInterval(interval);
                 }
             }, 50);
-        }
-        let mainContent = document.getElementById("main-content");
-        mainContent.style.display = "block";
-        let degree = 0;
-        let interval = setInterval(function () {
-            degree++;
-            mainContent.style.opacity = String(degree / 5);
-            if (degree === 5) {
-                clearInterval(interval);
-            }
-        }, 50);
+        }, () => {
+            if (loadingModal != null)
+                return 500;
+            else
+                return 5;
+        });
     }
 }
 
-window.addEventListener("scroll", changeNavbarShadow);
+window.addEventListener("scroll", throttle(changeNavbarShadow, 200));
 
 /* Load some event listeners */
 window.onload = function () {
