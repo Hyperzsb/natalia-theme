@@ -1,9 +1,12 @@
-url: http://127.0.0.1:4000
+## Information data of yourself
 
+# Your name to display on the navbar and the title of the window
 name: hyperzsb
-
-copyright: 2022 © hyperzsb
-
+# Your brief self introduction (keep it simple for better appearance)
+introduction:
+  main: Hi, here is hyperzsb
+  sub: I am free developer, interested in Web full-stack, Blockchain, cybersecurity, DevOps, OS, and other IT-related technologies.
+# Your social media details (if not applicable, leave it blank)
 socialMedia:
   email: hyperzsb@qq.com
   twitter: hyperzsb
@@ -11,7 +14,14 @@ socialMedia:
   instagram:
   youtube: UCpFjl9dlLOTEa99rKV7trrQ
   github: Hyperzsb
+# Copyright details
+copyright: 2022 © hyperzsb
 
+## Basic build and deploy setting
+
+# The URL name of your site. E.g.: https://hyperzsb.io
+url: http://127.0.0.1:4000
+# Navigation items
 navigation:
   - name: Home
     url: /
@@ -19,7 +29,7 @@ navigation:
     url: /blog
   - name: Contact
     url: /contact
-
+# Miscellaneous settings
 setting:
   enableLoadingModal: true
   # Dark mode has not developed completely yet. Please do not turn it on.

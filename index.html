@@ -3,5 +3,24 @@ layout: default
 title: Home
 permalink: /
 ---
-<h1>This is the Home page.</h1>
-<div style="height: 1000px">Contents</div>
+<div class="container-fluid bg-color p-lg-3">
+    <div class="row justify-content-center p-lg-3">
+        <div class="col-lg-6 order-1 order-lg-0 m-3 custom-introduction">
+            <div class="m-3 fs-1 fw-bold text-center font-josefin-sans">
+                {{ site.introduction.main }}
+            </div>
+            <div class="m-3 fs-3 text-center font-josefin-sans">
+                {{ site.introduction.sub }}
+            </div>
+        </div>
+        <div class="col-lg-4 order-0 order-lg-1 m-3 custom-logo">
+            <img src="/assets/images/logo.png" alt="Portrait">
+        </div>
+    </div>
+    <div class="row">
+        Projects
+    </div>
+    <div class="row">
+        Blogs
+    </div>
+</div>

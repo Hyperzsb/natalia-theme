@@ -8,9 +8,12 @@ $base-color-dark: #e9ecef;
 $base-color-darker: #ced4da;
 $shadow-color-light: #dee2e6;
 $shadow-color: #adb5bd;
-$link-color-lighter: #cc5de8;
-$link-color-light: #ae3ec9;
-$link-color: #862e9c;
+//$link-color-lighter: #cc5de8;
+//$link-color-light: #ae3ec9;
+//$link-color: #862e9c;
+$link-color-lighter: #868e96;
+$link-color-light: #495057;
+$link-color: #212529;
 $text-color-extreme-light: #adb5bd;
 $text-color-lighter: #868e96;
 $text-color-light: #495057;
@@ -82,7 +85,7 @@ $fatal-color: #ffa8a8;
 /* Header color style */
 
 .custom-navbar-bg-color {
-  background-color: rgba($base-color, .5);
+  background-color: rgba($base-color, .75);
 }
 
 .custom-navbar-shadow-color {
