@@ -1,12 +1,12 @@
-## Information data of yourself
+## Information details of yourself
 
-# Your name to display on the navbar and the title of the window
+# Your name displaying on the navbar and the title of the window
 name: hyperzsb
-# Your brief self introduction (keep it simple for better appearance)
+# Your brief self introduction displaying on the Home page (keep it simple for better appearance)
 introduction:
   main: Hi, here is hyperzsb
   sub: I am free developer, interested in Web full-stack, Blockchain, cybersecurity, DevOps, OS, and other IT-related technologies.
-# Your social media details (if not applicable, leave it blank)
+# Your social media details displaying on the footer (if not applicable, leave it blank)
 socialMedia:
   email: hyperzsb@qq.com
   twitter: hyperzsb
@@ -14,10 +14,10 @@ socialMedia:
   instagram:
   youtube: UCpFjl9dlLOTEa99rKV7trrQ
   github: Hyperzsb
-# Copyright details
+# Copyright details displaying on the footer
 copyright: 2022 © hyperzsb
 
-## Basic build and deploy setting
+## Basic build and deploy settings
 
 # The URL name of your site. E.g.: https://hyperzsb.io
 url: http://127.0.0.1:4000
@@ -25,8 +25,10 @@ url: http://127.0.0.1:4000
 navigation:
   - name: Home
     url: /
-  - name: Blog
-    url: /blog
+  - name: Projects
+    url: /projects
+  - name: Posts
+    url: /posts
   - name: Contact
     url: /contact
 # Miscellaneous settings
@@ -34,3 +36,32 @@ setting:
   enableLoadingModal: true
   # Dark mode has not developed completely yet. Please do not turn it on.
   enableDarkMode: false
+# Timezone setting
+timezone: Asia/Shanghai
+# Display future posts
+future: false
+
+## Advanced build and deploy settings
+
+collections:
+  projects:
+    output: true
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      permalink: /posts/:title:output_ext
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+    values:
+      layout: default
