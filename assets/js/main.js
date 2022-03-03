@@ -32,7 +32,7 @@ function changeNavbarShadow() {
 }
 
 function changeNavbarTogglerIcon() {
-    document.getElementById("navbar-toggler").addEventListener("click", () => {
+    document.getElementById("navbar-toggler").addEventListener("click", function () {
         let classList = this.firstElementChild.classList;
         if (classList.contains("bi-arrows-expand"))
             classList.replace("bi-arrows-expand", "bi-arrows-collapse");
