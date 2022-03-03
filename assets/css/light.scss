@@ -3,21 +3,21 @@
 
 @import "main";
 
-$base-color: #f8f9fa;
-$base-color-dark: #e9ecef;
-$base-color-darker: #ced4da;
-$shadow-color-light: #dee2e6;
-$shadow-color: #adb5bd;
-//$link-color-lighter: #cc5de8;
-//$link-color-light: #ae3ec9;
-//$link-color: #862e9c;
-$link-color-lighter: #868e96;
-$link-color-light: #495057;
-$link-color: #212529;
-$text-color-extreme-light: #adb5bd;
-$text-color-lighter: #868e96;
-$text-color-light: #495057;
-$text-color: #212529;
+$base-color-1: #ced4da;
+$base-color-2: #e9ecef;
+$base-color-3: #f8f9fa;
+$shadow-color-1: #adb5bd;
+$shadow-color-2: #dee2e6;
+//$link-color-1: #862e9c;
+//$link-color-2: #ae3ec9;
+//$link-color-3: #cc5de8;
+$link-color-1: #212529;
+$link-color-2: #495057;
+$link-color-3: #868e96;
+$text-color-1: #212529;
+$text-color-2: #495057;
+$text-color-3: #868e96;
+$text-color-4: #adb5bd;
 $hint-color: #63e6be;
 $warning-color: #ffe066;
 $fatal-color: #ffa8a8;
@@ -25,112 +25,112 @@ $fatal-color: #ffa8a8;
 /* General color style */
 
 .bg-color {
-  background-color: $base-color;
+  background-color: $base-color-3;
 }
 
 .hr-color {
-  background-color: $base-color-dark;
+  background-color: $base-color-2;
 }
 
 .text-color {
-  color: $text-color;
+  color: $text-color-1;
 }
 
 .light-text-color {
-  color: $text-color-light;
+  color: $text-color-2;
 }
 
 .lighter-text-color {
-  color: $text-color-lighter;
+  color: $text-color-3;
 }
 
 .link-color {
-  color: $link-color;
+  color: $link-color-1;
 
   &:hover, &:active {
-    color: $link-color-light;
+    color: $link-color-2;
   }
 }
 
 .gray-link-color {
-  color: $text-color-light;
+  color: $text-color-2;
 
   &:hover, &:active {
-    color: $text-color-lighter;
+    color: $text-color-3;
   }
 }
 
 .icon-color {
-  color: $link-color;
+  color: $link-color-1;
 
   &:hover, &:active {
-    color: $link-color-light;
+    color: $link-color-2;
   }
 }
 
 .gray-icon-color {
-  color: $text-color-light;
+  color: $text-color-2;
 
   &:hover, &:active {
-    color: $text-color-lighter;
+    color: $text-color-3;
   }
 }
 
 /* Loading modal color style */
 
 .loading-modal-color {
-  background-color: $base-color;
+  background-color: $base-color-3;
 }
 
 /* Header color style */
 
 .custom-navbar-bg-color {
-  background-color: rgba($base-color, .75);
+  background-color: rgba($base-color-3, .75);
 }
 
 .custom-navbar-shadow-color {
-  box-shadow: 0 10px 20px $shadow-color-light;
+  box-shadow: 0 10px 20px $shadow-color-2;
 }
 
 .custom-navbar-brand-color {
-  color: $link-color;
+  color: $link-color-1;
 
   &:hover {
-    color: $link-color-light;
+    color: $link-color-2;
   }
 
   &:hover::after {
-    border-bottom-color: $link-color-light;
+    border-bottom-color: $link-color-2;
   }
 }
 
 .custom-nav-item-active-color {
-  color: $link-color-lighter;
+  color: $link-color-3;
 }
 
 .custom-nav-item-inactive-color {
-  color: $link-color;
+  color: $link-color-1;
 
   &:hover {
-    color: $link-color-light;
+    color: $link-color-2;
   }
 
   &:hover::after {
-    border-bottom-color: $link-color-light;
+    border-bottom-color: $link-color-2;
   }
 }
 
 .custom-navbar-toggler-color {
-  color: $link-color;
+  color: $link-color-1;
   border: 0;
 }
 
 /* Footer color style */
 
 .custom-footer-bg-color {
-  background-color: $base-color;
+  background-color: $base-color-3;
 }
 
 .custom-footer-shadow-color {
-  box-shadow: 0 -10px 20px $shadow-color-light;
+  box-shadow: 0 -10px 20px $shadow-color-2;
 }

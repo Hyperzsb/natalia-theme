@@ -78,7 +78,7 @@ document.onreadystatechange = () => {
     }
 }
 
-window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 200));
+window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 100));
 
 /* Load some event listeners */
 window.onload = function () {
