@@ -5,7 +5,7 @@ name: hyperzsb
 # Your brief self introduction displaying on the Home page (keep it simple for better appearance)
 introduction:
   main: Hi, here is hyperzsb
-  sub: I am free developer, interested in Web full-stack, Blockchain, cybersecurity, DevOps, OS, and other IT-related technologies.
+  sub: I am a free developer, interested in Web full-stack, Blockchain, cybersecurity, DevOps, OS, and other IT-related technologies.
 # Your social media details displaying on the footer (if not applicable, leave it blank)
 socialMedia:
   email: hyperzsb@qq.com
@@ -45,8 +45,6 @@ future: false
 
 collections:
   projects:
-    output: true
-  authors:
     output: true
 
 defaults:
