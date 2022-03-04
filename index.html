@@ -4,8 +4,8 @@ title: Home
 permalink: /
 ---
 <div class="container-fluid p-lg-3">
-    <div class="row justify-content-center p-lg-3">
-        <div class="col-lg-6 order-1 order-lg-0 m-3 custom-introduction">
+    <div class="row justify-content-center my-lg-5">
+        <div class="col-lg-6 order-1 order-lg-0 m-lg-3 custom-introduction">
             <div class="m-3 fs-1 fw-bold text-center font-josefin-sans">
                 {{ site.introduction.main }}
             </div>
@@ -13,13 +13,38 @@ permalink: /
                 {{ site.introduction.sub }}
             </div>
         </div>
-        <div class="col-lg-4 order-0 order-lg-1 m-3 custom-logo">
+        <div class="col-lg-4 order-0 order-lg-1 m-lg-3 custom-logo">
             <img src="/assets/images/logo.png" alt="Portrait">
         </div>
     </div>
-    <div class="row">
-        Projects
+    {% if site.projects.size != 0 %}
+    <div class="row justify-content-center my-4 my-lg-5">
+        <div class="col-10 d-flex justify-content-center align-items-center my-3">
+            <div class="d-inline-block w-75 border-top"></div>
+            <div class="d-inline-block mx-3 mx-lg-5">
+                <h2 class="font-lobster">Projects</h2>
+            </div>
+            <div class="d-inline-block w-75 border-top"></div>
+        </div>
     </div>
+    <div class="row justify-content-center align-items-center my-4 my-lg-5">
+        {% assign pinned_projects = site.projects | where: 'pinned', true %}
+        {% for project in pinned_projects %}
+        <div class="col-10 col-lg-3 m-3 p-3">
+            <div class="card text-center">
+                {% if project.logo %}
+                <img src="{{ project.logo }}" class="card-img-top" alt="Logo of {{ project.name }}">
+                {% endif %}
+                <div class="card-body p-4">
+                    <h4 class="card-title">{{ project.name }}</h4>
+                    <p class="card-text">{{ project.description }}</p>
+                    <a href="{{ project.url }}">View More</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
     <div class="row">
         Blogs
     </div>
