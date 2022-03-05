@@ -65,3 +65,7 @@ defaults:
       path: ""
     values:
       layout: default
+# Exclude following files/directories when building
+exclude:
+  - README.md
+  - LICENSE
