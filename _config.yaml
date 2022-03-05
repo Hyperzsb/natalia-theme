@@ -44,6 +44,8 @@ future: false
 ## Advanced build and deploy settings
 
 collections:
+  pages:
+    output: true
   projects:
     output: true
 
