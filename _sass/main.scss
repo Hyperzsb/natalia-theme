@@ -110,3 +110,14 @@
     height: 100%;
   }
 }
+
+.custom-project-card {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  cursor: default;
+
+  &:hover {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+}

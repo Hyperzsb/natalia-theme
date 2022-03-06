@@ -8,12 +8,12 @@ $base-color-2: #e9ecef;
 $base-color-3: #f8f9fa;
 $shadow-color-1: #adb5bd;
 $shadow-color-2: #dee2e6;
-//$link-color-1: #862e9c;
-//$link-color-2: #ae3ec9;
-//$link-color-3: #cc5de8;
-$link-color-1: #212529;
-$link-color-2: #495057;
-$link-color-3: #868e96;
+$link-color-1: #087f5b;
+$link-color-2: #0ca678;
+$link-color-3: #20c997;
+//$link-color-1: #212529;
+//$link-color-2: #495057;
+//$link-color-3: #868e96;
 $text-color-1: #212529;
 $text-color-2: #495057;
 $text-color-3: #868e96;
@@ -133,4 +133,10 @@ $fatal-color: #ffa8a8;
 
 .custom-footer-shadow-color {
   box-shadow: 0 -10px 20px $shadow-color-2;
+}
+
+/* Home color style */
+
+.custom-project-card-color {
+  background-color: $base-color-3;
 }
