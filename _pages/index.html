@@ -21,15 +21,11 @@ permalink: /
     {% if pinned_projects.size != 0 %}
     <div class="row justify-content-center my-5">
         <div class="col-10 d-flex justify-content-around align-items-center my-3 my-lg-5">
+            <div class="d-none d-lg-inline-block w-50 border-top me-5"></div>
             <div class="d-inline-block">
                 <h2 class="font-lobster">Projects</h2>
             </div>
-            <div class="d-none d-lg-inline-block w-75 border-top"></div>
-            <div class="d-lg-inline-block">
-                <a class="btn btn-outline-primary border-0" href="/projects" role="button">
-                    View All <i class="bi bi-arrow-right"></i>
-                </a>
-            </div>
+            <div class="d-none d-lg-inline-block w-50 border-top ms-5"></div>
         </div>
     </div>
     <div class="row justify-content-center my-3">
@@ -41,7 +37,7 @@ permalink: /
                     <img src="{{ project.logo }}" class="card-img-top" alt="Logo of {{ project.name }}">
                 </a>
                 {% endif %}
-                <div class="card-body d-flex flex-column justify-content-center py-3">
+                <div class="card-body d-flex flex-column justify-content-center align-items-center py-3">
                     <a class="d-block link-color" href="{{ project.url }}">
                         <h3 class="card-title my-2">{{ project.name }}</h3>
                     </a>
@@ -51,10 +47,18 @@ permalink: /
                         {% endfor %}
                     </div>
                     <p class="d-block card-text my-2">{{ project.description }}</p>
+                    <div class="custom-project-card-shadow custom-project-card-shadow-color"></div>
                 </div>
             </div>
         </div>
         {% endfor %}
+    </div>
+    <div class="row justify-content-center my-lg-5">
+        <div class="col-10 col-lg-2 my-lg-3">
+            <a class="d-block btn rounded-pill btn-outline-primary" href="/projects" role="button">
+                View All <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
     </div>
     {% endif %}
     <div class="row">
