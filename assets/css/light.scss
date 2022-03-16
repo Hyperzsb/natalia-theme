@@ -2,6 +2,7 @@
 ---
 
 @import "main";
+@import "markdown";
 
 $base-color-1: #ced4da;
 $base-color-2: #e9ecef;
@@ -153,4 +154,13 @@ $fatal-color: #ffa8a8;
 
 .custom-post-card-color {
   background-color: $base-color-3;
+}
+
+/* Markdown color style */
+
+.markdown {
+  blockquote{
+    color: $text-color-3;
+    border-left: $text-color-3 3px solid;
+  }
 }

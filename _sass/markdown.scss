@@ -1,0 +1,134 @@
+@mixin mobile {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+.markdown {
+
+  h1, h2, h3 {
+    text-align: center;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Darker Grotesque", "Noto Serif SC", sans-serif;
+    font-weight: bold;
+  }
+
+  h1 {
+    line-height: 3rem;
+    margin: 2rem 0;
+
+    @include mobile {
+      line-height: 2.8rem;
+    }
+  }
+
+  h2 {
+    line-height: 3.3rem;
+    margin: 1.7rem 0;
+
+    @include mobile {
+      line-height: 2.6rem;
+    }
+  }
+
+  h3 {
+    line-height: 3.3rem;
+    margin: 1.4rem 0;
+
+    @include mobile {
+      line-height: 2.4rem;
+    }
+  }
+
+  h4 {
+    line-height: 3.1rem;
+    margin: 1.1rem 0;
+
+    @include mobile {
+      line-height: 2.2rem;
+    }
+  }
+
+  h5 {
+    line-height: 1.7rem;
+    margin: 0.8rem 0;
+
+    @include mobile {
+      line-height: 2rem;
+    }
+  }
+
+  h6 {
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
+
+    @include mobile {
+      line-height: 1.8rem;
+    }
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    &:after {
+      padding-left: 5px;
+      content: '⇗';
+      font-size: 70%;
+      vertical-align: super;
+    }
+  }
+
+  ul, ol {
+    margin: 0.7rem 0;
+    padding-inline-start: 2rem;
+
+    @include mobile {
+      padding-inline-start: 1.5rem;
+    }
+  }
+
+  li {
+    margin: 0.3rem 0;
+  }
+
+  hr {
+    margin: 3rem 0 2.5rem;
+  }
+
+  img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+  }
+
+  table {
+    max-width: 90%;
+    margin: 1.5rem auto;
+    text-align: center;
+    vertical-align: middle;
+
+    th {
+      padding: 10px;
+      font-weight: bold;
+      border-style: solid;
+      border-width: 2px;
+    }
+
+    tr, td {
+      padding: 5px;
+      border-style: solid;
+      border-width: 1px;
+    }
+  }
+
+  blockquote {
+    display: block;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+  }
+
+}

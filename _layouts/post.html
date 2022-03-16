@@ -1,5 +1,31 @@
 ---
 layout: default
 ---
-<h1>Post Layout</h1>
-{{ content }}
+<div class="container-fluid p-lg-5">
+    <div class="row justify-content-center my-3">
+        <div class="col-lg-6">
+            <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
+                {{ page.title }}
+            </h1>
+            <p class="d-block m-3 text-center lighter-text-color">
+                {{ page.date | date_to_string }}
+                {% if page.last_update %}
+                &nbsp;(Last Update on {{ page.last_update | date_to_string }})
+                {% endif %}
+            </p>
+            {% if page.tags !=0 %}
+            <div class="m-3 text-center">
+                {% for tag in page.tags %}
+                <span class="badge bg-secondary">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="py-lg-2"></div>
+    <div class="row justify-content-center mx-3 my-3">
+        <div class="col-lg-8 px-3 markdown">
+            {{ content }}
+        </div>
+    </div>
+</div>
