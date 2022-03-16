@@ -44,6 +44,12 @@ $fatal-color: #ffa8a8;
   color: $text-color-3;
 }
 
+.gradient-text-color {
+  background: linear-gradient(45deg, rgb(1, 113, 187), rgb(7, 127, 94));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 .link-color {
   color: $link-color-1;
 
