@@ -3,4 +3,54 @@ layout: default
 title: Projects
 permalink: /projects
 ---
-<h1>This is the Projects page.</h1>
+<div class="container-fluid p-lg-5">
+    <div class="row justify-content-center my-3">
+        <div class="col-lg-6">
+            <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
+                All My Projects
+            </h1>
+        </div>
+    </div>
+    <div class="py-3"></div>
+    {% for project in site.projects %}
+    <div class="row justify-content-center mx-3 my-2 my-lg-4">
+        {% if project.logo %}
+        <div class="col-lg-3">
+            <a href="{{ project.url }}">
+                <img src="{{ project.logo }}" class="rounded img-fluid"
+                     alt="Logo of {{ project.name }}" title="{{ project.name }}">
+            </a>
+        </div>
+        <div class="col-lg-6">
+            <a class="d-block link-color my-3" href="{{ project.url }}">
+                <h2 class="font-darker-grotesque fw-bold">{{ project.name }}</h2>
+            </a>
+            {% if project.tags !=0 %}
+            <div class="my-2">
+                {% for tag in project.tags %}
+                <span class="badge bg-primary">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <p class="d-block my-3">{{ project.excerpt }}</p>
+        </div>
+        {% else %}
+        <div class="col-lg-9">
+            <a class="d-block link-color my-3" href="{{ project.url }}">
+                <h2 class="font-darker-grotesque fw-bold">{{ project.name }}</h2>
+            </a>
+            {% if project.tags !=0 %}
+            <div class="my-2">
+                {% for tag in project.tags %}
+                <span class="badge bg-primary">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <p class="d-block my-3">{{ project.excerpt }}</p>
+        </div>
+        {% endif %}
+    </div>
+    <div class="py-3"></div>
+    {% endfor %}
+    <div class="py-3"></div>
+</div>
