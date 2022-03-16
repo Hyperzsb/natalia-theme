@@ -6,10 +6,6 @@
 
 .markdown {
 
-  h1, h2, h3 {
-    text-align: center;
-  }
-
   h1, h2, h3, h4, h5, h6 {
     font-family: "Darker Grotesque", "Noto Serif SC", sans-serif;
     font-weight: bold;
@@ -100,9 +96,14 @@
   }
 
   img {
-    margin: auto;
     display: block;
+    margin: 1rem auto;
     max-width: 90%;
+  }
+
+  img.emoji {
+    display: inline-block;
+    margin: 0 0.5rem;
   }
 
   table {

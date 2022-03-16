@@ -42,6 +42,9 @@ timezone: Asia/Shanghai
 future: false
 
 ## Advanced build and deploy settings
+# Plugins enbaled
+plugins:
+  - jemoji
 
 collections:
   pages:
