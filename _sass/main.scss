@@ -3,6 +3,10 @@
   transition: 0.25s;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .font-lobster {
   font-family: "Lobster", sans-serif;
 }
@@ -145,5 +149,18 @@
       margin-top: -1rem;
       padding-bottom: 0.75rem;
     }
+  }
+}
+
+.custom-post-card {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  border: 0;
+  cursor: default;
+  transition: 0.25s;
+
+  &:hover {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
   }
 }
