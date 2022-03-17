@@ -1,4 +1,6 @@
-/* Functions for header behavior */
+/* Functions for the header's behavior */
+
+// Display and hide the shadow of the navbar when scrolling
 function changeNavbarShadow() {
     let threshold = 10;
     let offset = 10;
@@ -31,6 +33,10 @@ function changeNavbarShadow() {
     }
 }
 
+// Add the event listener of "scroll" to window object
+window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 100));
+
+// Change the icon of the toggler of the navbar when in mobile mode.
 function changeNavbarTogglerIcon() {
     document.getElementById("navbar-toggler").addEventListener("click", function () {
         let classList = this.firstElementChild.classList;
@@ -41,6 +47,8 @@ function changeNavbarTogglerIcon() {
     })
 }
 
+/* Functions for the modal's behavior */
+// Show and hide the modal and the main content
 document.onreadystatechange = () => {
     if (document.readyState === "complete") {
         let loadingModal = document.getElementById("loading-modal");
@@ -78,9 +86,45 @@ document.onreadystatechange = () => {
     }
 }
 
-window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 100));
+/* Functions for the contents' behavior rendered from Markdown */
+
+// Change the "click" event's behavior of links
+function smoothScroll() {
+    let tocContainer = document.getElementById("toc");
+    if (tocContainer) {
+        let links = tocContainer.getElementsByTagName("a");
+        for (let link of links) {
+            link.addEventListener("click", function (ev) {
+                window.scrollTo({
+                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - 100),
+                    behavior: "smooth"
+                });
+                ev.preventDefault();
+            })
+        }
+    }
+    let markdownContainer = document.getElementById("markdown");
+    if (markdownContainer) {
+        let raw_links = markdownContainer.getElementsByTagName("a");
+        let links = [];
+        for (let raw_link of raw_links)
+            if (raw_link.attributes["href"].value[0] === "#") {
+                links.push(raw_link);
+            }
+        for (let link of links) {
+            link.addEventListener("click", function (ev) {
+                window.scrollTo({
+                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - 100),
+                    behavior: "smooth"
+                });
+                ev.preventDefault();
+            })
+        }
+    }
+}
 
 /* Load some event listeners */
 window.onload = function () {
     changeNavbarTogglerIcon();
+    smoothScroll();
 }
