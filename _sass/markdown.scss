@@ -11,14 +11,10 @@
     font-family: "Darker Grotesque", "Noto Serif SC", sans-serif;
     font-weight: bold;
 
-    a {
-      text-decoration: none;
+    a[href^="#"] {
       font-size: 70%;
       vertical-align: super;
-
-      &:after {
-        content: '';
-      }
+      text-decoration: none;
     }
   }
 
@@ -90,17 +86,13 @@
       vertical-align: super;
     }
 
-    &.footnote:after {
+    &[href^="#"]:after {
       content: '';
     }
 
     &.reversefootnote {
       font-size: 70%;
       vertical-align: super;
-
-      &:after {
-        content: '';
-      }
     }
   }
 

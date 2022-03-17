@@ -15,18 +15,18 @@ praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan a
 
 The Markdown engine of the Natalia Theme supports several common Markdown elements, including:
 
-- [Heading](#Heading)
-- [Emphasis](#Emphasis)
-- [Link](#Link)
-- [List](#List)
-- [Blockquote](#Blockquote)
-- [Code](#Code)
-- [Table](#Table)
-- [Image](#Image)
-- [Horizontal Rule](#Horizontal-Rule)
-- [Emoji](#Emoji)
-- [LaTeX](#LaTeX)
-- [Footnote](#Footnote)
+- [Heading](#heading)
+- [Emphasis](#emphasis)
+- [Link](#link)
+- [List](#list)
+- [Blockquote](#blockquote)
+- [Code](#code)
+- [Table](#table)
+- [Image](#image)
+- [Horizontal Rule](#horizontal-rule)
+- [Emoji](#emoji)
+- [LaTeX](#latex)
+- [Footnote](#footnote)
 
 Examples as follows:
 
