@@ -32,7 +32,7 @@ permalink: /projects
                 {% endfor %}
             </div>
             {% endif %}
-            <p class="d-block my-3">{{ project.excerpt }}</p>
+            <div class="my-3 markdown">{{ project.excerpt }}</div>
         </div>
         {% else %}
         <div class="col-lg-10">
@@ -46,7 +46,7 @@ permalink: /projects
                 {% endfor %}
             </div>
             {% endif %}
-            <p class="d-block my-3">{{ project.excerpt }}</p>
+            <div class="my-3 markdown">{{ project.excerpt }}</div>
         </div>
         {% endif %}
     </div>
