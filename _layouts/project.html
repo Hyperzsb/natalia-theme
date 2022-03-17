@@ -1,5 +1,28 @@
 ---
 layout: default
 ---
-<h1>Project Layout</h1>
-{{ content }}
+<div class="container-fluid p-lg-5">
+    <div class="row justify-content-center my-3">
+        <div class="col-lg-6">
+            <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
+                {{ page.name }}
+            </h1>
+            {% if page.tags !=0 %}
+            <div class="m-3 text-center">
+                {% for tag in page.tags %}
+                <span class="badge bg-secondary">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="py-lg-2"></div>
+    <div class="row justify-content-center mx-3 my-3">
+        <div class="col-lg-8 px-3 mx-3">
+            <div class="markdown" id="markdown">
+                {% include anchor_headings.html html=content anchorBody="§" %}
+            </div>
+        </div>
+    </div>
+    <div class="py-4 py-lg-2"></div>
+</div>
