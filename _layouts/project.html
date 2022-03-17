@@ -14,6 +14,12 @@ layout: default
                 {% endfor %}
             </div>
             {% endif %}
+            {% if page.logo %}
+            <div class="m-3 p-3">
+                <img src="{{ page.logo }}" class="rounded img-fluid"
+                     alt="Logo of {{ page.name }}" title="{{ page.name }}">
+            </div>
+            {% endif %}
         </div>
     </div>
     <div class="py-lg-2"></div>
