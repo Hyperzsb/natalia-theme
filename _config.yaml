@@ -31,6 +31,14 @@ navigation:
     url: /posts
   - name: Contact
     url: /contact
+# Gitalk settings. For more details, please refer to https://github.com/gitalk/gitalk
+gitalk:
+  clientID:
+  clientSecret:
+  repo:
+  owner:
+  # Only support single admin, or you can config it manually
+  admin:
 # Miscellaneous settings
 setting:
   enableLoadingModal: true
@@ -42,7 +50,7 @@ timezone: Asia/Shanghai
 future: false
 
 ## Advanced build and deploy settings
-# Plugins enbaled
+# Plugins enabled
 plugins:
   - jemoji
 

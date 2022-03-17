@@ -14,7 +14,8 @@
     <!-- Highlight JS -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/default.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+    <!-- Gitalk -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/light.css">
     <title>{{ page.title }}</title>
@@ -34,8 +35,11 @@
         crossorigin="anonymous"></script>
 <!-- Loadash Library -->
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-<!-- Highlight JS initialize -->
-<script>hljs.highlightAll();</script>
+<!-- Highlight JS Library -->
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
+<script>
+    hljs.highlightAll();
+</script>
 <!-- MathJax -->
 <script>
     MathJax = {
@@ -45,6 +49,23 @@
     };
 </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Gitalk Library -->
+{% if page.comment == true %}
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: '{{ site.gitalk.clientID }}',
+        clientSecret: '{{ site.gitalk.clientSecret }}',
+        repo: '{{ site.gitalk.repo }}',
+        owner: '{{ site.gitalk.owner }}',
+        admin: ['{{ site.gitalk.admin }}'],
+        id: location.pathname,
+        distractionFreeMode: false
+    })
+
+    gitalk.render('gitalk-container')
+</script>
+{% endif %}
 <!-- Custom Library -->
 <script src="/assets/js/main.js"></script>
 </body>
