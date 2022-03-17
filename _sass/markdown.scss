@@ -187,3 +187,31 @@
     border-top: 1px dashed;
   }
 }
+
+.toc-container {
+  position: sticky;
+  top: 12.5vh;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.toc {
+  max-height: 75vh;
+  overflow-y: auto;
+
+  ul, ol {
+    margin: 0.5rem 0;
+    padding-inline-start: 1rem;
+    list-style-type: none;
+
+    @include mobile {
+      padding-inline-start: 0.5rem;
+    }
+  }
+
+  li {
+    margin: 0.3rem 0;
+  }
+}

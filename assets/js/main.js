@@ -89,7 +89,7 @@ document.onreadystatechange = () => {
 /* Functions for the contents' behavior rendered from Markdown */
 
 // Change the "click" event's behavior of links
-function smoothScroll() {
+function enableSmoothScrollOfLinksInMarkdown() {
     let tocContainer = document.getElementById("toc");
     if (tocContainer) {
         let links = tocContainer.getElementsByTagName("a");
@@ -126,5 +126,5 @@ function smoothScroll() {
 /* Load some event listeners */
 window.onload = function () {
     changeNavbarTogglerIcon();
-    smoothScroll();
+    enableSmoothScrollOfLinksInMarkdown();
 }

@@ -183,3 +183,13 @@ $fatal-color: #ffa8a8;
     color: $text-color-3;
   }
 }
+
+.toc {
+  a {
+    color: $link-color-1;
+
+    &:hover, &:active {
+      color: $link-color-2;
+    }
+  }
+}
