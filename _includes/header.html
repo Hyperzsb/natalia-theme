@@ -14,7 +14,9 @@
                     {% for nav in site.navigation %}
                     <li class="nav-item mb-1 mb-lg-0 ms-0 ms-lg-3">
                         <a class="nav-link" href="{{ nav.url }}">
-                            {% if nav.url == page.url %}
+                            {% assign nav_url = nav.url | split: "/" %}
+                            {% assign page_url = page.url | split: "/" %}
+                            {% if nav_url[1] == page_url[1] %}
                             <b class="custom-nav-item custom-nav-item-active custom-nav-item-active-color">
                                 {{ nav.name }}
                             </b>
