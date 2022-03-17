@@ -159,8 +159,27 @@ $fatal-color: #ffa8a8;
 /* Markdown color style */
 
 .markdown {
-  blockquote{
+  a {
+    color: $link-color-1;
+
+    &:hover, &:active {
+      color: $link-color-2;
+    }
+  }
+
+  blockquote {
     color: $text-color-3;
     border-left: $text-color-3 3px solid;
+  }
+
+  code {
+    &.language-plaintext {
+      background-color: $base-color-2;
+    }
+  }
+
+  div.footnotes {
+    border-color: $text-color-3;
+    color: $text-color-3;
   }
 }

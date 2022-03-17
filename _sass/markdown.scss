@@ -1,3 +1,4 @@
+// Use the lg breakpoint (992px) of Bootstrap to change styles
 @mixin mobile {
   @media screen and (max-width: 992px) {
     @content;
@@ -5,10 +6,20 @@
 }
 
 .markdown {
-
+  // Heading
   h1, h2, h3, h4, h5, h6 {
     font-family: "Darker Grotesque", "Noto Serif SC", sans-serif;
     font-weight: bold;
+
+    a {
+      text-decoration: none;
+      font-size: 70%;
+      vertical-align: super;
+
+      &:after {
+        content: '';
+      }
+    }
   }
 
   h1 {
@@ -65,10 +76,12 @@
     }
   }
 
+  // Emphasis
   p {
     margin: 0.5rem 0;
   }
 
+  // Link
   a {
     &:after {
       padding-left: 5px;
@@ -76,8 +89,22 @@
       font-size: 70%;
       vertical-align: super;
     }
+
+    &.footnote:after {
+      content: '';
+    }
+
+    &.reversefootnote {
+      font-size: 70%;
+      vertical-align: super;
+
+      &:after {
+        content: '';
+      }
+    }
   }
 
+  // List
   ul, ol {
     margin: 0.7rem 0;
     padding-inline-start: 2rem;
@@ -91,21 +118,30 @@
     margin: 0.3rem 0;
   }
 
-  hr {
-    margin: 3rem 0 2.5rem;
-  }
-
-  img {
+  // Blockquote
+  blockquote {
     display: block;
-    margin: 1rem auto;
-    max-width: 90%;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
   }
 
-  img.emoji {
-    display: inline-block;
-    margin: 0 0.5rem;
+  // Code
+
+  code {
+    &.language-plaintext {
+      display: inline-block;
+      margin: 0 0.25rem;
+      padding: 0 0.25rem;
+      border-radius: 0.25rem;
+    }
+
+    &.hljs {
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
   }
 
+  // Table
   table {
     max-width: 90%;
     margin: 1.5rem auto;
@@ -126,10 +162,28 @@
     }
   }
 
-  blockquote {
+  // Image
+  img {
     display: block;
-    padding-left: 1.5rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    max-width: 90%;
   }
 
+  // Horizontal Rule
+  hr {
+    margin: 3rem 0 2.5rem;
+  }
+
+  // Emoji
+  img.emoji {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+  // Footnote
+  div.footnotes {
+    margin: 3rem 0 0;
+    padding: 1rem 0;
+    border-top: 1px dashed;
+  }
 }
