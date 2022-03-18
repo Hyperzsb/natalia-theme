@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lobster|Josefin+Sans|Josefin+Sans:b,i,bi|Darker+Grotesque|Darker+Grotesque:b,i,bi|Ubuntu|Ubuntu:b,i,bi|Noto+Serif+SC|Noto+Serif+SC:b,i,bi">
-    <!-- Highlight JS -->
+    <!-- HighlightJS -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/styles/default.min.css">
     <!-- Gitalk -->
@@ -65,6 +65,42 @@
     })
 
     gitalk.render('gitalk-container')
+</script>
+{% endif %}
+<!-- EmailJS -->
+{% if page.contact == true %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("{{ site.emailjs.userID }}");
+    })();
+    window.onload = function () {
+        let contactForm = document.getElementById('contact-form');
+        if (contactForm != null) {
+            contactForm.addEventListener("submit", function (ev) {
+                ev.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('{{ site.emailjs.serviceID }}', '{{ site.emailjs.templateID }}', this)
+                    .then(function () {
+                        const resultModal = new bootstrap.Modal(document.getElementById('contact-result-modal'));
+                        if (resultModal != null) {
+                            document.getElementById("contact-result-modal-title").innerText = "Succeeded!"
+                            document.getElementById("contact-result-modal-body").innerText = "Send message successfully! Please do not send the same message repeatedly.";
+                        }
+                        resultModal.show();
+                        document.getElementById("contact-form-reset").click();
+                    }, function (error) {
+                        const resultModal = new bootstrap.Modal(document.getElementById('contact-result-modal'));
+                        if (resultModal != null) {
+                            document.getElementById("contact-result-modal-title").innerText = "Failed!"
+                            document.getElementById("contact-result-modal-body").innerText = "Send message unsuccessfully! Please try again later. Error: " + error;
+                        }
+                        resultModal.show();
+                        document.getElementById("contact-form-reset").click();
+                    });
+            })
+        }
+    }
 </script>
 {% endif %}
 <!-- Custom Library -->

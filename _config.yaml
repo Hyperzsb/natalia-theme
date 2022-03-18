@@ -39,10 +39,15 @@ gitalk:
   owner:
   # Only support single admin, or you can config it manually
   admin:
+# EmailJS setting. For more details, please refer to https://www.emailjs.com/
+emailjs:
+  userID:
+  serviceID:
+  templateID:
 # Miscellaneous settings
 setting:
   enableLoadingModal: true
-  # Dark mode has not developed completely yet. Please do not turn it on.
+  # Dark mode has not developed completely yet. Please do not turn it on
   enableDarkMode: false
 # Timezone setting
 timezone: Asia/Shanghai

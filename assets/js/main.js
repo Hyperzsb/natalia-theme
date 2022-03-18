@@ -124,7 +124,20 @@ function enableSmoothScrollOfLinksInMarkdown() {
 }
 
 /* Load some event listeners */
-window.onload = function () {
+
+function addOnloadFunction(func) {
+    const oldOnload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function () {
+            oldOnload();
+            func();
+        }
+    }
+}
+
+addOnloadFunction(function () {
     changeNavbarTogglerIcon();
     enableSmoothScrollOfLinksInMarkdown();
-}
+});
