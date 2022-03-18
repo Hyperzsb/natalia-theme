@@ -23,7 +23,7 @@ layout: default
         </div>
     </div>
     <div class="py-lg-2"></div>
-    <div class="row justify-content-center mx-3 my-3">
+    <div class="row justify-content-center m-3">
         {% if page.toc != false %}
         <!-- TODO: make the headings of toc synchronous with the content -->
         <div class="col-lg-2 px-3 mx-3">
@@ -43,7 +43,11 @@ layout: default
     </div>
     {% if page.comment == true %}
     <div class="py-lg-2"></div>
-    <div id="gitalk-container"></div>
+    <div class="row justify-content-center m-3">
+        <div class="col-lg-8 px-3 mx-3">
+            <div id="gitalk-container"></div>
+        </div>
+    </div>
     {% endif %}
     <div class="py-4 py-lg-2"></div>
 </div>
