@@ -21,7 +21,7 @@ copyright: 2022 © hyperzsb
 
 # The URL name of your site. E.g.: https://hyperzsb.io
 # This option MUST be modified according to your deployment because the jekyll-sitemap plugin depends on it to generate correct sitemap
-url: http://127.0.0.1:4000
+url: https://hyperzsb.io
 # Navigation items
 navigation:
   - name: Home
