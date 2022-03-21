@@ -20,6 +20,7 @@ copyright: 2022 © hyperzsb
 ## Basic build and deploy settings
 
 # The URL name of your site. E.g.: https://hyperzsb.io
+# This option MUST be modified according to your deployment because the jekyll-sitemap plugin depends on it to generate correct sitemap
 url: http://127.0.0.1:4000
 # Navigation items
 navigation:
@@ -57,6 +58,13 @@ future: false
 ## Advanced build and deploy settings
 # Plugins enabled
 plugins:
+  # A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. For more details, please refer to https://github.com/jekyll/jekyll-feed
+  - jekyll-feed
+  # A Jekyll plugin to add metadata tags for search engines and social networks to better index and display your site's content. For more details, please refer to https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-seo-tag
+  # A Jekyll plugin to generate a sitemaps.org compliant sitemap for your Jekyll site. For more details, please refer to https://github.com/jekyll/jekyll-sitemap
+  - jekyll-sitemap
+  # A Jekyll plugin to support Emoji contents. For more details, please refer to https://github.com/jekyll/jemoji
   - jemoji
 
 collections:
