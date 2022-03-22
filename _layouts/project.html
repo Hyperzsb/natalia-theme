@@ -1,27 +1,27 @@
 ---
 layout: default
 ---
-<div class="container-fluid p-lg-5">
-    <div class="row justify-content-center my-3">
+<div class="container-fluid p-0 p-lg-5">
+    <div class="row justify-content-center py-3">
         <div class="col-lg-6">
-            <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
+            <h1 class="d-block pb-3 fw-bold text-center font-josefin-sans">
                 {{ page.name }}
             </h1>
             {% if page.tags != 0 %}
-            <div class="m-3 text-center">
+            <div class="pb-3 text-center">
                 {% for tag in page.tags %}
                 <span class="badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}
             {% if page.repo %}
-            <div class="m-3 text-center">
+            <div class="pb-3 text-center">
                 {% if page.logo %}
-                <a class="d-block btn rounded-pill btn-outline-primary w-50 my-5 mx-auto" href="{{ page.repo }}" target="_blank" role="button">
+                <a class="d-block btn rounded-pill btn-outline-primary w-50 my-3 my-lg-5 mx-auto" href="{{ page.repo }}" target="_blank" role="button">
                     <i class="bi bi-github">&nbsp;View in GitHub</i>
                 </a>
                 {% else %}
-                <a class="d-block btn rounded-pill btn-outline-primary w-50 mt-5 mx-auto" href="{{ page.repo }}" target="_blank" role="button">
+                <a class="d-block btn rounded-pill btn-outline-primary w-50 my-3 my-lg-5 mx-auto" href="{{ page.repo }}" target="_blank" role="button">
                     <i class="bi bi-github">&nbsp;View in GitHub</i>
                 </a>
                 {% endif %}
@@ -29,7 +29,7 @@ layout: default
             {% endif %}
             <!-- TODO: improve the styles of project's logo -->
             {% if page.logo %}
-            <div class="m-3 p-3">
+            <div class="px-3 pb-3 text-center">
                 <img src="{{ page.logo }}" class="rounded img-fluid"
                      alt="Logo of {{ page.name }}" title="{{ page.name }}">
             </div>
@@ -37,8 +37,8 @@ layout: default
         </div>
     </div>
     <div class="py-lg-2"></div>
-    <div class="row justify-content-center mx-3 my-3">
-        <div class="col-lg-8 px-3 mx-3">
+    <div class="row justify-content-center p-3">
+        <div class="col-lg-8 px-lg-3">
             <div class="markdown" id="markdown">
                 {% include anchor_headings.html html=content anchorBody="§" %}
             </div>

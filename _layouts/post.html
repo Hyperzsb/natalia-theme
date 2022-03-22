@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="container-fluid p-lg-5">
-    <div class="row justify-content-center my-3">
+<div class="container-fluid p-0 p-lg-5">
+    <div class="row justify-content-center py-3">
         <div class="col-lg-6">
             <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
                 {{ page.title }}
@@ -23,10 +23,10 @@ layout: default
         </div>
     </div>
     <div class="py-lg-2"></div>
-    <div class="row justify-content-center m-3">
+    <div class="row justify-content-center p-3">
         {% if page.toc != false %}
         <!-- TODO: make the headings of toc synchronous with the content -->
-        <div class="col-lg-2 px-3 mx-3">
+        <div class="col-lg-2 px-lg-3">
             <div class="toc-container">
                 <span class="d-block fs-3 fw-bold font-darker-grotesque m-3">Contents</span>
                 <div class="toc" id="toc">
@@ -35,7 +35,7 @@ layout: default
             </div>
         </div>
         {% endif %}
-        <div class="col-lg-8 px-3 mx-3">
+        <div class="col-lg-8 px-lg-3">
             <div class="markdown" id="markdown">
                 {% include anchor_headings.html html=content anchorBody="§" %}
             </div>
@@ -43,8 +43,8 @@ layout: default
     </div>
     {% if page.comment == true %}
     <div class="py-lg-2"></div>
-    <div class="row justify-content-center m-3">
-        <div class="col-lg-8 px-3 mx-3">
+    <div class="row justify-content-center p-3">
+        <div class="col-lg-8 px-lg-3">
             <div id="gitalk-container"></div>
         </div>
     </div>
