@@ -3,7 +3,7 @@ layout: default
 title: Posts
 permalink: /posts
 ---
-<div class="container-fluid p-0 p-lg-5">
+<div class="container-fluid p-lg-5">
     <div class="row justify-content-center py-3">
         <div class="col-lg-6">
             <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
@@ -13,7 +13,7 @@ permalink: /posts
     </div>
     <div class="py-lg-2"></div>
     {% for post in site.posts %}
-    <div class="row justify-content-center p-3">
+    <div class="row justify-content-center px-1 p-lg-3">
         <div class="col-lg-8">
             <a class="d-block text-center link-color my-3" href="{{ post.url }}">
                 <h2 class="font-darker-grotesque fw-bold">{{ post.title }}</h2>
