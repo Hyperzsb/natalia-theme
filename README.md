@@ -12,18 +12,18 @@ As the project is in its early stage, this documentation will update gradually i
 
 ## Table of Contents
 
-- [Introduction](#Introduction)
-- [Features](#Features)
+- [Introduction](#introduction)
+- [Features](#features)
   - [Already here](#already-here)
   - [Coming soon](#coming-soon)
-- [User Guide](#User-Guide)
+- [User Guide](#user-Guide)
   - [Customization](#customization)
   - [Deploy](#deploy)
     - [Deploy manually](#deploy-manually)
     - [Deploy using GitHub Pages](#deploy-using-github-pages)
-- [Troubleshooting](#Troubleshooting)
-- [Contributing](#Contributing)
-- [License](#License)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Every developer 🧑🏼‍💻 needs an awesome place to exhibit their unique e
 Natalia may be a good choice for you to build up your own portfolio and blog site in a few minutes, and deliver your ideas in a friendly way. 
 Out of the box, easy configuration, and free customization. 
 
-Natalia is mainly developed on [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/), lots of JavaScript libraries, Ruby gems, and third-party APIs are used as well:
+Natalia is mainly developed on [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/), but lots of JavaScript libraries, Ruby gems, and third-party APIs are used as well:
 
 - [lodash](https://github.com/lodash/lodash)
 - [HighlightJS](https://github.com/highlightjs/highlight.js/)
@@ -81,7 +81,7 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 ### Deploy
 
 You can deploy Natalia manually on your Virtual Machines provided by Cloud Service Providers like AWS, Azure, and Google Cloud.
-Besides, you can also use the static pages hosting services provided by [GitHub Pages](https://pages.github.com/), [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/), [Cloudflare Pages](https://pages.cloudflare.com/), and [AWS Amplify](https://aws.amazon.com/amplify/).
+Besides, you can also deploy Natalia using the static pages hosting services provided by [GitHub Pages](https://pages.github.com/), [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/), [Cloudflare Pages](https://pages.cloudflare.com/), and [AWS Amplify](https://aws.amazon.com/amplify/).
 
 My home site [hyperzsb.io](https://hyperzsb.io) is currently hosted on [AWS Amplify](https://aws.amazon.com/amplify/).
 
@@ -89,18 +89,18 @@ My home site [hyperzsb.io](https://hyperzsb.io) is currently hosted on [AWS Ampl
 
 1. Clone this project
 ```bash
-git clone https://github.com/Hyperzsb/natalia-theme.git
-cd natalia-theme
+$ git clone https://github.com/Hyperzsb/natalia-theme.git
+$ cd natalia-theme
 ```
 2. Install dependencies using `bundle`. For more information about installing bundle and Jekyll, please refer to [Quickstart Guide of Jekyll](https://jekyllrb.com/docs/).
 ```bash
-bundle install
+$ bundle install
 ```
 3. Build Natalia
 ```bash
-bundle exec jekyll build
+$ bundle exec jekyll build
 ```
-4. Copy the build output inside `_site/` to the corresponding folder of your server (like Nginx and Apache) to publish it. 
+4. Copy the build output inside `_site/` directory to the corresponding folder of your server (like [Nginx](https://www.nginx.com/) and [Apache](https://httpd.apache.org/)) to publish it. 
 For more information about the server applications, please refer to their documentation.
 
 #### Deploy using GitHub Pages
