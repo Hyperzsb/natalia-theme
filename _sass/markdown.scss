@@ -1,4 +1,4 @@
-// Use the lg breakpoint (992px) of Bootstrap to change styles
+/* Use the lg breakpoint (992px) of Bootstrap to change styles */
 @mixin mobile {
   @media screen and (max-width: 992px) {
     @content;
@@ -6,8 +6,15 @@
 }
 
 .markdown {
-  // Heading
-  h1, h2, h3, h4, h5, h6 {
+
+  /* Heading */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Darker Grotesque", "Noto Serif SC", sans-serif;
     font-weight: bold;
 
@@ -72,21 +79,23 @@
     }
   }
 
-  // Emphasis
+  /* Emphasis */
+
   p {
     margin: 0.5rem 0;
   }
 
-  // Link
+  /* Link */
+
   a {
-    &:after {
+    &::after {
       padding-left: 5px;
       content: '⇗';
       font-size: 70%;
       vertical-align: super;
     }
 
-    &[href^="#"]:after {
+    &[href^="#"]::after {
       content: '';
     }
 
@@ -96,8 +105,10 @@
     }
   }
 
-  // List
-  ul, ol {
+  /* List */
+
+  ul,
+  ol {
     margin: 0.7rem 0;
     padding-inline-start: 2rem;
 
@@ -110,14 +121,15 @@
     margin: 0.3rem 0;
   }
 
-  // Blockquote
+  /* Blockquote */
+
   blockquote {
     display: block;
     padding-left: 1.5rem;
     margin: 1rem 0;
   }
 
-  // Code
+  /* Code */
 
   code {
     &.language-plaintext {
@@ -133,7 +145,8 @@
     }
   }
 
-  // Table
+  /* Table */
+
   table {
     max-width: 90%;
     margin: 1.5rem auto;
@@ -147,32 +160,37 @@
       border-width: 2px;
     }
 
-    tr, td {
+    tr,
+    td {
       padding: 5px;
       border-style: solid;
       border-width: 1px;
     }
   }
 
-  // Image
+  /* Image */
+
   img {
     display: block;
     margin: 1rem auto;
     max-width: 90%;
   }
 
-  // Horizontal Rule
+  /* Horizontal Rule */
+
   hr {
     margin: 3rem 0 2.5rem;
   }
 
-  // Emoji
+  /* Emoji */
+
   img.emoji {
     display: inline-block;
     margin: 0 0.5rem;
   }
 
-  // Footnote
+  /* Footnote */
+
   div.footnotes {
     margin: 3rem 0 0;
     padding: 1rem 0;
@@ -193,7 +211,8 @@
   max-height: 75vh;
   overflow-y: auto;
 
-  ul, ol {
+  ul,
+  ol {
     margin: 0.5rem 0;
     padding-inline-start: 1rem;
     list-style-type: none;

@@ -49,7 +49,7 @@
 
 /* Header style */
 
-.custom-navbar:before {
+.custom-navbar::before {
   content: '';
   position: absolute;
   top: 0;
@@ -68,7 +68,7 @@
   position: relative;
   vertical-align: middle;
 
-  &:after {
+  &::after {
     box-sizing: inherit;
     content: '';
     position: absolute;
@@ -79,7 +79,7 @@
 
 .custom-nav-item-active {
 
-  &:after {
+  &::after {
     bottom: 0;
     right: 0;
     width: 100%;
