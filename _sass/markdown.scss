@@ -171,9 +171,12 @@
   /* Image */
 
   img {
-    //display: block;
-    //margin: 1rem auto;
     max-width: 90%;
+  }
+
+  .img-center {
+    display: block;
+    margin: 1rem auto;
   }
   
   /* Horizontal Rule */
