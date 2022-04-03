@@ -161,16 +161,19 @@ Right aligned columns
 
 # Image
 
-![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+Support both block and inline images.
 
-Like links, Images also have a footnote style syntax
+Also support images with custom classes.
 
-![Alt text][id]
+## Examples
 
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+- General image:
+  ![Minion](https://octodex.github.com/images/minion.png)
+- Image with class `.img-center`
+  ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat"){: .img-center}
+- Badge images:
+  ![Bootstrap Version](https://img.shields.io/badge/badge_image-one-blue)
+  ![Bootstrap Version](https://img.shields.io/badge/badge_image-two-red)
 
 # Horizontal Rule
 
