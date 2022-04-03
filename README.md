@@ -4,7 +4,7 @@
 ![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.1-blue?logo=bootstrap)
 
 Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered
-by [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/).
+by [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/). 
 
 ## `hyperzsb-aws` branch
 

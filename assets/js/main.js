@@ -14,21 +14,25 @@ function changeNavbarShadow() {
                 fromAbove = false;
                 threshold -= offset;
             }
-            if (!classList.contains("custom-navbar-shadow-color"))
+            if (!classList.contains("custom-navbar-shadow-color")) {
                 classList.add("custom-navbar-shadow-color");
-            if (classList.contains("p-4"))
-                //classList.replace("p-4", "p-2");
-                classList.remove("p-4")
+            }
+            // if (classList.contains("p-4")) {
+            //     //classList.replace("p-4", "p-2");
+            //     classList.remove("p-4");
+            // }
         } else {
             if (!fromAbove) {
                 fromAbove = true;
                 threshold += offset;
             }
-            if (classList.contains("custom-navbar-shadow-color"))
+            if (classList.contains("custom-navbar-shadow-color")) {
                 classList.remove("custom-navbar-shadow-color");
-            if (!classList.contains("p-4"))
-                //classList.replace("p-2", "p-4");
-                classList.add("p-4")
+            }
+            // if (!classList.contains("p-4")) {
+            //     //classList.replace("p-2", "p-4");
+            //     classList.add("p-4");
+            // }
         }
     }
 }
@@ -40,11 +44,12 @@ window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 100));
 function changeNavbarTogglerIcon() {
     document.getElementById("navbar-toggler").addEventListener("click", function () {
         let classList = this.firstElementChild.classList;
-        if (classList.contains("bi-arrows-expand"))
+        if (classList.contains("bi-arrows-expand")) {
             classList.replace("bi-arrows-expand", "bi-arrows-collapse");
-        else
+        } else {
             classList.replace("bi-arrows-collapse", "bi-arrows-expand");
-    })
+        }
+    });
 }
 
 /* Functions for the modal's behavior */
@@ -78,10 +83,11 @@ document.onreadystatechange = () => {
                 mainContent.style.opacity = "1";
             }
         }, () => {
-            if (loadingModal != null)
+            if (loadingModal != null) {
                 return 500;
-            else
+            } else {
                 return 5;
+            }
         });
     }
 }
@@ -100,17 +106,18 @@ function enableSmoothScrollOfLinksInMarkdown() {
                     behavior: "smooth"
                 });
                 ev.preventDefault();
-            })
+            });
         }
     }
     let markdownContainer = document.getElementById("markdown");
     if (markdownContainer) {
-        let raw_links = markdownContainer.getElementsByTagName("a");
+        let rawLinks = markdownContainer.getElementsByTagName("a");
         let links = [];
-        for (let raw_link of raw_links)
-            if (raw_link.attributes["href"].value[0] === "#") {
-                links.push(raw_link);
+        for (let rawLink of rawLinks) {
+            if (rawLink.attributes["href"].value[0] === "#") {
+                links.push(rawLink);
             }
+        }
         for (let link of links) {
             link.addEventListener("click", function (ev) {
                 window.scrollTo({
@@ -127,7 +134,7 @@ function enableSmoothScrollOfLinksInMarkdown() {
 
 function addOnloadFunction(func) {
     const oldOnload = window.onload;
-    if (typeof window.onload != 'function') {
+    if (typeof window.onload != "function") {
         window.onload = func;
     } else {
         window.onload = function () {
