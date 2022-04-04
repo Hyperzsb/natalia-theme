@@ -118,9 +118,31 @@ Start numbering with offset:
 
 ## Blockquote
 
-> Blockquotes can also be nested...
->> ...by using additional greater-than signs right next to each other...
-> > > ...or with spaces between arrows.
+Support default blockquotes and other special blockquotes with classes, including info blockquotes, warning
+blockquotes, and danger blockquotes.
+
+### Examples
+
+- Default blockquote with no classes:
+
+  > Blockquotes can also be nested...
+  >> ...by using additional greater-than signs right next to each other...
+  > > > ...or with spaces between arrows.
+
+- Info blockquote with class `.info-blockquote`:
+
+  {: .info-blockquote}
+  > This is an info blockquote.
+
+- Warning blockquote with class `.warning-blockquote`:
+
+  {: .warning-blockquote}
+  > This is a warning blockquote.
+
+- Danger blockquote with class `.danger-blockquote`:
+
+  {: .danger-blockquote}
+  > This is a danger blockquote.
 
 ## Code
 
