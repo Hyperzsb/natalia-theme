@@ -19,9 +19,9 @@ $text-color-1: #212529;
 $text-color-2: #495057;
 $text-color-3: #868e96;
 $text-color-4: #adb5bd;
-$hint-color: #63e6be;
-$warning-color: #ffe066;
-$fatal-color: #ffa8a8;
+$info-color: #1c7ed6;
+$warning-color: #f59f00;
+$danger-color: #f03e3e;
 
 /* General color style */
 
@@ -170,6 +170,27 @@ $fatal-color: #ffa8a8;
   blockquote {
     color: $text-color-3;
     border-left: $text-color-3 3px solid;
+  }
+
+  blockquote.info-blockquote {
+    border-left: $info-color 3px solid;
+    &::before {
+      color: $info-color;
+    }
+  }
+
+  blockquote.warning-blockquote {
+    border-left: $warning-color 3px solid;
+    &::before {
+      color: $warning-color;
+    }
+  }
+
+  blockquote.danger-blockquote {
+    border-left: $danger-color 3px solid;
+    &::before {
+      color: $danger-color;
+    }
   }
 
   code {
