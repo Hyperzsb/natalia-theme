@@ -10,7 +10,7 @@ pinned: true
 
 在 HTTPS 逐渐取代 HTTP 的今天，我们也要跟上时代的脚步，用 HTTPS 协议来保护我们的网络服务。但是传统的 SSL 证书签发成本高，对于资金短缺的开发者不甚友好。所以，**Let's Encrypt** 应运而生。
 
-# Let's Encrypt 简介
+## Let's Encrypt 简介
 
 > "A nonprofit Certificate Authority providing TLS certificates to **225 million** websites."
 
@@ -18,7 +18,7 @@ Let's Encrypt 是一个免费、开放，自动化的证书颁发机构，由 IS
 
 **更多内容详询[ Let's Encrypt 官网](https://letsencrypt.org/)**。
 
-# Let's Encrypt 安装流程
+## Let's Encrypt 安装流程
 
 > **通常情况下，使用 Let's Encrypt 的基本要求需要用户拥有对服务器的命令行权限（即可以通过 SSH 访问到服务器）**
 >
@@ -26,13 +26,13 @@ Let's Encrypt 是一个免费、开放，自动化的证书颁发机构，由 IS
 >
 > 对于不满足要求的应用场景，请参照[官网指南](https://letsencrypt.org/getting-started/#without-shell-access)。
 
-## 安装 Certbot
+### 安装 Certbot
 
 > "Certbot is a free, open source software tool for automatically using Let's Encrypt certificates on manually-administrated websites to enable HTTPS."
 >
 > 简单来说，Certbot 就是 Let's Encrypt 的证书签发客户端，需要通过 Certbot 来获取证书。
 
-### 安装方法
+#### 安装方法
 
 安装方式有很多，包括：
 
@@ -40,7 +40,7 @@ Let's Encrypt 是一个免费、开放，自动化的证书颁发机构，由 IS
 - Docker：通过 Docker 安装。**（Docker 在证书自动签发和自动配置应用场景下有一定局限性）**
 - 系统安装包：即通过`apt`等命令进行安装。**（本教程采用该方式）**
 
-### 安装流程
+#### 安装流程
 
 ```shell
 $ sudo apt-get update
@@ -51,13 +51,13 @@ $ sudo apt-get update
 $ sudo apt-get install certbot
 ```
 
-## 其它客户端
+### 其它客户端
 
 除了 Certbot 外， Let's Encrypt 还支持很多其它的签发客户端，详询[官网](https://letsencrypt.org/docs/client-options/)。
 
-# Let's Encrypt 配置流程
+## Let's Encrypt 配置流程
 
-## 自动模式
+### 自动模式
 
 直接使用：
 
@@ -73,7 +73,7 @@ $ sudo certbot --nginx
 
 该方式简单易行，对于只需要单域名证书的情况就已经够用了。
 
-## 手动模式
+### 手动模式
 
 **该模式用于申请泛域名证书。**
 
@@ -85,7 +85,7 @@ Certbot 默认支持一些 DNS 供应商的自动认证，但是很遗憾，并�
 
 > 具体使用方法在该 GitHub 仓库的`README`中已经详细说明，因为该库时常更新，可以直接参照文档操作。
 
-### 安装
+#### 安装
 
 ```shell
 $ git clone https://github.com/ywdblog/certbot-letencrypt-wildcardcertificates-alydns-au
@@ -95,7 +95,7 @@ $ cd certbot-letencrypt-wildcardcertificates-alydns-au
 $ chmod 0777 au.sh
 ```
 
-### 配置
+#### 配置
 
 1. 配置根域名：打开`domain.ini`如果没有你需要的根域名，添加进去即可。
 
@@ -150,9 +150,9 @@ $ chmod 0777 au.sh
 
    > 根据各类文档，Certbot 已经设置了自动更新任务，应当不需要手动进行设置。如果后期出现默认配置不能进行自动更新的情况，再对本教程进行更新。
 
-# 遇到的问题
+## 遇到的问题
 
-## [X509] no certificate or crl found
+### [X509] no certificate or crl found
 
 如果在证书申请阶段程序报出该错误，可以使用如下方式尝试解决：
 

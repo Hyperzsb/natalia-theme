@@ -10,9 +10,9 @@ pinned: false
 
 作为国内的开发者，时常因为软件源受到限制而在`gem install ...`和`bundle install`时痛不欲生，有时即便是科学上网也不能完美地解决这一问题。无奈，只好换用国内镜像源罢了。
 
-# 方法
+## 方法
 
-## 使用命令行进行修改
+### 使用命令行进行修改
 
 ```shell
 # 添加国内源并且删除默认源
@@ -34,7 +34,7 @@ $ gem sources -l
 # 成功！
 ```
 
-## 在Gemfile中进行修改
+### 在Gemfile中进行修改
 
 ```ruby
 # 一般的默认源
@@ -62,7 +62,7 @@ source "https://my_awesome_source.com" do
 end
 ```
 
-# 常用Gem源
+## 常用Gem源
 
 - https://gems.ruby-china.com/
 
@@ -82,7 +82,7 @@ end
 
   > 之前的淘宝镜像源，但是已经不再维护了。
 
-# 参考
+## 参考
 
 - [What is a Gemfile](https://tosbourn.com/what-is-the-gemfile/) - 中译版 - [Gemfile 详解](https://blog.csdn.net/efvn2008/article/details/48392047)
 

@@ -10,9 +10,9 @@ pinned: false
 
 SourceGraph和Octotree是两个GitHub的浏览器插件，可以极大地提高使用GitHub等代码托管网站的效率。
 
-# SourceGraph
+## SourceGraph
 
-## 功能
+### 功能
 
 给GitHub和其它服务商添加代码智能感知和导航，包括：
 
@@ -24,7 +24,7 @@ SourceGraph和Octotree是两个GitHub的浏览器插件，可以极大地提高�
 
 ![SourceGraph-2](https://hyperzsb-images.oss-cn-beijing.aliyuncs.com/blog/2020-04-10-git-browser-tools/SourceGraph-2.jpg)
 
-## 支持平台
+### 支持平台
 
 - Chrome
 - Firefox
@@ -34,7 +34,7 @@ SourceGraph和Octotree是两个GitHub的浏览器插件，可以极大地提高�
 - Sublime
 - Atom
 
-## 支持服务商
+### 支持服务商
 
 - GitHub
 - GitLab
@@ -43,13 +43,13 @@ SourceGraph和Octotree是两个GitHub的浏览器插件，可以极大地提高�
 - Azure DevOps
 - AWS CodeCommit
 
-## 安装
+### 安装
 
 Chrome和Firefox均可直接搜索安装（Chrome需要科学上网）
 
-# Octotree
+## Octotree
 
-## 功能
+### 功能
 
 一个可以将你的GitHub体验提升到一个新水平的浏览器拓展
 
@@ -70,16 +70,16 @@ Chrome和Firefox均可直接搜索安装（Chrome需要科学上网）
 
 ![Octotree-2](https://hyperzsb-images.oss-cn-beijing.aliyuncs.com/blog/2020-04-10-git-browser-tools/Octotree-2.jpg)
 
-## 支持平台
+### 支持平台
 
 - Chrome
 - Firefox
 
-## 支持服务商
+### 支持服务商
 
 - GitHub
 
-## 安装
+### 安装
 
 Chrome和Firefox均可直接搜索安装（Chrome需要科学上网）
 

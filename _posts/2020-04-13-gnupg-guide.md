@@ -10,17 +10,17 @@ pinned: false
 
 PGP是一款基于RSA非对称加密算法的加密软件。而它的GNU发行版即为GnuPG。我们可以利用它生成自定义的公私钥对，并实现对指定内容的加密、解密和签名操作。
 
-# GnuPG 安装
+## GnuPG 安装
 
-## 软件下载
+### 软件下载
 
 访问[GnuPG官网](https://www.gnupg.org/)进行下载（由于美国限制加密技术出口，该软件只能通过相应的镜像站下载，在此我选用的是[日本的镜像站](http://www.ring.gr.jp/pub/net/gnupg/binary/)）。
 
-## 软件安装
+### 软件安装
 
 根据安装向导的提示进行安装。
 
-## 安装验证
+### 安装验证
 
 打开命令行（cmd，power shell，wsl均可），输入：
 
@@ -47,7 +47,7 @@ Hash: SHA1, RIPEMD160, SHA256, SHA384, SHA512, SHA224
 Compression: Uncompressed, ZIP, ZLIB, BZIP2
 ```
 
-# 生成密钥
+## 生成密钥
 
 使用命令生成自己的密钥：
 
@@ -173,9 +173,9 @@ $ gpg --gen-revoke <user_id or user_id_hash>
 $ gpg --generate-revocation <user_id or user_id_hash>
 ```
 
-# 密钥管理
+## 密钥管理
 
-## 列出所有的密钥
+### 列出所有的密钥
 
 ```shell
 $ gpg --list-keys
@@ -191,7 +191,7 @@ sub   rsa2048 /*日期*/ [E] /*私钥特征*/
 ...
 ```
 
-## 删除密钥
+### 删除密钥
 
 ```shell
 # 删除公钥
@@ -200,7 +200,7 @@ $ gpg --delete-keys <user_id or user_id_hash>
 $ gpg --delete-secret-keys <user_id or user_id_hash>
 ```
 
-## 输出密钥
+### 输出密钥
 
 ```shell
 # 生成的密钥以二进制形式存储
@@ -211,7 +211,7 @@ $ gpg --armor --output <output_file> --export <user_id or user_id_hash>
 $ gpg --armor --output <output_file> --export-secret-keys <user_id or user_id_hash>
 ```
 
-## 上传公钥
+### 上传公钥
 
 ```shell
 # 公钥服务器是网络上专门储存用户公钥的服务器
@@ -227,7 +227,7 @@ $ gpg --send-keys <user_id or user_id_hash> --keyserver hkp://subkeys.pgp.net
 > $ gpg --fingerprint <user_id or user_id_hash>
 > ```
 
-## 加载密钥
+### 加载密钥
 
 ```shell
 # --import可以将他人的公钥或者你的其他密钥输入系统
@@ -236,9 +236,9 @@ $ gpg --import <key_file>
 $ gpg --keyserver hkp://subkeys.pgp.net --search-keys <user_id or user_id_hash>
 ```
 
-# 文件的加密和解密
+## 文件的加密和解密
 
-## 加密文件
+### 加密文件
 
 假使你有一个想要加密的文件，该如何操作才能达成你的目标呢？
 
@@ -248,7 +248,7 @@ $ gpg --keyserver hkp://subkeys.pgp.net --search-keys <user_id or user_id_hash>
 $ gpg --recipient <user_id or user_id_hash> --output <output_file> --encrypt <input_file>
 ```
 
-## 解密文件
+### 解密文件
 
 当收信方收到密文后，就可以用自己的私钥进行解密：
 
@@ -260,9 +260,9 @@ $ gpg <encrypted_file>
 # 解密结果将在命令行直接输出
 ```
 
-# 签名
+## 签名
 
-## 对文件进行签名
+### 对文件进行签名
 
 有时，我们不需要加密文件，只需要对文件签名，表示这个文件确实是发信者本人发出的。
 
@@ -283,7 +283,7 @@ $ gpg --detach-sign <file>
 $ gpg --armor --detach-sign <file>
 ```
 
-## 签名和加密
+### 签名和加密
 
 如果想达成签名和加密同时进行的目的，可以使用：
 
@@ -292,7 +292,7 @@ $ gpg --armor --detach-sign <file>
 $ gpg --local-user <send_user_id or send_user_id_hash> --recipient <receive_user_id or receive_user_id_hash> --armor --sign --encrypt <file>
 ```
 
-## 签名验证
+### 签名验证
 
 有了签名后的文件，如何验证该文件签名是否属实呢？
 
@@ -301,6 +301,6 @@ $ gpg --local-user <send_user_id or send_user_id_hash> --recipient <receive_user
 $ gpg --verify <file>.asc <file>
 ```
 
-# 参考
+## 参考
 
 - [Gnu 隐私卫士 (GnuPG) 袖珍 HOWTO (中文版)](https://www.gnupg.org/howtos/zh/index.html)

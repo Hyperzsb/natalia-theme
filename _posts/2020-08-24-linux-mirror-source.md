@@ -1,7 +1,7 @@
 ---
 title: Linux - 国内镜像源
 date: 2020-08-24
-last_update:
+last_update: 2022-04-04
 tags: linux mirror
 toc: true
 comment: true
@@ -10,17 +10,19 @@ pinned: false
 
 我们作为国内用户在使用各 Linux 发行版时，往往会因为网络原因导致在搜索、安装和更新软件包时速度十分缓慢，极大地降低了用户体验。所以在安装 Linux 发行版时，不可或缺的一步就是替换发行版默认的软件源。
 
-# 清华软件源
+## 清华软件源
 
 清华大学作为国内顶尖大学，计算机学科自然也是全国第一。其对于计算机学科基础设施的建设也投入甚多。Linux 发行版的镜像软件源就是其中之一。
 
 该文章均使用**[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)**所提供的镜像服务。该服务提供了近百种 Linux 发行版（Ubuntu、Debian、Fedora、CentOS、Arch 甚至 Raspberry Pi OS 等）软件源、开源软件镜像源（PyPi、Node.js、Docker、K8S 等）。
 
->  本文所有相关代码均可在官网找到。版权由清华大学开源软件镜像站所有。
+> 本文所有相关代码均可在官网找到。版权由清华大学开源软件镜像站所有。
 
-# Ubuntu
+**为保证代码的时效性，请尽量使用清华大学开源软件镜像站上提供的修改模版。本文仅用作参考。**
 
-## 版本代号 & 镜像下载
+## Ubuntu
+
+### 版本代号 & 镜像下载
 
 - [Ubuntu 20.04 LTS (Focal Fossa)](https://releases.ubuntu.com/20.04/)
 - [Ubuntu 18.04 LTS (Bionic Beaver)](https://releases.ubuntu.com/18.04/)
@@ -28,7 +30,7 @@ pinned: false
 - [Ubuntu 14.04 LTS (Trusty Tahr)](https://releases.ubuntu.com/14.04/)
 - [Ubuntu 12.04 LTS (Precise Pangolin)](https://releases.ubuntu.com/12.04/)
 
-## 更换软件源
+### 更换软件源
 
 直接编辑 `/etc/apt/sources.list` 文件或者在 `/etc/apt/sources.list.d` 目录下添加任意文件。
 
@@ -90,9 +92,9 @@ pinned: false
 
 其中诸如 `deb-src` 的源码镜像源默认是不启用的，如果你需要手动编译安装某些软件，可以考虑启用。
 
-# Debian
+## Debian
 
-## 版本代号 & 镜像下载
+### 版本代号 & 镜像下载
 
 - [下一代 Debian 正式发行版的代号为 bullseye](https://www.debian.org/releases/bullseye/) — 发布时间尚未确定
 - [Debian 10 (buster)](https://www.debian.org/releases/buster/) — 当前的稳定版（stable）
@@ -108,7 +110,7 @@ pinned: false
 - [Debian GNU/Linux 2.1 (slink)](https://www.debian.org/releases/slink/) — 被淘汰的稳定版
 - [Debian GNU/Linux 2.0 (hamm)](https://www.debian.org/releases/hamm/) — 被淘汰的稳定版
 
-## 更换软件源
+### 更换软件源
 
 直接编辑 `/etc/apt/sources.list` 文件或者在 `/etc/apt/sources.list.d` 目录下添加任意文件。
 
@@ -156,15 +158,15 @@ pinned: false
   # deb-src https://mirrors.tuna.tsinghua.edu.cn/debian-security jessie/updates main contrib non-free
   ```
 
-# CentOS
+## CentOS
 
-## 版本代号 & 镜像下载
+### 版本代号 & 镜像下载
 
 - [CentOS 8](http://isoredirect.centos.org/centos/8/isos/x86_64/)
 - [CentOS 7](http://isoredirect.centos.org/centos/7/isos/x86_64/)
 - [CentOS 6](http://isoredirect.centos.org/centos/6/isos/x86_64/)
 
-## 更换软件源
+### 更换软件源
 
 建议先备份 CentOS-Base.repo：
 
@@ -367,6 +369,6 @@ sudo cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
 sudo yum makecache
 ```
 
-# 其它
+## 其它
 
 其它 Linux 发行版更改软件源方式详询[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)。

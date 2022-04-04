@@ -10,13 +10,13 @@ pinned: false
 
 在使用 Linux 常会遇到一些不太常用但又非常基本的命令，今天就来总结一下。**持续更新...**
 
-# 系统环境
+## 系统环境
 
 以下所有命令均基于 Ubuntu 18.04 amd64 版本以及 CentOS 7.8 amd64。不保证在其它发行版上的正确性。但是在通常情况下是通用的。
 
-# 查询系统信息
+## 查询系统信息
 
-## 基本信息
+### 基本信息
 
 - 系统位数
 
@@ -143,7 +143,7 @@ pinned: false
      11:13:14 up 68 days,  1:24,  1 user,  load average: 0.00, 0.01, 0.05
     ```
 
-## 硬件信息
+### 硬件信息
 
 - 查看 CPU 信息
 
@@ -506,9 +506,9 @@ pinned: false
         |__ Port 1: Dev 2, If 0, Class=Human Interface Device, Driver=usbhid, 12M
     ```
 
-# 常用工具
+## 常用工具
 
-## 压缩 / 解压缩
+### 压缩 / 解压缩
 
 - .zip
 
@@ -558,7 +558,7 @@ pinned: false
 
   > 更多参数请参考相关命令说明手册
 
-## 图片处理
+### 图片处理
 
 Linux 平台有很多用于处理图片的工具，例如`ImageMagick`、`jpegoptim` 和 `pngcrush` 等。这里主要介绍 `ImageMagick` 的用法。
 
@@ -609,7 +609,7 @@ Linux 平台有很多用于处理图片的工具，例如`ImageMagick`、`jpegop
     $ find ./ -regex '.*\(jpg\|JPG\|png\|PNG\|jpeg\)' -size +50k -exec convert -resize 100x100 {} {} \;
     ```
 
-## 远程连接
+### 远程连接
 
 - SSH 连接远程主机：
 
@@ -625,6 +625,6 @@ Linux 平台有很多用于处理图片的工具，例如`ImageMagick`、`jpegop
   $ scp user@myhost.com:/home/user/myfile.txt ~/CopyFiles/ # 将以 root 身份登陆的 112.113.114.115 IP 对应的远程主机的 /home/user/myfile.txt 复制到本机主目录的 CopyFiles 目录下
   ```
 
-# 参考
+## 参考
 
 - [Linux 图片批量压缩工具 ImageMagick](https://blog.csdn.net/qq_38228582/article/details/104836907)
