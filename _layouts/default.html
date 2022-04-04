@@ -19,7 +19,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/light.css">
     <!-- Page Title -->
-    <title>{{ page.title }} | {{ site.name }}</title>
+    {% if page.title == "Home" %}
+    <title>{{ site.windowTitle }}</title>
+    {% else %}
+    <title>{{ page.title }} | {{ site.windowTitle }}</title>
+    {% endif %}
     <!-- favicon.ico -->
     <link rel="shortcut icon" href="/assets/images/favicon.png">
     <!-- jekyll-seo-tag -->
