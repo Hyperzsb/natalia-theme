@@ -34,7 +34,7 @@ function changeNavbarShadow() {
             //     classList.add("p-4");
             // }
         }
-    }
+    };
 }
 
 // Add the event listener of "scroll" to window object
@@ -96,13 +96,14 @@ document.onreadystatechange = () => {
 
 // Change the "click" event's behavior of links
 function enableSmoothScrollOfLinksInMarkdown() {
+    let header = document.getElementsByTagName("header").item(0);
     let tocContainer = document.getElementById("toc");
     if (tocContainer) {
         let links = tocContainer.getElementsByTagName("a");
         for (let link of links) {
             link.addEventListener("click", function (ev) {
                 window.scrollTo({
-                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - 100),
+                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - header.offsetHeight),
                     behavior: "smooth"
                 });
                 ev.preventDefault();
@@ -121,11 +122,11 @@ function enableSmoothScrollOfLinksInMarkdown() {
         for (let link of links) {
             link.addEventListener("click", function (ev) {
                 window.scrollTo({
-                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - 100),
+                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - header.offsetHeight),
                     behavior: "smooth"
                 });
                 ev.preventDefault();
-            })
+            });
         }
     }
 }

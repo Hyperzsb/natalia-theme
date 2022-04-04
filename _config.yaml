@@ -93,5 +93,6 @@ defaults:
       layout: default
 # Exclude following files/directories when building
 exclude:
-  - README.md
+  - CHANGELOG.md
   - LICENSE
+  - README.md

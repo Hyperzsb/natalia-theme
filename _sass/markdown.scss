@@ -6,7 +6,6 @@
 }
 
 .markdown {
-
   /* Heading */
 
   h1,
@@ -128,6 +127,30 @@
     margin: 1.5rem 0;
   }
 
+  blockquote.info-blockquote {
+    &::before {
+      content: "Info";
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+
+  blockquote.warning-blockquote {
+    &::before {
+      content: "Warning";
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+
+  blockquote.danger-blockquote {
+    &::before {
+      content: "Danger";
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  }
+
   /* Code */
 
   code {
@@ -178,7 +201,7 @@
     display: block;
     margin: 1rem auto;
   }
-  
+
   /* Horizontal Rule */
 
   hr {
@@ -213,6 +236,7 @@
 .toc {
   max-height: 75vh;
   overflow-y: auto;
+  margin-left: -0.5rem;
 
   ul,
   ol {
