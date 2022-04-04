@@ -34,7 +34,7 @@ function changeNavbarShadow() {
             //     classList.add("p-4");
             // }
         }
-    }
+    };
 }
 
 // Add the event listener of "scroll" to window object
@@ -125,7 +125,7 @@ function enableSmoothScrollOfLinksInMarkdown() {
                     behavior: "smooth"
                 });
                 ev.preventDefault();
-            })
+            });
         }
     }
 }
