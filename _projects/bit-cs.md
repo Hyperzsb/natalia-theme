@@ -13,14 +13,14 @@ This repository is used to provide programming and learning reference to the jun
 
 :warning: However, plagiarism will never be recommended. Think about everything by yourself at first, and do everything by yourself at last. :warning:
 
-# Table of Contents
+## Table of Contents
 
 - [Courses](https://github.com/Hyperzsb/BIT#courses)
 - [Call for Contribution](https://github.com/Hyperzsb/BIT#call-for-contribution)
 - [Declaration](https://github.com/Hyperzsb/BIT#declaration)
 - [License](https://github.com/Hyperzsb/BIT#license)
 
-# Courses
+## Courses
 
 **This repository currently includes codes of following courses:**
 
@@ -71,7 +71,7 @@ This repository is used to provide programming and learning reference to the jun
 
 ***Continually updating...***
 
-# Call for Contribution
+## Call for Contribution
 
 If you are a student studying in School of CS, BIT, I wish you can help me to improve this repository. Your contribution will definitely benefits every junior sutdents in the future.
 
@@ -81,10 +81,10 @@ To make your own contribution, you can just fork this repository and create PRs,
 
 For more details, please refer to [CONTRIBUTING](https://github.com/Hyperzsb/BIT/blob/master/CONTRIBUTING.md).
 
-# Declaration
+## Declaration
 
 The maintainer and contributors of this repository are **NOT** responsible for **ANY** positive or negative effect caused by abuse of **ANY** content in this repository.
 
-# LICENSE
+## LICENSE
 
 This project is under [MIT license](https://github.com/Hyperzsb/BIT/tree/master/LICENSE).

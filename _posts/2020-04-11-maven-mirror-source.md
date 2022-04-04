@@ -10,7 +10,7 @@ pinned: false
 
 在配置Maven或者Spring项目时，常常会出现下载依赖失败的问题。大多数情况下都是国内网络环境的问题。更换Maven默认的软件源会立竿见影地解决这个问题。
 
-# 问题症状
+## 问题症状
 
 IDE报错如下：
 
@@ -24,7 +24,7 @@ Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:
 
 ---
 
-# 解决方法
+## 解决方法
 
 添加阿里云的仓库为Maven项目的默认仓库。
 
@@ -48,7 +48,7 @@ Could not transfer artifact org.springframework.boot:spring-boot-starter-parent:
 
 Reimport Maven项目即可。
 
-# 参考
+## 参考
 
 - [IDEA中Maven依赖包下载不了的问题解决方案汇总](https://blog.csdn.net/jwcxs_m/article/details/80076909)
 - [IDEA里Maven依赖无法下载的解决办法](https://blog.csdn.net/weixin_36795183/article/details/79408167)
