@@ -7,12 +7,19 @@ tags: spring-boot spring-cloud
 pinned: true
 ---
 
-This is the project 3 for testing. [In arcu accumsan arcu adipiscing accumsan orci ac](/). Felis id enim aliquet. Accumsan ac
-integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer
-semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus
-ac interdum morbi accumsan vis mi accumsan ac praesent.
+This is the project 3 for testing. [In arcu accumsan arcu adipiscing accumsan orci ac](/). Felis id enim aliquet. 
+Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing 
+integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing 
+nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.
 
-# Markdown Elements Supported
+## Special Notes
+
+Before going to demonstrate the Markdown elements supported, there are several tips you should know about using Natalia:
+
+- Do not use H1 heading (`#`) in the main content, as there is already an H1 heading in the page, the title of the
+  article. Multiple H1 headings will damage the consistency of the article.
+
+## Markdown Elements Supported
 
 The Markdown engine of the Natalia Theme supports several common Markdown elements, including:
 
@@ -31,11 +38,11 @@ The Markdown engine of the Natalia Theme supports several common Markdown elemen
 
 Examples as follows:
 
-# Heading
+## Heading
 
 Support 6 sizes of headings from H1 (`#`) to H6 (`######`).
 
-## Examples
+### Examples
 
 - H1 heading using `#`:
 
@@ -61,13 +68,13 @@ Support 6 sizes of headings from H1 (`#`) to H6 (`######`).
 
 ###### H6 Heading
 
-# Emphasis
+## Emphasis
 
 Support both **bold text** (using either `****` or `____`) and *italic text* (using either `**` or `__`) formats.
 
 Also support ~~strikethrough text~~ (using `~~~~`) format.
 
-## Examples
+### Examples
 
 - Bold text using `****`: **This is bold text.**
 - Bold text using `____`: __This is bold text.__
@@ -75,16 +82,16 @@ Also support ~~strikethrough text~~ (using `~~~~`) format.
 - Italic text using `__`: _This is italic text._
 - Strikethrough text using `~~~~`: ~~This is strikethrough text.~~
 
-# Link
+## Link
 
 Support [links](#Link) (using `[]()`) and [links with titles](#Link "Title") (using `[]( "title")`).
 
-## Examples
+### Examples
 
 - Link using `[]()`: [Link](#Link)
 - Link with a title using `[]( "title")`: [Link with a title](#Link "Title")
 
-# List
+## List
 
 Unordered
 
@@ -110,13 +117,13 @@ Start numbering with offset:
 57. foo
 1. bar
 
-# Blockquote
+## Blockquote
 
 > Blockquotes can also be nested...
 >> ...by using additional greater-than signs right next to each other...
 > > > ...or with spaces between arrows.
 
-# Code
+## Code
 
 Inline `code`
 
@@ -144,7 +151,7 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
-# Table
+## Table
 
 | Option | Description |
 | ------ | ----------- |
@@ -160,13 +167,13 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-# Image
+## Image
 
 Support both block and inline images.
 
 Also support images with custom classes.
 
-## Examples
+### Examples
 
 - General image:
   ![Minion](https://octodex.github.com/images/minion.png)
@@ -176,11 +183,11 @@ Also support images with custom classes.
   ![Bootstrap Version](https://img.shields.io/badge/badge_image-one-blue)
   ![Bootstrap Version](https://img.shields.io/badge/badge_image-two-red)
 
-# Horizontal Rule
+## Horizontal Rule
 
 Support horizontal rule using either `---` or `***`.
 
-## Examples
+### Examples
 
 - Horizontal rule using `---`:
 
@@ -190,23 +197,23 @@ ___
 
 ***
 
-# Emoji
+## Emoji
 
 Support emojis by Jekyll plugin `jemoji`.
 
-## Examples
+### Examples
 
 - `:+1:`: :+1:
 - `:grin:`: :grin:
 - `:man_student:`: :man_student:
 
-# LaTeX
+## LaTeX
 
 Support enable $\LaTeX$, MathML, and AsciiMath contents by MathJax.
 
 You can use `$$$$` to generate block contents or `$$` & `\\(\\)` to generate inline contents.
 
-## Examples
+### Examples
 
 - Block $\LaTeX$ using `$$$$`:
 
@@ -217,7 +224,7 @@ $$
 - Inline $\LaTeX$ using `$$`: $a^2 + b^2 = c^2$
 - Inline $\LaTeX$ using `\\(\\)`: \\(a^2 + b^2 = c^2\\)
 
-# Footnote
+## Footnote
 
 Footnote 1 link[^first].
 
