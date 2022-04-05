@@ -26,13 +26,13 @@ permalink: /projects
                 <h2 class="font-titillium-web fw-bold">{{ project.name }}</h2>
             </a>
             {% if project.tags !=0 %}
-            <div class="my-2">
+            <div class="my-3">
                 {% for tag in project.tags %}
-                <span class="badge bg-primary">{{ tag }}</span>
+                <span class="badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}
-            <div class="my-3 markdown">{{ project.excerpt }}</div>
+            <div class="my-4 markdown">{{ project.excerpt }}</div>
         </div>
         {% else %}
         <div class="col-lg-10">
@@ -40,13 +40,13 @@ permalink: /projects
                 <h2 class="font-titillium-web fw-bold">{{ project.name }}</h2>
             </a>
             {% if project.tags !=0 %}
-            <div class="my-2">
+            <div class="my-3">
                 {% for tag in project.tags %}
-                <span class="badge bg-primary">{{ tag }}</span>
+                <span class="badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}
-            <div class="my-3 markdown">{{ project.excerpt }}</div>
+            <div class="my-4 markdown">{{ project.excerpt }}</div>
         </div>
         {% endif %}
     </div>
