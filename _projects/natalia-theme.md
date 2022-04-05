@@ -16,6 +16,8 @@ excerpt_separator: <!--more-->
 Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered
 by [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/).
 
+<!--more-->
+
 ## Special Notes
 
 As the project is in its early stage, this documentation will update gradually in the future.
