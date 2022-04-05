@@ -1,4 +1,8 @@
 /* Global style */
+:root {
+  font-size: 16px;
+}
+
 * {
   transition: 0.25s;
 }
@@ -21,8 +25,8 @@
   font-family: "Josefin Sans", "Noto Serif SC", sans-serif;
 }
 
-.font-darker-grotesque {
-  font-family: "Darker Grotesque", "Noto Serif SC", sans-serif;
+.font-titillium-web {
+  font-family: "Titillium Web", "Noto Serif SC", sans-serif;
 }
 
 .font-ubuntu {
@@ -49,7 +53,7 @@
 
 /* Header style */
 
-.custom-navbar:before {
+.custom-navbar::before {
   content: '';
   position: absolute;
   top: 0;
@@ -62,24 +66,13 @@
 
 .custom-nav-item {
   display: inline-block;
-  background: none;
-  border: 0;
-  box-sizing: border-box;
   position: relative;
-  vertical-align: middle;
-
-  &:after {
-    box-sizing: inherit;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .custom-nav-item-active {
-
-  &:after {
+  &::after {
+    position: absolute;
+    content: '';
     bottom: 0;
     right: 0;
     width: 100%;
@@ -89,20 +82,20 @@
 }
 
 .custom-nav-item-inactive {
-
-  &:after {
+  &::after {
+    position: absolute;
+    content: '';
     bottom: 0;
     left: 0;
     width: 0;
     height: 0;
     border-bottom: 2px solid transparent;
-    transition: border-color 0.25s ease-out 0.1s, width 0.25s ease-out 0.1s;
+    transition: all 0.25s ease-out 0.1s;
   }
 
   &:hover::after {
     width: 100%;
     height: 100%;
-    transition: border-color 0.25s ease-out 0.1s, width 0.25s ease-out 0.1s;
   }
 }
 
@@ -129,25 +122,37 @@
   }
 }
 
-.custom-project-card {
+.custom-float-card {
   margin-top: 0.5rem;
   margin-bottom: 0;
   border: 0;
   cursor: default;
-  transition: 0.25s;
 
-  p {
-    z-index: 2;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    margin-top: -3px;
+    margin-left: -3px;
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    transition: all 0.25s ease-out 0.1s;
   }
 
-  .custom-project-card-shadow {
-    width: 75%;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
     height: 0;
-    margin-top: -0.25rem;
-    margin-bottom: 0.25rem;
-    padding-bottom: 0;
-    border-radius: 1rem;
-    z-index: 1;
+    width: 0;
+    margin-bottom: -3px;
+    margin-right: -3px;
+    border-bottom: 3px solid transparent;
+    border-right: 3px solid transparent;
     transition: all 0.25s ease-out 0.1s;
   }
 
@@ -155,22 +160,14 @@
     margin-top: 0;
     margin-bottom: 0.5rem;
 
-    .custom-project-card-shadow {
-      margin-top: -1rem;
-      padding-bottom: 0.75rem;
+    &::before {
+      height: 3rem;
+      width: 3rem;
     }
-  }
-}
 
-.custom-post-card {
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  border: 0;
-  cursor: default;
-  transition: 0.25s;
-
-  &:hover {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+    &::after {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 }

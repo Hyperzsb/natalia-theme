@@ -1,7 +1,9 @@
 ## Information details of yourself
 
-# Your name displaying on the navbar and the title of the window
+# Your name displaying as the navbar brand
 name: hyperzsb
+# The custom text displaying as the title of the window
+windowTitle: hyperzsb's ideas
 # Your brief self introduction displaying on the Home page (keep it simple for better appearance)
 introduction:
   main: Hi, here is hyperzsb
@@ -91,5 +93,6 @@ defaults:
       layout: default
 # Exclude following files/directories when building
 exclude:
-  - README.md
+  - CHANGELOG.md
   - LICENSE
+  - README.md

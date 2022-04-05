@@ -16,22 +16,22 @@ permalink: /posts
     <div class="row justify-content-center px-1 p-lg-3">
         <div class="col-lg-8">
             <a class="d-block text-center link-color my-3" href="{{ post.url }}">
-                <h2 class="font-darker-grotesque fw-bold">{{ post.title }}</h2>
+                <h2 class="font-titillium-web fw-bold">{{ post.title }}</h2>
             </a>
-            <p class="d-block text-center lighter-text-color">
+            <p class="d-block text-center lighter-text-color my-3">
                 {{ post.date | date_to_string }}
                 {% if post.last_update %}
                 &nbsp;(Last Update on {{ post.last_update | date_to_string }})
                 {% endif %}
             </p>
             {% if post.tags !=0 %}
-            <div class="my-2 text-center">
+            <div class="my-3 text-center">
                 {% for tag in post.tags %}
                 <span class="badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}
-            <div class="my-3 markdown">{{ post.excerpt }}</div>
+            <div class="my-4 markdown">{{ post.excerpt }}</div>
         </div>
     </div>
     <div class="py-lg-2"></div>

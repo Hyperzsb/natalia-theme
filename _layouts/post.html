@@ -28,9 +28,9 @@ layout: default
         <!-- TODO: make the headings of toc synchronous with the content -->
         <div class="col-lg-2 px-lg-3">
             <div class="toc-container">
-                <span class="d-block fs-3 fw-bold font-darker-grotesque m-3">Contents</span>
+                <span class="d-block fs-3 fw-bold font-titillium-web m-1">Contents</span>
                 <div class="toc" id="toc">
-                    {% include toc.html html=content h_max=3 %}
+                    {% include toc.html html=content h_min=1 h_max=4 %}
                 </div>
             </div>
         </div>
