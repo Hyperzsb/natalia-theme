@@ -19,7 +19,7 @@ permalink: /
     </div>
     {% assign pinned_projects = site.projects | where: 'pinned', true %}
     {% if pinned_projects.size != 0 %}
-    <div class="row justify-content-center py-4 p-lg-3">
+    <div class="row justify-content-center p-3">
         <div class="col-10 d-flex justify-content-around align-items-center my-3 my-lg-5">
             <div class="d-none d-lg-inline-block w-50 border-top me-5"></div>
             <div class="d-inline-block">
@@ -30,28 +30,26 @@ permalink: /
     </div>
     <div class="row row-cols-1 row-cols-lg-3 justify-content-center mx-0 mx-lg-5 px-0 px-lg-5">
         {% for project in pinned_projects %}
-        <div class="col px-1 py-3 p-lg-3">
-            <div class="card h-100 text-center custom-project-card custom-project-card-color">
+        <div class="col p-1 p-lg-3">
+            <div class="card h-100 text-center custom-float-card custom-float-card-color">
                 {% if project.logo %}
                 <a href="{{ project.url }}">
                     <img src="{{ project.logo }}" class="card-img-top"
                          alt="Logo of {{ project.name }}" title="{{ project.name }}">
                 </a>
                 {% endif %}
-                <div class="card-body d-flex flex-column justify-content-start align-items-center px-0 py-3">
-                    <a class="d-block link-color my-2" href="{{ project.url }}">
+                <div class="card-body d-flex flex-column justify-content-start align-items-center p-3">
+                    <a class="d-block link-color my-3" href="{{ project.url }}">
                         <h3 class="d-block card-title font-titillium-web fw-bold">{{ project.name }}</h3>
                     </a>
                     {% if project.tags !=0 %}
-                    <div class="my-2">
+                    <div class="my-3">
                         {% for tag in project.tags %}
                         <span class="badge bg-secondary">{{ tag }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
-                    <p class="d-block card-text my-2">{{ project.description }}</p>
-                    <!-- TODO: improve the behavior of the custom text shadow -->
-                    <!--<div class="custom-project-card-shadow custom-project-card-shadow-color"></div>-->
+                    <p class="d-block card-text my-4">{{ project.description }}</p>
                 </div>
             </div>
         </div>
@@ -68,7 +66,7 @@ permalink: /
     {% assign pinned_posts = site.posts | where: 'pinned', true %}
     {% if pinned_posts.size != 0 %}
     <div class="row justify-content-center py-4 py-lg-3">
-        <div class="col-10 d-flex justify-content-around align-items-center py-3 py-lg-5">
+        <div class="col-10 d-flex justify-content-around align-items-center py-3 py-lg-4">
             <div class="d-none d-lg-inline-block w-50 border-top me-5"></div>
             <div class="d-inline-block">
                 <h2 class="font-lobster">Posts</h2>
@@ -79,8 +77,8 @@ permalink: /
     <div class="row row-cols-1 row-cols-lg-3 justify-content-center mx-0 mx-lg-5 px-0 px-lg-5">
         {% for post in pinned_posts %}
         <div class="col px-1 py-3 p-lg-3">
-            <div class="card h-100 custom-post-card custom-post-card-color">
-                <div class="card-body d-flex flex-column justify-content-start align-items-center p-0">
+            <div class="card h-100 custom-float-card custom-float-card-color">
+                <div class="card-body d-flex flex-column justify-content-start align-items-center p-3">
                     <div class="my-1 text-center">
                         <a class="link-color" href="{{ post.url }}">
                             <h3 class="font-titillium-web fw-bold">{{ post.title }}</h3>
