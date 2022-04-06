@@ -43,7 +43,7 @@
                     <ul class="nav justify-content-center align-items-center">
                         {% for nav in site.navigation %}
                         <li class="nav-item">
-                            <a class="nav-link link-color" href="{{ nav.url }}">
+                            <a class="nav-link link-color" href="{{ site.baseUrl }}{{ nav.url }}">
                                 <b>{{ nav.name }}</b>
                             </a>
                         </li>

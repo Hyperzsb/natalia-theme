@@ -1,7 +1,9 @@
 ---
 name: Project 2
 description: This is the Project 2 for testing. This is the description of the project.
-logo: /assets/images/project-2-logo.jpg
+logo:
+  src: /assets/images/project-2-logo.jpg
+  internal: true
 repo: https://github.com/hyperzsb/natalia-theme
 tags:
 pinned: true

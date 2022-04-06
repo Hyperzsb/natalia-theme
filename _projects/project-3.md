@@ -1,7 +1,9 @@
 ---
 name: Project 3
 description: This is the Project 3 for testing. This is the description of the project.
-logo: /assets/images/project-3-logo.jpg
+logo:
+  src: /assets/images/project-3-logo.jpg
+  internal: true
 repo: https://github.com/hyperzsb/natalia-theme
 tags: spring-boot spring-cloud
 pinned: true
