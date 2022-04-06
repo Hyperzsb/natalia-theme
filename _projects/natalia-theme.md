@@ -75,6 +75,11 @@ Natalia supports a wide range of Markdown contents including:
 - **Emojis** like `:+1:` 👍 supported by [jemoji](https://github.com/jekyll/jemoji).
 - **LaTeX** contents including **inline notations and block equations** rendered by [MathJax](https://github.com/mathjax/MathJax).
 
+Natalia also supports awesome features provided by third-party libraries:
+
+- Embedded **comments** plugin using GitHub Issues powered by [Gitalk](https://github.com/gitalk/gitalk). No additional server-side applications needed.
+- Direct **email** plugin provided by [EmailJS](https://www.emailjs.com/) where users can send you emails without opening email clients.
+
 ### Coming soon
 
 Natalia is far from a perfect project right now. Quite a few features are about to be considered:
@@ -99,25 +104,37 @@ My home site [hyperzsb.io](https://hyperzsb.io) is currently hosted on [AWS Ampl
 
 #### Deploy manually
 
-1. Clone this project
+1. Clone this project.
 ```bash
 $ git clone https://github.com/Hyperzsb/natalia-theme.git
 $ cd natalia-theme
 ```
-2. Install dependencies using `bundle`. For more information about installing bundle and Jekyll, please refer to [Quickstart Guide of Jekyll](https://jekyllrb.com/docs/).
+2. Customize your awesome site. For more detail, please refer to [Customization](#customization).
+3. Install dependencies using `bundle`. For more information about installing bundle and Jekyll, please refer to [Quickstart Guide of Jekyll](https://jekyllrb.com/docs/).
 ```bash
 $ bundle install
 ```
-3. Build Natalia
+4. Build Natalia.
 ```bash
 $ bundle exec jekyll build
 ```
-4. Copy the build output inside `_site/` directory to the corresponding folder of your server (like [Nginx](https://www.nginx.com/) and [Apache](https://httpd.apache.org/)) to publish it.
+5. Copy the build output inside `_site/` directory to the corresponding folder of your server (like [Nginx](https://www.nginx.com/) and [Apache](https://httpd.apache.org/)) to publish it.
    For more information about the server applications, please refer to their documentation.
 
 #### Deploy using GitHub Pages
 
-*TBD*
+As Natalia is developed atop [Jekyll](https://jekyllrb.com/), you can easily deploy your awesome site using [GitHub Pages](https://pages.github.com/).
+
+1. Fork, clone this repo, or use this repo as template.
+2. Customize your awesome site. For more detail, please refer to [Customization](#customization).
+3. Modify the `baseUrl` field in the `_config.yaml` file.
+   Typically, if you use GitHub Pages to deploy your site, the site will be deployed under a non-root route of the domain provided GitHub Pages or your custom domain.
+   For example, assuming you are using the domain provided by GitHub Pages, `hyperzsb.github.io`, this site will be deployed under `hyperzsb.github.io/natalia-theme`.
+   To avoid potential route issues, you should modify the `baseUrl` field with the value `/natalia-theme`.
+4. Go to the setting page of your repo, and enable the GitHub Pages service. For more details about how to enable the GitHub Pages, please refer to [its documentation](https://pages.github.com/).
+5. You can visit your site once the deployment has succeeded.
+
+Here is a live demo of deploying Natalia using GitHub Pages: [demo](https://github.hyperzsb.tech/natalia-theme).
 
 ## Troubleshooting
 
@@ -127,6 +144,15 @@ Although the preferred Ruby version is `~> 3.0`, lower LTS versions are also acc
 
 However, if you choose to use a lower version other than `~> 3.0`, you should modify the `Gemfile` to remove version flags of Jekyll gems to achieve maximal compatibility.
 Additionally, in this situation, `Gemfile.lock` should be removed as well.
+
+- **Can not download CSS, JavaScript, or other assets from the server**
+
+This problem is probably caused by assigning an empty or incorrect value to the `baseUrl` field in the `_config.yaml` file.
+
+When you deploy your site under a non-root route of a given domain (for example, `https://hyperzsb.github.io/natalia-theme`), you may encounter this problem.
+In this situation, if no modification has been made to the `baseUrl` field, the browser will attempt to download CSS, JS, and other assets (like images) from the root route (in this example, `https://hyperzsb.github.io`) rather than the actual route (`https://hyperzsb.github.io/natalia-theme`).
+
+To deal with this problem, just modify the `baseUrl` field to the corresponding value (in this example, modify it to `/natalia-theme`) and redeploy your site.
 
 ## Contributing
 
