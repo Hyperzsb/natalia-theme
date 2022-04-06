@@ -16,7 +16,7 @@ layout: default
             {% endif %}
             {% if page.repo %}
             <div class="pb-3 text-center">
-                {% if page.logo %}
+                {% if page.logo.src %}
                 <a class="d-block btn rounded-pill btn-outline-primary w-50 my-3 my-lg-5 mx-auto" href="{{ page.repo }}" target="_blank" role="button">
                     <i class="bi bi-github">&nbsp;View in GitHub</i>
                 </a>
@@ -28,10 +28,15 @@ layout: default
             </div>
             {% endif %}
             <!-- TODO: improve the styles of project's logo -->
-            {% if page.logo %}
+            {% if page.logo.src %}
             <div class="px-3 pb-3 text-center">
-                <img src="{{ page.logo }}" class="rounded img-fluid"
+                {% if page.logo.internal %}
+                <img src="{{ site.baseUrl }}{{ page.logo.src }}" class="rounded img-fluid"
                      alt="Logo of {{ page.name }}" title="{{ page.name }}">
+                {% else %}
+                <img src="{{ page.logo.src }}" class="rounded img-fluid"
+                     alt="Logo of {{ page.name }}" title="{{ page.name }}">
+                {% endif %}
             </div>
             {% endif %}
         </div>

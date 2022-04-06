@@ -2,6 +2,8 @@
 name: Project 4
 description: This is the Project 4 for testing. This is the description of the project.
 logo:
+  src:
+  internal:
 repo: https://github.com/hyperzsb/natalia-theme
 tags:
 pinned: false

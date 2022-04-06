@@ -1,21 +1,21 @@
 <header class="sticky-top">
     <nav class="navbar navbar-expand-lg custom-navbar custom-navbar-bg-color" id="navbar">
         <div class="container-fluid mt-2 mb-2 ms-3 ms-lg-4 me-3 me-lg-4">
-            <a class="navbar-brand custom-navbar-brand-color" href="/">
+            <a class="navbar-brand custom-navbar-brand-color" href="{{ site.baseUrl }}/">
                 <b class="font-lobster gradient-text-color">@{{ site.name }}</b>
             </a>
             <div class="navbar-toggler custom-navbar-toggler-color" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                 aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
                 <i class="bi-arrows-expand custom-navbar-toggler-color"></i>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-2 mt-lg-0">
                     {% for nav in site.navigation %}
                     <li class="nav-item mb-1 mb-lg-0 ms-0 ms-lg-3">
-                        <a class="nav-link" href="{{ nav.url }}">
+                        <a class="nav-link" href="{{ site.baseUrl }}{{ nav.url }}">
                             {% assign nav_url = nav.url | split: "/" %}
-                            {% assign page_url = page.url | split: "/" %}
+                            {% assign page_url = page.url | remove_first: site.baseUrl | split: "/" %}
                             {% if nav_url[1] == page_url[1] %}
                             <b class="custom-nav-item custom-nav-item-active custom-nav-item-active-color">
                                 {{ nav.name }}

@@ -14,15 +14,20 @@ permalink: /projects
     <div class="py-3"></div>
     {% for project in site.projects %}
     <div class="row justify-content-center px-1 p-lg-3">
-        {% if project.logo %}
+        {% if project.logo.src %}
         <div class="col-lg-4">
-            <a href="{{ project.url }}">
-                <img src="{{ project.logo }}" class="rounded img-fluid"
+            <a href="{{ site.baseUrl }}{{ project.url }}">
+                {% if project.logo.internal %}
+                <img src="{{ site.baseUrl }}{{ project.logo.src }}" class="rounded img-fluid"
                      alt="Logo of {{ project.name }}" title="{{ project.name }}">
+                {% else %}
+                <img src="{{ project.logo.src }}" class="rounded img-fluid"
+                     alt="Logo of {{ project.name }}" title="{{ project.name }}">
+                {% endif %}
             </a>
         </div>
         <div class="col-lg-6">
-            <a class="d-block link-color my-3" href="{{ project.url }}">
+            <a class="d-block link-color my-3" href="{{ site.baseUrl }}{{ project.url }}">
                 <h2 class="font-titillium-web fw-bold">{{ project.name }}</h2>
             </a>
             {% if project.tags !=0 %}
@@ -36,7 +41,7 @@ permalink: /projects
         </div>
         {% else %}
         <div class="col-lg-10">
-            <a class="d-block link-color my-3" href="{{ project.url }}">
+            <a class="d-block link-color my-3" href="{{ site.baseUrl }}{{ project.url }}">
                 <h2 class="font-titillium-web fw-bold">{{ project.name }}</h2>
             </a>
             {% if project.tags !=0 %}
