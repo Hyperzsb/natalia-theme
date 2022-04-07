@@ -76,8 +76,9 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 
 - Group projects and posts by tags in standalone pages.
 - Add more components into portfolio home page, such as detailed self-introduction, personal experiences, and programming skills.
-- Improve the appearance and behavior of project detail page. 
-- Improve the appearance and behavior of contact page.
+- Maybe add a timeline to posts page.
+- Improve the appearance and behavior of project detail page. Although it is really unsatisfying right now 😵, I have no inspiration to improve it (I am an expert in UI & UX). If someone has some good ideas, please tell me!
+- Improve the appearance and behavior of contact page. Maybe add more components to provide more information and contact methods.
 
 ## User Guide
 
@@ -145,7 +146,7 @@ In this situation, if no modification has been made to the `baseUrl` field, the 
 To deal with this problem, just modify the `baseUrl` field to the corresponding value (in this example, modify it to `/natalia-theme`) and redeploy your site.
 
 Additionally, for senior users, you can just config redirect rules on your Apache and Nginx servers (if you deploy your sites manually); or you can just add some rewrite/redirect rules to your service providers (if you deploy your sites using some hosting services). No need to modify the `_config.yaml` file.
-It is a more complicated way, better may offer more flexibility.
+It is a more complicated way, but may offer more flexibility.
 
 ## Contributing
 
