@@ -85,14 +85,14 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 
 *TBD*
 
-### Deploy
+### Deploying
 
 You can deploy Natalia manually on your Virtual Machines provided by Cloud Service Providers like AWS, Azure, and Google Cloud.
 Besides, you can also deploy Natalia using the static pages hosting services provided by [GitHub Pages](https://pages.github.com/), [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/), [Cloudflare Pages](https://pages.cloudflare.com/), and [AWS Amplify](https://aws.amazon.com/amplify/).
 
 My home site [hyperzsb.io](https://hyperzsb.io) is currently hosted on [AWS Amplify](https://aws.amazon.com/amplify/).
 
-#### Deploy manually
+#### Deploying manually
 
 1. Clone this project.
 ```bash
@@ -111,7 +111,7 @@ $ bundle exec jekyll build
 5. Copy the build output inside `_site/` directory to the corresponding folder of your server (like [Nginx](https://www.nginx.com/) and [Apache](https://httpd.apache.org/)) to publish it. 
 For more information about the server applications, please refer to their documentation.
 
-#### Deploy using GitHub Pages
+#### Deploying using GitHub Pages
 
 As Natalia is developed atop [Jekyll](https://jekyllrb.com/), you can easily deploy your awesome site using [GitHub Pages](https://pages.github.com/).
 
@@ -120,7 +120,7 @@ As Natalia is developed atop [Jekyll](https://jekyllrb.com/), you can easily dep
 3. Modify the `baseUrl` field in the `_config.yaml` file.
    Typically, if you use GitHub Pages to deploy your site, the site will be deployed under a non-root route of the domain provided GitHub Pages or your custom domain.
    For example, assuming you are using the domain provided by GitHub Pages, `hyperzsb.github.io`, this site will be deployed under `hyperzsb.github.io/natalia-theme`.
-   To avoid potential route issues, you should modify the `baseUrl` field with the value `/natalia-theme`.
+   To avoid potential route issues, you should modify the `baseUrl` field with the value `/natalia-theme`. To learn more about this modification, please go through the [Troubleshooting](#troubleshooting) section.
 4. Go to the setting page of your repo, and enable the GitHub Pages service. For more details about how to enable the GitHub Pages, please refer to [its documentation](https://pages.github.com/).
 5. You can visit your site once the deployment has succeeded.
 
@@ -135,7 +135,7 @@ Although the preferred Ruby version is `~> 3.0`, lower LTS versions are also acc
 However, if you choose to use a lower version other than `~> 3.0`, you should modify the `Gemfile` to remove version flags of Jekyll gems to achieve maximal compatibility. 
 Additionally, in this situation, `Gemfile.lock` should be removed as well.
 
-- **Can not download CSS, JavaScript, or other assets from the server**
+- **Can not download CSS, JavaScript, or other assets from the server (404 error)**
 
 This problem is probably caused by assigning an empty or incorrect value to the `baseUrl` field in the `_config.yaml` file.
 
@@ -143,6 +143,9 @@ When you deploy your site under a non-root route of a given domain (for example,
 In this situation, if no modification has been made to the `baseUrl` field, the browser will attempt to download CSS, JS, and other assets (like images) from the root route (in this example, `https://hyperzsb.github.io`) rather than the actual route (`https://hyperzsb.github.io/natalia-theme`).
 
 To deal with this problem, just modify the `baseUrl` field to the corresponding value (in this example, modify it to `/natalia-theme`) and redeploy your site.
+
+Additionally, for senior users, you can just config redirect rules on your Apache and Nginx servers (if you deploy your sites manually); or you can just add some rewrite/redirect rules to your service providers (if you deploy your sites using some hosting services). No need to modify the `_config.yaml` file.
+It is a more complicated way, better may offer more flexibility.
 
 ## Contributing
 
