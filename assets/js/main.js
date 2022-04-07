@@ -122,7 +122,7 @@ function enableSmoothScrollOfLinksInMarkdown() {
         for (let link of links) {
             link.addEventListener("click", function (ev) {
                 window.scrollTo({
-                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - header.offsetHeight),
+                    top: (document.getElementById(link.attributes["href"].value.slice(1)).offsetTop - header.offsetHeight),
                     behavior: "smooth"
                 });
                 ev.preventDefault();
@@ -130,6 +130,38 @@ function enableSmoothScrollOfLinksInMarkdown() {
         }
     }
 }
+
+// Make the headings in the toc synchronous with the contents
+function enableSyncOfHeadingsInToc() {
+    let tocContainer = document.getElementById("toc")
+    if (tocContainer) {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let links = tocContainer.getElementsByTagName("a");
+        let index = 0;
+        for (let i = links.length - 1; i >= 0; i--) {
+            index = i;
+            let headingTop = document.getElementById(links.item(i).attributes["href"].value.slice(1)).offsetTop;
+            if (headingTop <= scrollTop + 100) {
+                console.log(links.item(i).attributes["href"].value.slice(1), links.length - 1, i);
+                break;
+            }
+        }
+        for (let i = 0; i < links.length; i++) {
+            if (index === i) {
+                if (!links.item(i).classList.contains("current-heading")) {
+                    links.item(i).classList.add("current-heading");
+                }
+            } else {
+                if (links.item(i).classList.contains("current-heading")) {
+                    links.item(i).classList.remove("current-heading");
+                }
+            }
+        }
+    }
+}
+
+// Add the event listener of "scroll" to window object
+window.addEventListener("scroll", _.throttle(enableSyncOfHeadingsInToc, 100));
 
 /* Load some event listeners */
 
@@ -148,4 +180,5 @@ function addOnloadFunction(func) {
 addOnloadFunction(function () {
     changeNavbarTogglerIcon();
     enableSmoothScrollOfLinksInMarkdown();
+    enableSyncOfHeadingsInToc();
 });

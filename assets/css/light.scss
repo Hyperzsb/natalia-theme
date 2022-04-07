@@ -218,4 +218,9 @@ $danger-color: #f03e3e;
       color: $link-color-2;
     }
   }
+
+  .current-heading {
+    border-color: $link-color-2;
+    color: $link-color-2;
+  }
 }

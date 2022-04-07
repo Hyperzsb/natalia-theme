@@ -251,5 +251,23 @@
 
   li {
     margin: 0.3rem 0;
+
+    a {
+      position: relative;
+      display: block;
+      transition: all 0.25s ease-out 0.1s;
+    }
+  }
+
+  .current-heading {
+    border-left: 3px solid;
+    padding-left: 0.5rem;
+    font-weight: bold;
+
+    &::before {
+      position: relative;
+      content: '§';
+      padding-right: 0.5rem;
+    }
   }
 }
