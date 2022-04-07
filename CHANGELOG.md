@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.1](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.0...v1.1.0-beta.1) (2022-04-07)
+
+
+### Features
+
+* **toc:** make links in toc synchronous with the current heading ([7e53b0c](https://github.com/Hyperzsb/natalia-theme/commit/7e53b0cccd621b7e476bbbc849e973ac62a72912))
+
 ## 1.1.0-beta.0 (2022-04-07)
 
 
