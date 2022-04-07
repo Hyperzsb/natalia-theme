@@ -2,7 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## 1.1.0-beta.0 (2022-04-06)
+## [1.1.0-beta.1](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.0...v1.1.0-beta.1) (2022-04-07)
+
+
+### Features
+
+* **toc:** make links in toc synchronous with the current heading ([7e53b0c](https://github.com/Hyperzsb/natalia-theme/commit/7e53b0cccd621b7e476bbbc849e973ac62a72912))
+
+## 1.1.0-beta.0 (2022-04-07)
 
 
 ### ⚠ BREAKING CHANGES
@@ -23,6 +30,7 @@ All notable changes to this project will be documented in this file. See [standa
 * add ubuntu fonts, change some styles, and improve the navbar behavior ([a96c8d5](https://github.com/Hyperzsb/natalia-theme/commit/a96c8d5aa6e84a4be96ad294c3859bc5c34ec461))
 * **bootstrap & jekyll:** introduce Bootstrap and add some basic Jekyll contents ([c714024](https://github.com/Hyperzsb/natalia-theme/commit/c71402431c9bd3379824cdd6092750375cd36f3b))
 * **emailjs:** introduce emailjs to support email function ([a1b763a](https://github.com/Hyperzsb/natalia-theme/commit/a1b763a056500bc3ef9899bab3879b806c0114d9))
+* **error page:** add basic 404 error page ([1d05e36](https://github.com/Hyperzsb/natalia-theme/commit/1d05e36678e6188605759074444374db72d85483))
 * **fonts:** add some Google Fonts to style ([ac2ee43](https://github.com/Hyperzsb/natalia-theme/commit/ac2ee434b2723cb4f8bf1bd49ef9c70569d0a632))
 * **fonts:** change font dark grotesque to titillium web ([4e211c1](https://github.com/Hyperzsb/natalia-theme/commit/4e211c1a537368d1e989c8b81c7ccd1a20909aaf))
 * **footer:** add an almost complete footer ([fe0f14a](https://github.com/Hyperzsb/natalia-theme/commit/fe0f14aa46a40b37e9ccf24cb7fcc6f732633d23))
