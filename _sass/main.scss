@@ -99,6 +99,27 @@
   }
 }
 
+.custom-navbar-toggler {
+  border: 0;
+}
+
+/* Footer style */
+
+.custom-footer {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 /* Home style */
 
 .custom-introduction {
@@ -130,7 +151,7 @@
 
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 0;
     left: 0;
     height: 0;
@@ -144,7 +165,7 @@
 
   &::after {
     position: absolute;
-    content: "";
+    content: '';
     bottom: 0;
     right: 0;
     height: 0;

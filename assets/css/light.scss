@@ -22,6 +22,10 @@ $danger-color: #f03e3e;
 
 /* General color style */
 
+:root {
+  background-color: $base-color-3;
+}
+
 .bg-color {
   background-color: $base-color-3;
 }
@@ -82,13 +86,13 @@ $danger-color: #f03e3e;
 
 /* Loading modal color style */
 
-.loading-modal-color {
+.loading-modal {
   background-color: $base-color-3;
 }
 
 /* Header color style */
 
-.custom-navbar-bg-color {
+.custom-navbar {
   background-color: rgba($base-color-3, .75);
 }
 
@@ -108,11 +112,11 @@ $danger-color: #f03e3e;
   }
 }
 
-.custom-nav-item-active-color {
+.custom-nav-item-active {
   color: $link-color-3;
 }
 
-.custom-nav-item-inactive-color {
+.custom-nav-item-inactive {
   color: $link-color-1;
 
   &:hover {
@@ -124,24 +128,23 @@ $danger-color: #f03e3e;
   }
 }
 
-.custom-navbar-toggler-color {
+.custom-navbar-toggler {
   color: $link-color-1;
-  border: 0;
 }
 
 /* Footer color style */
 
-.custom-footer-bg-color {
+.custom-footer {
   background-color: $base-color-3;
-}
 
-.custom-footer-shadow-color {
-  box-shadow: 0 -10px 20px $shadow-color-2;
+  &::before {
+    box-shadow: 0 -10px 20px $shadow-color-2;
+  }
 }
 
 /* Home color style */
 
-.custom-float-card-color {
+.custom-float-card {
   background-color: $base-color-3;
 
   &:hover {
