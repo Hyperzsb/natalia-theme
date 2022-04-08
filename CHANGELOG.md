@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.2](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2022-04-08)
+
+
+### Features
+
+* **style:** add a global opacity property of contents inside blockquotes and footnotes ([fb239dd](https://github.com/Hyperzsb/natalia-theme/commit/fb239dd7af959dac3220e29d9164a0fe77665f59))
+
 ## [1.1.0-beta.1](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.0...v1.1.0-beta.1) (2022-04-07)
 
 
