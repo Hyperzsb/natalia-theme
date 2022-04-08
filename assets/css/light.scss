@@ -170,8 +170,11 @@ $danger-color: #f03e3e;
   }
 
   blockquote {
-    color: $text-color-3;
     border-left: $text-color-3 3px solid;
+
+    & > :not(blockquote) {
+      filter: opacity(0.6);
+    }
   }
 
   blockquote.info-blockquote {
@@ -206,7 +209,10 @@ $danger-color: #f03e3e;
 
   div.footnotes {
     border-color: $text-color-3;
-    color: $text-color-3;
+
+    & > :not(blockquote) {
+      filter: opacity(0.6);
+    }
   }
 }
 
