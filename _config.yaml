@@ -49,6 +49,10 @@ emailjs:
   userID:
   serviceID:
   templateID:
+# Clarity setting. For more details, please refer to https://clarity.microsoft.com/
+clarity:
+  enable:
+  projectID:
 # Miscellaneous settings
 setting:
   enableLoadingModal: true
