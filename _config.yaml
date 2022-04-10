@@ -14,18 +14,20 @@ socialMedia:
   twitter: hyperzsb
   facebook:
   instagram:
+  # Please use your channel ID instead of your username
   youtube: UCpFjl9dlLOTEa99rKV7trrQ
   github: Hyperzsb
 # Copyright details displaying on the footer
 copyright: 2022 © hyperzsb
 
-## Basic build and deploy settings
+## Basic building and deploying settings
 
 # The URL name of your site. E.g.: https://hyperzsb.io
 # This option MUST be modified according to your deployment because the jekyll-sitemap plugin depends on it to generate correct sitemap
 url: http://127.0.0.1:4000
 # The base route of your site. E.g.: https://hyperzsb.github.io/natalia-theme
 baseUrl:
+
 # Navigation items
 navigation:
   - name: Home
@@ -36,7 +38,9 @@ navigation:
     url: /posts
   - name: Contact
     url: /contact
-# Gitalk settings. For more details, please refer to https://github.com/gitalk/gitalk
+
+# Gitalk settings
+# Gitalk is a modern comment component based on GitHub Issue and Preact. For more details, please refer to https://github.com/gitalk/gitalk
 gitalk:
   clientID:
   clientSecret:
@@ -44,15 +48,20 @@ gitalk:
   owner:
   # Only support single admin, or you can config it manually
   admin:
-# EmailJS setting. For more details, please refer to https://www.emailjs.com/
+
+# EmailJS setting
+# EmailJS is an email service that can send emails directly from your site using JavaScript. For more details, please refer to https://www.emailjs.com/
 emailjs:
   userID:
   serviceID:
   templateID:
-# Clarity setting. For more details, please refer to https://clarity.microsoft.com/
+
+# Clarity setting
+# Clarity is a free, easy-to-use tool that captures how real people actually use your site. For more details, please refer to https://clarity.microsoft.com/
 clarity:
   enable:
   projectID:
+
 # Miscellaneous settings
 setting:
   enableLoadingModal: true
@@ -63,7 +72,8 @@ timezone: Asia/Shanghai
 # Display future posts
 future: false
 
-## Advanced build and deploy settings
+## Advanced building and deploying settings
+
 # Plugins enabled
 plugins:
   # A Jekyll plugin to generate an Atom (RSS-like) feed of your Jekyll posts. For more details, please refer to https://github.com/jekyll/jekyll-feed
@@ -75,28 +85,37 @@ plugins:
   # A Jekyll plugin to support Emoji contents. For more details, please refer to https://github.com/jekyll/jemoji
   - jemoji
 
+# Definition of custom collections. For more details about collections, please refer to https://jekyllrb.com/docs/collections/
 collections:
+  # The collection of "pages" currently includes the Home page, the Projects page, the Posts page, the Contact page, and the 404 page inside the `_pages` directory
+  # You can add more custom pages if you want, but remember to add the permalinks of your custom pages to the `navigation` section of this file if they are top-level pages to enable navigation
   pages:
     output: true
+  # The collection of "projects" includes all your projects inside the `_projects` directory
   projects:
     output: true
 
+# Front Matter Default setting for layouts or permalinks of pages in different directory. For more details about the default setting, please refer to https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
+  # Pages inside `_posts` directory are post pages, and they will ues the default layout `post` and default permalink format `/posts/:title:output_ext`
   - scope:
       path: "_posts"
       type: posts
     values:
       layout: post
       permalink: /posts/:title:output_ext
+  # Pages inside `_posts` directory are project pages, and they will ues the default layout `project`
   - scope:
       path: "_projects"
       type: projects
     values:
       layout: project
+  # This is a wildcard setting, pages in other directory will use the default layout `default`
   - scope:
       path: ""
     values:
       layout: default
+
 # Exclude following files/directories when building
 exclude:
   - CHANGELOG.md
