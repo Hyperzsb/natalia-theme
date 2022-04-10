@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.3](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.2...v1.1.0-beta.3) (2022-04-10)
+
+
+### Features
+
+* **clarity:** introduce microsoft clarity for site  analysis ([0378f36](https://github.com/Hyperzsb/natalia-theme/commit/0378f36fc72640b524ced3a43a61ed668e7ac9e8))
+
 ## [1.1.0-beta.2](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2022-04-08)
 
 
