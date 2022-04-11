@@ -20,6 +20,9 @@ As the project is in its early stage, this documentation will update gradually i
   - [Coming soon](#coming-soon)
 - [User Guide](#user-Guide)
   - [Customization](#customization)
+    - [Personal information settings](#personal-information-settings)
+    - [Basic building and deploying settings](#basic-building-and-deploying-settings)
+    - [Advanced building and deploying settings](#advanced-building-and-deploying-settings)
   - [Deploy](#deploying)
     - [Deploy manually](#deploying-manually)
     - [Deploy using GitHub Pages](#deploying-using-github-pages)
@@ -84,7 +87,34 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 
 ### Customization
 
-*TBD*
+All the customization can be made just inside the `_config.yaml` file, but you can also customize more by editing the source code.
+
+#### Personal information settings
+
+There is some information you can add to Natalia in the section `Personal information settings` of the `_config.yaml` file.
+You can add your name, your description, and your social media accounts & channels.
+
+> Natalia currently only support Email, Twitter, Facebook, Instagram, YouTube, and GitHub.
+> But it is quite simple to add more social media like Stack Overflow or Vimeo to Natalia by yourself.
+> Just need a few Web skills.
+
+Additionally, you can also edit the base title of windows and the copyright information in the footer.
+
+#### Basic building and deploying settings
+
+There are more configurations of how the site is built and which component is enabled in the section `Basic building and deploying settings` of the `_config.yaml` file.
+
+- `url` and `baseUrl`: You should modify the `url` to your custom domain name because functions of some plugins rely on it. 
+  For more information about the `baseUrl`, please refer to *Can not download CSS, JavaScript, or other assets from the server (404 error)* in the section  [Troubleshooting](#troubleshooting)
+- `gitalk`: *TBD*
+- `emailjs`: *TBD*
+- `clarity`: *TBD*
+
+#### Advanced building and deploying settings
+
+There are some advanced configurations of Natalia in the section `Advanced building and deploying settings` section of the `_config.yaml` file.
+
+In most cases, **DO NOT** modify contents in this section unless you are clear about what you are doing.
 
 ### Deploying
 
