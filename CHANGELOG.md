@@ -2,7 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## 1.1.0 (2022-04-05)
+## [1.1.0-beta.3](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.2...v1.1.0-beta.3) (2022-04-10)
+
+
+### Features
+
+* **clarity:** introduce microsoft clarity for site  analysis ([0378f36](https://github.com/Hyperzsb/natalia-theme/commit/0378f36fc72640b524ced3a43a61ed668e7ac9e8))
+
+## [1.1.0-beta.2](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.1...v1.1.0-beta.2) (2022-04-08)
+
+
+### Features
+
+* **style:** add a global opacity property of contents inside blockquotes and footnotes ([fb239dd](https://github.com/Hyperzsb/natalia-theme/commit/fb239dd7af959dac3220e29d9164a0fe77665f59))
+
+## [1.1.0-beta.1](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.0...v1.1.0-beta.1) (2022-04-07)
+
+
+### Features
+
+* **toc:** make links in toc synchronous with the current heading ([7e53b0c](https://github.com/Hyperzsb/natalia-theme/commit/7e53b0cccd621b7e476bbbc849e973ac62a72912))
+
+## 1.1.0-beta.0 (2022-04-07)
 
 
 ### ⚠ BREAKING CHANGES
@@ -11,6 +32,7 @@ All notable changes to this project will be documented in this file. See [standa
 * **emailjs:** introduce emailjs to support email function
 * **gitalk:** introduce gitalk to provide the comment feature
 * **toc & anchor headings:** introduce toc and anchor headings libraries
+* **jemoji:** introduce jemoji plugin to support emoji
 * **lodash:** introduce Lodash
 * **fonts:** introduce Google Fonts
 * **bootstrap & jekyll:** introduce Bootstrap framework
@@ -18,17 +40,29 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * add favicon and update page title ([fdc06f0](https://github.com/Hyperzsb/natalia-theme/commit/fdc06f0e601c4115ed67bf9b81f4ce95d58ff6c9))
+* add support for deploying under non-root route ([b5f0161](https://github.com/Hyperzsb/natalia-theme/commit/b5f016193c3a3e15a662238c5875352e10609d80))
 * add ubuntu fonts, change some styles, and improve the navbar behavior ([a96c8d5](https://github.com/Hyperzsb/natalia-theme/commit/a96c8d5aa6e84a4be96ad294c3859bc5c34ec461))
 * **bootstrap & jekyll:** introduce Bootstrap and add some basic Jekyll contents ([c714024](https://github.com/Hyperzsb/natalia-theme/commit/c71402431c9bd3379824cdd6092750375cd36f3b))
 * **emailjs:** introduce emailjs to support email function ([a1b763a](https://github.com/Hyperzsb/natalia-theme/commit/a1b763a056500bc3ef9899bab3879b806c0114d9))
+* **error page:** add basic 404 error page ([1d05e36](https://github.com/Hyperzsb/natalia-theme/commit/1d05e36678e6188605759074444374db72d85483))
 * **fonts:** add some Google Fonts to style ([ac2ee43](https://github.com/Hyperzsb/natalia-theme/commit/ac2ee434b2723cb4f8bf1bd49ef9c70569d0a632))
+* **fonts:** change font dark grotesque to titillium web ([4e211c1](https://github.com/Hyperzsb/natalia-theme/commit/4e211c1a537368d1e989c8b81c7ccd1a20909aaf))
 * **footer:** add an almost complete footer ([fe0f14a](https://github.com/Hyperzsb/natalia-theme/commit/fe0f14aa46a40b37e9ccf24cb7fcc6f732633d23))
 * **gitalk:** introduce gitalk to provide the comment feature ([91a5d65](https://github.com/Hyperzsb/natalia-theme/commit/91a5d65f87969d862b84a253a1944fc82054da52))
+* **gitalk:** update the issue template used by gitalk ([ec4374a](https://github.com/Hyperzsb/natalia-theme/commit/ec4374a85be32313d93e29b6709cc8fa0bab5a1f))
 * **google fonts:** add Noto Serif Simplified Chinese font ([eac60e3](https://github.com/Hyperzsb/natalia-theme/commit/eac60e34482dcf33b2b0c1de13137e3af4174f5d))
 * **header:** add an almost complete navbar to header ([b822a53](https://github.com/Hyperzsb/natalia-theme/commit/b822a533a866479756283a4c9c7b22e71bf0dc82))
 * **header:** add gradient text color for navbar brand ([112a7e2](https://github.com/Hyperzsb/natalia-theme/commit/112a7e2b0e0328fe645006147faa88a2ad81cd35))
+* **header:** change navbar style ([bec70ea](https://github.com/Hyperzsb/natalia-theme/commit/bec70ea6a31973c4ffd8b10ecf0253bba23beb15))
+* **header:** remove padding animation effect ([36e0744](https://github.com/Hyperzsb/natalia-theme/commit/36e0744e67f94c74c9a78ebf37b56d09270d21ae))
 * **home:** add the introduction section of the home page ([dcbfb36](https://github.com/Hyperzsb/natalia-theme/commit/dcbfb3654d78b5d73a7582949897468da7a30fa5))
+* **home:** update projects component's structure and style ([b155ee1](https://github.com/Hyperzsb/natalia-theme/commit/b155ee1fac3942bc566370c09794e96765d7c81d))
+* **home:** update projects component's style ([0b3bc21](https://github.com/Hyperzsb/natalia-theme/commit/0b3bc2186aacd92d7494c6d133d93eeb8da98579))
+* **home:** update projects component's style and add basic posts component ([a3841b5](https://github.com/Hyperzsb/natalia-theme/commit/a3841b5b3dac9fbaba941892b3187b59b06e88c3))
+* **home:** update style and layout of component "posts" ([f4871dc](https://github.com/Hyperzsb/natalia-theme/commit/f4871dc00be597c67ad1a6323dbed7556244317a))
 * **javascript:** add throttle control and other behavior improvements ([19e73e6](https://github.com/Hyperzsb/natalia-theme/commit/19e73e6553c849135e916396228cfb21c110a004))
+* **javascript:** improve behavior of links in toc and markdown contents ([48c84a8](https://github.com/Hyperzsb/natalia-theme/commit/48c84a81f76c40660b87dc48f67748a7d7effbce))
+* **javascript:** use the actual height of the header as the offset of the scrolling distance ([ac4f740](https://github.com/Hyperzsb/natalia-theme/commit/ac4f7408475cad71b9bd002efb15cad28699f72b))
 * **jekyll plugins:** introduce some jekyll plugins ([d785a56](https://github.com/Hyperzsb/natalia-theme/commit/d785a565f86b81abf256da53ca4ff8d857551831))
 * **jekyll:** add basic site structure of projects and posts ([73d7659](https://github.com/Hyperzsb/natalia-theme/commit/73d7659d976f6d41b332d8fddce78e2a401f51c3))
 * **jemoji:** introduce jemoji plugin to support emoji ([bcd130d](https://github.com/Hyperzsb/natalia-theme/commit/bcd130db80e448a3ec9fafec4514fd5ae01d9a06))
@@ -36,15 +70,20 @@ All notable changes to this project will be documented in this file. See [standa
 * **lodash:** use Lodash to provide utilities ([d09b8f7](https://github.com/Hyperzsb/natalia-theme/commit/d09b8f7ca00d0df88cc70268a191102c86987191))
 * **markdown:** add img-center class to align imgs ([7dbda34](https://github.com/Hyperzsb/natalia-theme/commit/7dbda34becca9ef3fa284850a4acc1012ef78b3c))
 * **markdown:** add info, warning, and danger blockquote elements support ([11f7453](https://github.com/Hyperzsb/natalia-theme/commit/11f745384d6364588ee5cb19bd2c8cbb312ed0bb))
+* **markdown:** improve markdown styles ([a05e581](https://github.com/Hyperzsb/natalia-theme/commit/a05e5819ad7647bbc9e31292f2489a244cb33f54))
 * **post:** add basic Markdown rendering ([2114399](https://github.com/Hyperzsb/natalia-theme/commit/21143994ca03f5a0f5e8701cc529f12bebb274f8))
 * **posts:** add basic posts page ([bfb79ed](https://github.com/Hyperzsb/natalia-theme/commit/bfb79ed4edf1e895b0028f61137a9ebdf7569454))
+* **post:** update toc's styles and behavior ([23c731c](https://github.com/Hyperzsb/natalia-theme/commit/23c731c5fa666bbaf8f30afd7ad00f9364bf1049))
 * **project:** add basic project layout ([608de94](https://github.com/Hyperzsb/natalia-theme/commit/608de94344dbc3f924ed4ee4fdbc191497018e19))
 * **project:** add the repo link option for the project ([78b8fc5](https://github.com/Hyperzsb/natalia-theme/commit/78b8fc5bc28583731419367124192b7211155efe))
 * **projects:** add basic project portfolio to home page ([bfe023c](https://github.com/Hyperzsb/natalia-theme/commit/bfe023c56508a08fd38e48326063aba445db3152))
 * **projects:** add basic projects page ([6b670b2](https://github.com/Hyperzsb/natalia-theme/commit/6b670b2351b8645efa6eed8579820deba66c94c3))
+* **project:** update project layout ([b1f8636](https://github.com/Hyperzsb/natalia-theme/commit/b1f86368d16e3af9b2926140d0079f62adad7ce8))
 * **style:** add styles for floating cards ([3d98c76](https://github.com/Hyperzsb/natalia-theme/commit/3d98c76a7091cb2f43d8d18be83017f352fe8853))
+* **style:** update padding and margin styles for better appearance on mobile devices ([50b74d1](https://github.com/Hyperzsb/natalia-theme/commit/50b74d1b595f96c9ae9adba687be7ed21817d30c))
 * **title:** add custom title text ([5c0c860](https://github.com/Hyperzsb/natalia-theme/commit/5c0c8604f5c5dcd48807d78efe6d3c023ffa0531))
 * **toc & anchor headings:** introduce toc and anchor headings libraries ([cee875e](https://github.com/Hyperzsb/natalia-theme/commit/cee875e599824e252993d3ea80f35690ab08e6b5))
+* **toc:** change the heading level of the toc ([fa877b1](https://github.com/Hyperzsb/natalia-theme/commit/fa877b101e1e54735b3777ccb0cf6359a3ba51b5))
 
 
 ### Bug Fixes
