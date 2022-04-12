@@ -140,19 +140,25 @@ My home site [hyperzsb.io](https://hyperzsb.io) is currently hosted on [AWS Ampl
 #### Deploying manually
 
 1. Clone this project.
+   
    ```bash
    $ git clone https://github.com/Hyperzsb/natalia-theme.git
    $ cd natalia-theme
    ```
+
 2. Customize your awesome site. For more details, please refer to [Customization](#customization).
 3. Install dependencies using `bundle`. For more information about installing bundle and Jekyll, please refer to [Quickstart Guide of Jekyll](https://jekyllrb.com/docs/).
+
    ```bash
    $ bundle install
    ```
+
 4. Build Natalia.
+
    ```bash
    $ bundle exec jekyll build
    ```
+
 5. Copy the build output inside `_site/` directory to the corresponding folder of your server (like [Nginx](https://www.nginx.com/) and [Apache](https://httpd.apache.org/)) to publish it. 
 For more information about the server applications, please refer to their documentation.
 
