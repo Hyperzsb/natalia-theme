@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="container-fluid p-lg-5">
-    <div class="row justify-content-center py-3">
+<div class="container-fluid">
+    <div class="row justify-content-center py-5">
         <div class="col-lg-6">
             <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
                 {{ page.title }}
@@ -22,10 +22,14 @@ layout: default
             {% endif %}
         </div>
     </div>
-    <div class="py-lg-2"></div>
-    <div class="row justify-content-center px-1 p-lg-3">
+    <div
+         {% if page.comment %}
+         class="row justify-content-center px-1 pt-3"
+         {% else %}
+         class="row justify-content-center px-1 pt-3 pb-5"
+         {% endif %}
+    >
         {% if page.toc != false %}
-        <!-- TODO: make the headings of toc synchronous with the content -->
         <div class="col-lg-2 px-lg-3">
             <div class="toc-container">
                 <span class="d-block fs-3 fw-bold font-titillium-web m-1">Contents</span>
@@ -41,13 +45,11 @@ layout: default
             </div>
         </div>
     </div>
-    {% if page.comment == true %}
-    <div class="py-lg-2"></div>
-    <div class="row justify-content-center p-3">
+    {% if page.comment %}
+    <div class="row justify-content-center px-1 px-lg-3 pb-5">
         <div class="col-lg-8 px-lg-3">
             <div id="gitalk-container"></div>
         </div>
     </div>
     {% endif %}
-    <div class="py-4 py-lg-2"></div>
 </div>

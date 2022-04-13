@@ -5,6 +5,7 @@ logo:
   src: /assets/images/project-1-logo.jpg
   internal: true
 repo: https://github.com/hyperzsb/natalia-theme
+demo: https://github.com/hyperzsb/natalia-theme
 tags: jekyll bootstrap
 pinned: true
 ---

@@ -3,17 +3,22 @@ layout: default
 title: Projects
 permalink: /projects
 ---
-<div class="container-fluid p-lg-5">
-    <div class="row justify-content-center py-3">
+<div class="container-fluid">
+    <div class="row justify-content-center py-5">
         <div class="col-lg-6">
             <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
                 All My Projects
             </h1>
         </div>
     </div>
-    <div class="py-3"></div>
     {% for project in site.projects %}
-    <div class="row justify-content-center px-1 p-lg-3">
+    <div
+        {% if project == site.projects.last %}
+        class="row justify-content-center px-1 px-lg-3 pt-3 pb-5 "
+        {% else %}
+        class="row justify-content-center px-1 p-lg-3"
+        {% endif %}
+    >
         {% if project.logo.src %}
         <div class="col-lg-4">
             <a href="{{ site.baseUrl }}{{ project.url }}">
@@ -55,7 +60,5 @@ permalink: /projects
         </div>
         {% endif %}
     </div>
-    <div class="py-3"></div>
     {% endfor %}
-    <div class="py-4 py-lg-2"></div>
 </div>
