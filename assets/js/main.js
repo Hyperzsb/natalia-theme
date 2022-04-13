@@ -142,7 +142,6 @@ function enableSyncOfHeadingsInToc() {
             index = i;
             let headingTop = document.getElementById(links.item(i).attributes["href"].value.slice(1)).offsetTop;
             if (headingTop <= scrollTop + 100) {
-                console.log(links.item(i).attributes["href"].value.slice(1), links.length - 1, i);
                 break;
             }
         }

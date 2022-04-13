@@ -3,17 +3,22 @@ layout: default
 title: Posts
 permalink: /posts
 ---
-<div class="container-fluid p-lg-5">
-    <div class="row justify-content-center py-3">
+<div class="container-fluid">
+    <div class="row justify-content-center py-5">
         <div class="col-lg-6">
             <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
                 All My Posts
             </h1>
         </div>
     </div>
-    <div class="py-lg-2"></div>
     {% for post in site.posts %}
-    <div class="row justify-content-center px-1 p-lg-3">
+    <div
+         {% if post == site.posts.last %}
+         class="row justify-content-center px-1 px-lg-3 pt-3 pb-5 "
+         {% else %}
+         class="row justify-content-center px-1 p-lg-3"
+         {% endif %}
+    >
         <div class="col-lg-8">
             <a class="d-block text-center link-color my-3" href="{{ site.baseUrl }}{{ post.url }}">
                 <h2 class="font-titillium-web fw-bold">{{ post.title }}</h2>
@@ -34,7 +39,5 @@ permalink: /posts
             <div class="my-4 markdown">{{ post.excerpt }}</div>
         </div>
     </div>
-    <div class="py-lg-2"></div>
     {% endfor %}
-    <div class="py-4 py-lg-2"></div>
 </div>

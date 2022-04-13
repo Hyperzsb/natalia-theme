@@ -53,15 +53,21 @@
 
 /* Header style */
 
-.custom-navbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  backdrop-filter: blur(10px);
-  z-index: -1;
+.custom-navbar {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    z-index: 0;
+  }
+
+  & > * {
+    z-index: 1;
+  }
 }
 
 .custom-nav-item {
@@ -190,5 +196,29 @@
       height: 3rem;
       width: 3rem;
     }
+  }
+}
+
+/* Project style */
+
+.custom-bg-image {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(3px);
+    background-color: rgba(248, 249, 250, 0.6);
+    z-index: 0;
+  }
+
+  & > * {
+    z-index: 1;
   }
 }
