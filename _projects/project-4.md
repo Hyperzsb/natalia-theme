@@ -5,6 +5,7 @@ logo:
   src:
   internal:
 repo: https://github.com/hyperzsb/natalia-theme
+demo: https://github.com/hyperzsb/natalia-theme
 tags:
 pinned: false
 ---
