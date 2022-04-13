@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.4](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.3...v1.1.0-beta.4) (2022-04-13)
+
+
+### Features
+
+* **project:** update styles of project pages ([b87abe7](https://github.com/Hyperzsb/natalia-theme/commit/b87abe720b981223e4565e9c7e05be632485b3e9))
+
+
+### Bug Fixes
+
+* **style:** fix the bad z-index of the footer ([acd4dff](https://github.com/Hyperzsb/natalia-theme/commit/acd4dffcd33f961e3b152f475acaed959eb3403a))
+
 ## [1.1.0-beta.3](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.2...v1.1.0-beta.3) (2022-04-10)
 
 
