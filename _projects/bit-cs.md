@@ -3,6 +3,7 @@ name: bit-cs
 description: Codes and other resources of courses offered at School of Computer Science & Technology, Beijing Institute of Technology.
 logo: 
 repo: https://github.com/hyperzsb/bit-cs
+demo: https://github.hyperzsb.tech/bit-cs
 tags: computer-science bit beijing-institute-of-technology
 pinned: true
 ---

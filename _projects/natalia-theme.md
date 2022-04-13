@@ -3,6 +3,7 @@ name: natalia-theme
 description: Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered by Jekyll.
 logo: 
 repo: https://github.com/hyperzsb/natalia-theme
+demo: https://github.hyperzsb.tech/natalia-theme
 tags: jekyll bootstrap
 pinned: true
 excerpt_separator: <!--more-->
