@@ -3,6 +3,7 @@ name: vladimir-theme
 description: A General project presentation UI with Vue.js.
 logo: 
 repo: https://github.com/hyperzsb/vladimir-theme
+demo: https://vladimir.hyperzsb.tech
 tags: vue
 pinned: true
 ---
