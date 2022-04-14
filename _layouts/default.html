@@ -69,7 +69,7 @@
         owner: '{{ site.gitalk.owner }}',
         admin: ['{{ site.gitalk.admin }}'],
         {% if page.legacyCommentID %}
-        id: '{{ page.legacyCommentID }}'
+        id: '{{ page.legacyCommentID }}',
         {% else %}
         id: location.pathname,
         {% endif %}
