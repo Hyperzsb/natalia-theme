@@ -103,13 +103,14 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: /posts/:title:output_ext
+      permalink: /posts/:title/
   # Pages inside `_posts` directory are project pages, and they will ues the default layout `project`
   - scope:
       path: "_projects"
       type: projects
     values:
       layout: project
+      permalink: /projects/:title/
   # This is a wildcard setting, pages in other directory will use the default layout `default`
   - scope:
       path: ""
