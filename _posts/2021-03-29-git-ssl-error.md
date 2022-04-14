@@ -5,6 +5,7 @@ last_update: 2021.07.11
 tags: github
 toc: true
 comment: true
+legacyCommentID: /git-ssl-error/
 pinned: true
 ---
 
