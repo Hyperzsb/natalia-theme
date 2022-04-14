@@ -68,7 +68,11 @@
         repo: '{{ site.gitalk.repo }}',
         owner: '{{ site.gitalk.owner }}',
         admin: ['{{ site.gitalk.admin }}'],
+        {% if page.legacyCommentID %}
+        id: '{{ page.legacyCommentID }}'
+        {% else %}
         id: location.pathname,
+        {% endif %}
         title: location.host + ": " + document.title,
         language: 'en',
         distractionFreeMode: false
