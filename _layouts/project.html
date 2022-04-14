@@ -20,18 +20,18 @@ layout: default
             {% endif %}
             {% if page.repo or page.demo %}
             <div class="py-3 text-center">
-                <div class="row justify-content-center">
+                <div class="row row-cols-1 row-cols-lg-2 justify-content-center">
                     {% if page.repo %}
-                    <div class="col-6 justify-content-end p-3">
-                        <a class="d-block btn rounded-pill btn-outline-primary"
+                    <div class="col pt-3">
+                        <a class="btn rounded-pill btn-outline-primary w-75"
                            href="{{ page.repo }}" target="_blank" role="button">
                             <i class="bi bi-github">&nbsp;View in GitHub</i>
                         </a>
                     </div>
                     {% endif %}
                     {% if page.demo %}
-                    <div class="col-6 justify-content-start p-3">
-                        <a class="d-block btn rounded-pill btn-outline-primary"
+                    <div class="col pt-3">
+                        <a class="btn rounded-pill btn-outline-primary w-75"
                            href="{{ page.demo }}" target="_blank" role="button">
                             <i class="bi bi-binoculars-fill">&nbsp;View Live Demo</i>
                         </a>
@@ -44,7 +44,7 @@ layout: default
     </div>
     <div class="row justify-content-center px-1 px-lg-3 pt-3 pb-5">
         <div class="col-lg-8 px-lg-3">
-            <div class="markdown" id="markdown">
+            <div class="markdown" id="markdown" data-clarity-region="article">
                 {% include anchor_headings.html html=content anchorBody="§" %}
             </div>
         </div>
