@@ -5,6 +5,7 @@ last_update:
 tags: git 
 toc: true
 comment: true
+legacyCommentID: /Git-rebase-command/
 pinned: false
 ---
 
