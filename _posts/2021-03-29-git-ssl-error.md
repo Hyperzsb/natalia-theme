@@ -1,7 +1,7 @@
 ---
 title: Git - SSL_ERROR_SYSCALL 问题解决
 date: 2021-03-29
-last_update: 2021.07.11
+last_update: 2022-04-17
 tags: github
 toc: true
 comment: true
@@ -23,7 +23,7 @@ Terminal
 
 ### 使用命令
 
-```sh
+```bash
 $ git clone https://github.com/xxx/xxx.git
 fatal: unable to access 'https://github.com/xxx/xxx.git/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443 
 ```
@@ -48,7 +48,7 @@ fatal: unable to access 'https://github.com/xxx/xxx.git/': LibreSSL SSL_connect:
 
   - 可以直接修改全局 Git 配置文件进行修改：
 
-    ```sh
+    ```bash
     $ vim ~/.gitconfig
     ```
 
@@ -56,7 +56,7 @@ fatal: unable to access 'https://github.com/xxx/xxx.git/': LibreSSL SSL_connect:
 
   - 也可以使用命令进行修改：
 
-    ```sh
+    ```bash
     $ git config --global --unset http.proxy
     $ git config --global --unset https.proxy
     ```
@@ -67,7 +67,7 @@ fatal: unable to access 'https://github.com/xxx/xxx.git/': LibreSSL SSL_connect:
 
   由于该问题是 LibreSSL 库报错，可以修改 Git 使用 OpenSSL 库进行 HTTPS 的通信。
 
-  ```
+  ```bash
   $ git config --global http.sslBackend "openssl"
   ```
 
@@ -77,13 +77,13 @@ fatal: unable to access 'https://github.com/xxx/xxx.git/': LibreSSL SSL_connect:
 
 由于使用 IPv6 的原因，可能会导致这一问题的出现。可以配置计算机不使用 IPv6，故使用以下命令：
 
-```sh
+```bash
 $ networksetup -setv6off Wi-Fi
 ```
 
 如果有需要，可以再将配置修改回来：
 
-```sh
+```bash
 $ networksetup -setv6automatic Wi-Fi
 ```
 
@@ -110,11 +110,11 @@ $ networksetup -setv6automatic Wi-Fi
 
 在使用 HTTPS 连接 GitHub 进行 push/pull 时（即 origin 地址为 https://github.com/xxx/xxx.git），需要更改本地 git 的配置，使用代理向 GitHub 发起请求。
 
-> 要求：你需要有一个梯子，关于如何获取梯子，可以参考[我的收藏](https://blog.hyperzsb.tech/collections/)中关于 VPN 的章节。
+> 要求：你需要有一个梯子，关于如何获取梯子，请自行搜索相关资料（由于政策原因，仅提供一些可用的关键字：机场、FreeWhale、Meet）。
 
 执行如下命令：
 
-```shell
+```bash
 $ git config --global -e
 ```
 
@@ -141,13 +141,13 @@ $ git config --global -e
 
 进入仓库对应目录，执行如下命令：
 
-```shell
+```bash
 $ git remote set-url origin git@github.com:xxx/xxx.git
 ```
 
 更改完成后，可以使用如下命令查看当前的 origin 地址：
 
-```shell
+```bash
 $ git remote -v
 ```
 
