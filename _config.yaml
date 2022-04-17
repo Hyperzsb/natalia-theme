@@ -66,7 +66,7 @@ clarity:
 setting:
   enableLoadingModal: true
   # Dark mode has not developed completely yet. Please do not turn it on
-  enableDarkMode: false
+  enableDarkMode: true
 # Timezone setting
 timezone: Asia/Shanghai
 # Display future posts

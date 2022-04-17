@@ -3,8 +3,8 @@
   font-size: 16px;
 }
 
-* {
-  transition: 0.25s;
+a {
+  transition: color 0.25s;
 }
 
 .text-justify {
@@ -54,6 +54,8 @@
 /* Header style */
 
 .custom-navbar {
+  transition: box-shadow 0.25s;
+
   &::before {
     position: absolute;
     content: '';
@@ -88,6 +90,8 @@
 }
 
 .custom-nav-item-inactive {
+  transition: color 0.25s ease-out 0.1s;
+
   &::after {
     position: absolute;
     content: '';
@@ -96,7 +100,7 @@
     width: 0;
     height: 0;
     border-bottom: 2px solid transparent;
-    transition: all 0.25s ease-out 0.1s;
+    transition: width 0.25s ease-out 0.1s, height 0.25s ease-out 0.1s, border-bottom-color 0.25s ease-out 0.1s;
   }
 
   &:hover::after {
@@ -157,6 +161,7 @@
   margin-bottom: 0;
   border: 0;
   cursor: default;
+  transition: margin-top 0.25s ease-out 0.1s, margin-bottom 0.25s ease-out 0.1s, box-shadow 0.25s ease-out 0.1s;
 
   &::before {
     position: absolute;
@@ -169,7 +174,7 @@
     margin-left: -3px;
     border-top: 3px solid transparent;
     border-left: 3px solid transparent;
-    transition: all 0.25s ease-out 0.1s;
+    transition: width 0.25s ease-out 0.1s, height 0.25s ease-out 0.1s;
   }
 
   &::after {
@@ -183,7 +188,7 @@
     margin-right: -3px;
     border-bottom: 3px solid transparent;
     border-right: 3px solid transparent;
-    transition: all 0.25s ease-out 0.1s;
+    transition: width 0.25s ease-out 0.1s, height 0.25s ease-out 0.1s;
   }
 
   &:hover {
