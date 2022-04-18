@@ -1,3 +1,5 @@
+import {addOnloadFunction} from "./utils.js"
+
 /* Functions for the header's behavior */
 
 // Display and hide the shadow of the navbar when scrolling
@@ -53,6 +55,7 @@ function changeNavbarTogglerIcon() {
 }
 
 /* Functions for the modal's behavior */
+
 // Show and hide the modal and the main content
 document.onreadystatechange = () => {
     if (document.readyState === "complete") {
@@ -162,22 +165,7 @@ function enableSyncOfHeadingsInToc() {
 // Add the event listener of "scroll" to window object
 window.addEventListener("scroll", _.throttle(enableSyncOfHeadingsInToc, 100));
 
-/* Load some event listeners */
-
-function addOnloadFunction(func) {
-    const oldOnload = window.onload;
-    if (typeof window.onload != "function") {
-        window.onload = func;
-    } else {
-        window.onload = function () {
-            oldOnload();
-            func();
-        }
-    }
-}
-
 addOnloadFunction(function () {
     changeNavbarTogglerIcon();
     enableSmoothScrollOfLinksInMarkdown();
-    enableSyncOfHeadingsInToc();
 });

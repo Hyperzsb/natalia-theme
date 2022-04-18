@@ -1,7 +1,7 @@
 <footer class="container-fluid custom-footer">
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center py-3">
         <div class="col-lg-6">
-            <div class="d-flex flex-row justify-content-center mt-4">
+            <div class="d-flex flex-row justify-content-center pt-3">
                 {% if site.socialMedia.email %}
                 <a class="gray-icon-color p-3 fs-4" target="_blank" href="mailto:{{ site.socialMedia.email }}">
                     <i class="bi bi-envelope-fill"></i>
@@ -38,8 +38,8 @@
                 </a>
                 {% endif %}
             </div>
-            <div class="row justify-content-center align-items-center mt-2">
-                <div class="col-lg-8">
+            <div class="row justify-content-center align-items-center py-2">
+                <div class="col">
                     <ul class="nav justify-content-center align-items-center">
                         {% for nav in site.navigation %}
                         <li class="nav-item">
@@ -50,18 +50,22 @@
                         {% endfor %}
                     </ul>
                 </div>
-                {% if site.setting.enableDarkMode == true %}
-                <div class="col-lg-4">
+            </div>
+            {% if site.setting.enableDarkMode == true %}
+            <div class="row justify-content-center align-items-center py-3">
+                <div class="col">
                     <div class="form-check form-switch d-flex justify-content-center align-items-center">
-                        <input class="form-check-input mt-0 me-2" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                        <label class="form-check-label light-text-color" for="flexSwitchCheckDefault">Dark Mode</label>
+                        <input class="form-check-input mt-0 me-2 switch-color" type="checkbox" role="switch"
+                               id="darkModeSwitch">
+                        <label class="form-check-label lighter-text-color" for="darkModeSwitch">Dark Mode</label>
                     </div>
                 </div>
-                {% endif %}
             </div>
-            <div class="row text-center border-top my-4 mx-3 py-3">
+            {% endif %}
+            <hr class="d-block hr-color"/>
+            <div class="row text-center py-2">
                 <b class="d-inline-block lighter-text-color mt-3">{{ site.copyright }}</b>
-                <span class="d-inline-block lighter-text-color mt-4">
+                <span class="d-inline-block lighter-text-color my-3">
                     With
                     <a class="gray-link-color" target="_blank"
                        href="https://github.com/Hyperzsb/natalia-theme">Natalia</a>,

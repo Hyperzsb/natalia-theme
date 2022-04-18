@@ -29,8 +29,8 @@
     <!-- jekyll-seo-tag -->
     {% seo %}
 </head>
-<body class="bg-color font-ubuntu">
-{% if site.setting.enableLoadingModal == true %}
+<body class="font-ubuntu">
+{% if site.setting.enableLoadingModal %}
 {% include loading.html %}
 {% endif %}
 <div id="main-content">
@@ -38,18 +38,30 @@
     {{ content }}
     {% include footer.html %}
 </div>
-<!-- Bootstrap Library -->
+<!-- Custom libraries -->
+<script src="{{ site.baseUrl }}/assets/js/utils.js" type="module"></script>
+<script src="{{ site.baseUrl }}/assets/js/main.js" type="module"></script>
+{% if site.setting.enableDarkMode %}
+<script id="dark-mode-script" src="{{ site.baseUrl }}/assets/js/dark-mode.js" type="module"
+        baseUrl="{{ site.baseUrl }}"></script>
+{% endif %}
+<!-- End of custom libraries -->
+<!-- Bootstrap library -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-<!-- Loadash Library -->
+<!-- End of Bootstrap library -->
+<!-- Lodash library -->
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
-<!-- Highlight JS Library -->
+<!-- End of Lodash library -->
+<!-- HighlightJS library -->
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.0/build/highlight.min.js"></script>
 <script>
     hljs.highlightAll();
 </script>
-<!-- MathJax -->
+<!-- End of HighlightJS library -->
+<!-- MathJax library-->
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
     MathJax = {
         tex: {
@@ -57,9 +69,9 @@
         }
     };
 </script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- End of MathJax library-->
 {% if page.comment == true %}
-<!-- Gitalk Library -->
+<!-- Gitalk library -->
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 <script>
     const gitalk = new Gitalk({
@@ -76,45 +88,22 @@
 
     gitalk.render('gitalk-container')
 </script>
+<!-- End of Gitalk library -->
 {% endif %}
 {% if page.contact == true %}
-<!-- EmailJS -->
+<!-- EmailJS libraries -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script type="text/javascript">
     (function () {
         emailjs.init("{{ site.emailjs.userID }}");
     })();
-    window.onload = function () {
-        let contactForm = document.getElementById('contact-form');
-        if (contactForm != null) {
-            contactForm.addEventListener("submit", function (ev) {
-                ev.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('{{ site.emailjs.serviceID }}', '{{ site.emailjs.templateID }}', this)
-                    .then(function () {
-                        const resultModal = new bootstrap.Modal(document.getElementById('contact-result-modal'));
-                        if (resultModal != null) {
-                            document.getElementById("contact-result-modal-title").innerText = "Succeeded!"
-                            document.getElementById("contact-result-modal-body").innerText = "Send message successfully! Please do not send the same message repeatedly.";
-                        }
-                        resultModal.show();
-                        document.getElementById("contact-form-reset").click();
-                    }, function (error) {
-                        const resultModal = new bootstrap.Modal(document.getElementById('contact-result-modal'));
-                        if (resultModal != null) {
-                            document.getElementById("contact-result-modal-title").innerText = "Failed!"
-                            document.getElementById("contact-result-modal-body").innerText = "Send message unsuccessfully! Please try again later. Error: " + error;
-                        }
-                        resultModal.show();
-                        document.getElementById("contact-form-reset").click();
-                    });
-            })
-        }
-    }
 </script>
+<script id="email-script" src="{{ site.baseUrl }}/assets/js/email.js" type="module"
+        serviceID="{{ site.emailjs.serviceID }}" templateID="{{ site.emailjs.templateID }}"></script>
+<!-- End of EmailJS libraries -->
 {% endif %}
 {% if site.clarity.enable %}
-<!-- Microsoft Clarity -->
+<!-- Microsoft Clarity library -->
 <script type="text/javascript">
     (function (c, l, a, r, i, t, y) {
         c[a] = c[a] || function () {
@@ -127,8 +116,7 @@
         y.parentNode.insertBefore(t, y);
     })(window, document, "clarity", "script", "{{ site.clarity.projectID }}");
 </script>
+<!-- End of Microsoft Clarity library -->
 {% endif %}
-<!-- Custom Library -->
-<script src="{{ site.baseUrl }}/assets/js/main.js"></script>
 </body>
 </html>
