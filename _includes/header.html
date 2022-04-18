@@ -20,6 +20,10 @@
                             <b class="custom-nav-item custom-nav-item-active">
                                 {{ nav.name }}
                             </b>
+                            {% elsif nav_url[1] == nil and page_url[1] == "index.html" %}
+                            <b class="custom-nav-item custom-nav-item-active">
+                                {{ nav.name }}
+                            </b>
                             {% else %}
                             <b class="custom-nav-item custom-nav-item-inactive">
                                 {{ nav.name }}

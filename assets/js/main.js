@@ -1,3 +1,5 @@
+import {addOnloadFunction} from "./utils.js"
+
 /* Functions for the header's behavior */
 
 // Display and hide the shadow of the navbar when scrolling
@@ -162,8 +164,6 @@ function enableSyncOfHeadingsInToc() {
 
 // Add the event listener of "scroll" to window object
 window.addEventListener("scroll", _.throttle(enableSyncOfHeadingsInToc, 100));
-
-/* Load some event listeners */
 
 addOnloadFunction(function () {
     changeNavbarTogglerIcon();
