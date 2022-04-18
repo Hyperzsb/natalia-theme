@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.5](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.4...v1.1.0-beta.5) (2022-04-18)
+
+
+### Features
+
+* **clarity:** enable the content insights function of clarity ([8cb279a](https://github.com/Hyperzsb/natalia-theme/commit/8cb279a01f1b8220941809640fd5a836bc9d2e4b))
+* **dark mode:** add basic dark mode ([bbde260](https://github.com/Hyperzsb/natalia-theme/commit/bbde260bd211da5f43e3ae8de61cb984061308ca))
+* **footer:** update styles of dark mode switch ([cf0468c](https://github.com/Hyperzsb/natalia-theme/commit/cf0468c19128e56285ff96289d07a22073cd9bd8))
+
+
+### Bug Fixes
+
+* **style:** fix bad styles of the active navbar item ([4414dc7](https://github.com/Hyperzsb/natalia-theme/commit/4414dc7ac1c9f443346154aa8fe00c55b0bb4813))
+
 ## [1.1.0-beta.4](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.3...v1.1.0-beta.4) (2022-04-13)
 
 
