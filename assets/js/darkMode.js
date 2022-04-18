@@ -1,3 +1,5 @@
+import {getScriptParameter, loadStylesheet, addOnloadFunction} from "./utils.js"
+
 /* Functions for the dark mode */
 
 // Change the global styles when click the dark mode switch
@@ -5,7 +7,7 @@ function enableDarkMode() {
     let darkModeSwitch = document.getElementById("darkModeSwitch");
     let localDarkModeSetting = localStorage.getItem("darkMode");
 
-    let baseUrl = getScriptParameter("dark-mode-script", "baseUrl")
+    let baseUrl = getScriptParameter("dark-mode-script", "baseUrl");
     if (localDarkModeSetting != null) {
         darkModeSwitch.checked = localDarkModeSetting === "true";
         if (localDarkModeSetting === "true") {

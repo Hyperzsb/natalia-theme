@@ -1,3 +1,5 @@
+import {addOnloadFunction} from "./utils.js"
+
 /* Functions for the header's behavior */
 
 // Display and hide the shadow of the navbar when scrolling

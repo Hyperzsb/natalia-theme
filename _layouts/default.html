@@ -129,10 +129,10 @@
 </script>
 {% endif %}
 <!-- Custom Library -->
-<script src="{{ site.baseUrl }}/assets/js/utils.js"></script>
-<script src="{{ site.baseUrl }}/assets/js/main.js"></script>
+<script src="{{ site.baseUrl }}/assets/js/utils.js" type="module"></script>
+<script src="{{ site.baseUrl }}/assets/js/main.js" type="module"></script>
 {% if site.setting.enableDarkMode %}
-<script id="dark-mode-script" src="{{ site.baseUrl }}/assets/js/darkMode.js" baseUrl="{{ site.baseUrl }}"></script>
+<script id="dark-mode-script" src="{{ site.baseUrl }}/assets/js/darkMode.js" type="module" baseUrl="{{ site.baseUrl }}"></script>
 {% endif %}
 </body>
 </html>
