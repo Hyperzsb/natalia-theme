@@ -16,7 +16,7 @@ const loadStylesheet = function (href) {
 const removeStylesheet = function (href) {
     let head = document.getElementsByTagName("head")[0];
     for (let i = 0; i < head.children.length; i++)
-        if (head.children.item(i).tagName === 'LINK' && head.children[i].getAttribute("href") === href) {
+        if (head.children.item(i).tagName === "LINK" && head.children[i].getAttribute("href") === href) {
             head.removeChild(head.children.item(i));
         }
 }
