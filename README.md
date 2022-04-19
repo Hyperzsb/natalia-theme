@@ -77,6 +77,8 @@ Natalia also supports awesome features provided by third-party libraries:
 - Clear site **analysis** with the help of [Microsoft Clarity](https://clarity.microsoft.com/) which enable the global monitoring and statistic of your site.
   Totally free and easy to use.
 
+Many other features are included in Natalia as well, such as the global **dark mode**.
+
 ### Coming soon
 
 Natalia is far from a perfect project right now. Quite a few features are about to be considered:
@@ -84,7 +86,6 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 - Group projects and posts by tags in standalone pages.
 - Add more components to the portfolio home page, such as detailed self-introduction, personal experiences, and programming skills.
 - Maybe add a timeline to the posts page.
-- Improve the appearance and behavior of the project detail page. Although it is really unsatisfying right now 😵, I have no inspiration to improve it (I am an expert in UI & UX). If someone has some good ideas, please tell me!
 - Improve the appearance and behavior of the contact page. Maybe add more components to provide more information and contact methods.
 
 ## User Guide
