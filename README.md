@@ -79,6 +79,8 @@ Natalia also supports awesome features provided by third-party libraries:
 
 Many other features are included in Natalia as well, such as the global **dark mode**.
 
+To find all the Natalia's features, please refer to the [CHANGELOG](https://github.com/Hyperzsb/natalia-theme/blob/master/CHANGELOG.md).
+
 ### Coming soon
 
 Natalia is far from a perfect project right now. Quite a few features are about to be considered:
@@ -87,6 +89,8 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 - Add more components to the portfolio home page, such as detailed self-introduction, personal experiences, and programming skills.
 - Maybe add a timeline to the posts page.
 - Improve the appearance and behavior of the contact page. Maybe add more components to provide more information and contact methods.
+
+You can find all the Natalia's scheduled backlogs from [here](https://github.com/Hyperzsb/natalia-theme/projects/1).
 
 ## User Guide
 
