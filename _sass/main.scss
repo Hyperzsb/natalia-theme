@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  transition: color 0.25s;
+  transition: color 0.25s ease-out 0.1s;
 }
 
 .text-justify {

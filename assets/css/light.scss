@@ -182,6 +182,23 @@ body {
 /* Markdown color style */
 
 .markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a.anchor-heading {
+      color: transparent;
+    }
+
+    &:hover {
+      a.anchor-heading {
+        color: $link-color-1;
+      }
+    }
+  }
+
   a {
     color: $link-color-1;
 
