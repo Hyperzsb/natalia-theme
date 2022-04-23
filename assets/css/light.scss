@@ -25,6 +25,11 @@ $danger-color: #f03e3e;
 body {
   background-color: $base-color-3;
   color: $text-color-1;
+
+  *::selection {
+    background-color: $link-color-1;
+    color: $base-color-3;
+  }
 }
 
 .bg-color {
@@ -177,6 +182,23 @@ body {
 /* Markdown color style */
 
 .markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a.anchor-heading {
+      color: transparent;
+    }
+
+    &:hover {
+      a.anchor-heading {
+        color: $link-color-1;
+      }
+    }
+  }
+
   a {
     color: $link-color-1;
 
