@@ -134,6 +134,18 @@ function enableSmoothScrollOfLinksInMarkdown() {
     }
 }
 
+// Add titles to links in the toc
+
+function addTitlesToHeadingsInToc() {
+    let tocContainer = document.getElementById("toc");
+    if (tocContainer) {
+        let links = tocContainer.getElementsByTagName("a");
+        for (let link of links) {
+            link.title = link.textContent;
+        }
+    }
+}
+
 // Make the headings in the toc synchronous with the contents
 function enableSyncOfHeadingsInToc() {
     let tocContainer = document.getElementById("toc")
@@ -167,5 +179,6 @@ window.addEventListener("scroll", _.throttle(enableSyncOfHeadingsInToc, 100));
 
 addOnloadFunction(function () {
     changeNavbarTogglerIcon();
+    addTitlesToHeadingsInToc();
     enableSmoothScrollOfLinksInMarkdown();
 });

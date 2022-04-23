@@ -16,7 +16,7 @@
   h6 {
     font-weight: bold;
 
-    a[href^="#"] {
+    a.anchor-heading {
       font-size: 70%;
       vertical-align: super;
       text-decoration: none;
@@ -254,8 +254,11 @@
 
     a {
       position: relative;
-      display: block;
-      transition: all 0.25s ease-out 0.1s;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
 
