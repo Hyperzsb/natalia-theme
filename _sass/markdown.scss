@@ -250,12 +250,17 @@
   }
 
   li {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0.3rem 0;
 
     a {
       position: relative;
       display: block;
-      transition: all 0.25s ease-out 0.1s;
+      transition: color 0.25s ease-out 0.1s;
     }
   }
 

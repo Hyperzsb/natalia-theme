@@ -3,6 +3,10 @@
   font-size: 16px;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 a {
   transition: color 0.25s;
 }

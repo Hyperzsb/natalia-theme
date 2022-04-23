@@ -25,6 +25,11 @@ $danger-color: #f03e3e;
 body {
   background-color: $base-color-3;
   color: $text-color-1;
+
+  *::selection {
+    background-color: $link-color-1;
+    color: $base-color-3;
+  }
 }
 
 .bg-color {
