@@ -36,15 +36,17 @@ Every developer 🧑🏼‍💻 needs an awesome place to exhibit their unique e
 Natalia may be a good choice for you to build up your own portfolio and blog site in a few minutes, and deliver your ideas in a friendly way.
 Out of the box, easy configuration, and free customization.
 
-Natalia is mainly developed on [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/), but lots of JavaScript libraries, Ruby gems, and third-party APIs are used as well (in lexicographical order):
+Natalia is mainly developed on [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/), but lots of JavaScript libraries, Ruby gems, Liquid templates, and third-party APIs are used as well (in lexicographical order):
 
 - [EmailJS](https://www.emailjs.com/)
 - [Gitalk](https://github.com/gitalk/gitalk)
 - [Google Fonts](https://fonts.google.com/)
 - [HighlightJS](https://github.com/highlightjs/highlight.js/)
+- [jekyll-anchor-headings](https://github.com/allejo/jekyll-anchor-headings)
 - [jekyll-feed](https://github.com/jekyll/jekyll-feed)
 - [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [jekyll-toc](https://github.com/allejo/jekyll-toc)
 - [jemoji](https://github.com/jekyll/jemoji)
 - [Lodash](https://github.com/lodash/lodash)
 - [MathJax](https://github.com/mathjax/MathJax)
