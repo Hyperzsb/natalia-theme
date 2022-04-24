@@ -6,6 +6,7 @@ tags: linux
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 在进行 Linux 系统编程时，我们常会用到各种各样的第三方库协助我们进行开发。但是安装方式往往没有很明确的说明。这里包括了我所用到过的 Linux 第三方库的安装方式。

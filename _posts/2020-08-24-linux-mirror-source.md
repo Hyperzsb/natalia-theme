@@ -6,6 +6,7 @@ tags: linux mirror
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 我们作为国内用户在使用各 Linux 发行版时，往往会因为网络原因导致在搜索、安装和更新软件包时速度十分缓慢，极大地降低了用户体验。所以在安装 Linux 发行版时，不可或缺的一步就是替换发行版默认的软件源。

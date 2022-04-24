@@ -6,6 +6,7 @@ tags: ruby mirror
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 作为国内的开发者，时常因为软件源受到限制而在`gem install ...`和`bundle install`时痛不欲生，有时即便是科学上网也不能完美地解决这一问题。无奈，只好换用国内镜像源罢了。

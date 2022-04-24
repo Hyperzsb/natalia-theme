@@ -6,6 +6,7 @@ tags: tools
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 PGP是一款基于RSA非对称加密算法的加密软件。而它的GNU发行版即为GnuPG。我们可以利用它生成自定义的公私钥对，并实现对指定内容的加密、解密和签名操作。

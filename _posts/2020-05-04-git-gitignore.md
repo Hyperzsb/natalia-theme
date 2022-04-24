@@ -6,6 +6,7 @@ tags: git
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 众所周知，`.gitignore`文件是用来描述哪些文件应当被版本库跟踪，而哪些文件不应当被版本库跟踪。但是今天遇到了一个忽略文件夹失效的问题，特此记录。

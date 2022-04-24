@@ -6,6 +6,7 @@ tags: nginx cloud
 toc: true
 comment: true
 pinned: true
+top: false
 ---
 
 我们在部署服务器之后，在很多场景下都要进行身份认证和访问控制的相关配置。而通常使用的访问控制方式需要后端服务器加入响应的业务逻辑进行配合（如 JWT 或者 Cookies），比较复杂。幸运的是，Nginx 已经为我们提供了简单的身份认证的功能，开箱即用。

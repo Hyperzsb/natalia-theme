@@ -6,6 +6,7 @@ tags: tools
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 作为 JetBrains 全家桶的忠实用户，给自己的 IDE 配置一些有用的插件是很有必要的。这篇文章记录了我在使用 JetBrains 系列 IDE 时使用的各种插件

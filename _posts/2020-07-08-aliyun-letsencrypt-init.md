@@ -6,6 +6,7 @@ tags: cloud
 toc: true
 comment: true
 pinned: true
+top: false
 ---
 
 在 HTTPS 逐渐取代 HTTP 的今天，我们也要跟上时代的脚步，用 HTTPS 协议来保护我们的网络服务。但是传统的 SSL 证书签发成本高，对于资金短缺的开发者不甚友好。所以，**Let's Encrypt** 应运而生。
