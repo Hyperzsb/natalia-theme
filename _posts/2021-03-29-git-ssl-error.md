@@ -7,6 +7,7 @@ toc: true
 comment: true
 legacyCommentID: /git-ssl-error/
 pinned: true
+top: true
 ---
 
 最近在使用 Git 时发现在使用 `git clone` 或 `git pull` 等需要访问远程仓库的操作时，总是无法连接 GitHub 服务器，很是郁闷。在查阅了多方资料后，总结了这一问题的解决方法，希望能解决这一问题。

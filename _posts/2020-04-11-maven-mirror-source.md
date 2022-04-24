@@ -6,6 +6,7 @@ tags: maven mirror
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 在配置Maven或者Spring项目时，常常会出现下载依赖失败的问题。大多数情况下都是国内网络环境的问题。更换Maven默认的软件源会立竿见影地解决这个问题。

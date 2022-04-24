@@ -6,6 +6,7 @@ tags: github tools
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 SourceGraph和Octotree是两个GitHub的浏览器插件，可以极大地提高使用GitHub等代码托管网站的效率。

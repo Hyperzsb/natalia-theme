@@ -7,6 +7,7 @@ toc: true
 comment: true
 legacyCommentID: /Git-rebase-command/
 pinned: false
+top: false
 ---
 
 `git rebase` (变基) 命令是用来改变一串提交是以什么为基础的。与`git merge`类似，这是Git中很重要的一个概念。而它与`git merge`的区别与联系却往往令人感到困惑。

@@ -6,6 +6,7 @@ tags: linux
 toc: true
 comment: true
 pinned: false
+top: false
 ---
 
 在使用 Linux 常会遇到一些不太常用但又非常基本的命令，今天就来总结一下。**持续更新...**
