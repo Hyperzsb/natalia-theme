@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.6](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.5...v1.1.0-beta.6) (2022-04-23)
+
+
+### Features
+
+* **styles:** add styles for text selection and truncate text ([887c590](https://github.com/Hyperzsb/natalia-theme/commit/887c5904b61f184cc2dc100a6d66a024ca0468e0))
+* **toc:** add titles to links in the tocs of markdown contents ([3e20df0](https://github.com/Hyperzsb/natalia-theme/commit/3e20df012cdb7521bddeb566f5cfca07d6d3af69))
+
+
+### Bug Fixes
+
+* **styles:** fix bad margins of headings in the tocs of markdown contents ([74745ba](https://github.com/Hyperzsb/natalia-theme/commit/74745ba8ab30f9417c62c1931bfe0325b38762ff))
+
 ## [1.1.0-beta.5](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.4...v1.1.0-beta.5) (2022-04-18)
 
 
