@@ -42,6 +42,26 @@ function changeNavbarShadow() {
 // Add the event listener of "scroll" to window object
 window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 100));
 
+// Display and update the progress bar of the article
+function updateProgressBar() {
+    let progressBar = document.getElementById("article-progress-bar");
+    if (progressBar) {
+        let scrollHeight = document.documentElement.scrollHeight;
+        let widowHeight = window.screen.height;
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let progress = (scrollTop / (scrollHeight - widowHeight) * 100).toFixed(2);
+        if (progress <= 100) {
+            progressBar.style.width = progress.toString() + "%";
+        } else {
+            progressBar.style.width = "100%";
+        }
+    }
+}
+
+// Add the event listener of "scroll" to window object
+window.addEventListener("scroll", _.throttle(updateProgressBar, 100));
+
+
 // Change the icon of the toggler of the navbar when in mobile mode.
 function changeNavbarTogglerIcon() {
     document.getElementById("navbar-toggler").addEventListener("click", function () {
