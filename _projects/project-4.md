@@ -7,7 +7,6 @@ logo:
 repo: https://github.com/hyperzsb/natalia-theme
 demo: https://github.com/hyperzsb/natalia-theme
 tags:
-pinned: false
 ---
 
 This is the project 4 for testing. $\LaTeX$. Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio 

@@ -82,15 +82,22 @@ defaults:
       path: "_posts"
       type: posts
     values:
+      type: post
       layout: post
       permalink: /posts/:title/
+      toc: true
+      comment: true
+      pinned: false
+      top: false
   # Pages inside `_posts` directory are project pages, and they will ues the default layout `project`
   - scope:
       path: "_projects"
       type: projects
     values:
+      type: project
       layout: project
       permalink: /projects/:title/
+      pinned: false
   # This is a wildcard setting, pages in other directory will use the default layout `default`
   - scope:
       path: ""
