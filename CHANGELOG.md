@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.7](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.6...v1.1.0-beta.7) (2022-04-28)
+
+
+### Features
+
+* **component:** add a progress bar for articles ([8f7ea69](https://github.com/Hyperzsb/natalia-theme/commit/8f7ea69f101396d0e5d44f754b91a4199c19ba82))
+* **posts:** add the feature of pinning posts to the top of the posts page ([41ea5a3](https://github.com/Hyperzsb/natalia-theme/commit/41ea5a3355edcf470febbe644dce9a3e8b56ae00))
+
 ## [1.1.0-beta.6](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.5...v1.1.0-beta.6) (2022-04-23)
 
 
