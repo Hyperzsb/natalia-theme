@@ -1,5 +1,8 @@
-<header class="sticky-top">
-    <nav class="navbar navbar-expand-lg custom-navbar" id="navbar">
+<header class="sticky-top custom-navbar" id="navbar">
+    {% if page.type == "post" or page.type == "project" %}
+    <div id="article-progress-bar"></div>
+    {% endif %}
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid mt-2 mb-2 ms-3 ms-lg-4 me-3 me-lg-4">
             <a class="navbar-brand custom-navbar-brand-color" href="{{ site.baseUrl }}/">
                 <b class="font-lobster gradient-text-color">@{{ site.name }}</b>
