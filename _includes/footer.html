@@ -3,36 +3,37 @@
         <div class="col-lg-6">
             <div class="d-flex flex-row justify-content-center pt-3">
                 {% if site.socialMedia.email %}
-                <a class="gray-icon-color p-3 fs-4" target="_blank" href="mailto:{{ site.socialMedia.email }}">
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
+                   href="mailto:{{ site.socialMedia.email }}">
                     <i class="bi bi-envelope-fill"></i>
                 </a>
                 {% endif %}
                 {% if site.socialMedia.twitter %}
-                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
                    href="https://twitter.com/{{ site.socialMedia.twitter }}">
                     <i class="bi bi-twitter"></i>
                 </a>
                 {% endif %}
                 {% if site.socialMedia.facebook %}
-                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
                    href="https://facebook.com/{{ site.socialMedia.facebook }}">
                     <i class="bi bi-facebook"></i>
                 </a>
                 {% endif %}
                 {% if site.socialMedia.instagram %}
-                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
                    href="https://instagram.com/{{ site.socialMedia.instagram }}">
                     <i class="bi bi-instagram"></i>
                 </a>
                 {% endif %}
                 {% if site.socialMedia.youtube %}
-                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
                    href="https://youtube.com/channel/{{ site.socialMedia.youtube }}">
                     <i class="bi bi-youtube"></i>
                 </a>
                 {% endif %}
                 {% if site.socialMedia.github %}
-                <a class="gray-icon-color p-3 fs-4" target="_blank"
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
                    href="https://github.com/{{ site.socialMedia.github }}">
                     <i class="bi bi-github"></i>
                 </a>
@@ -67,12 +68,14 @@
                 <b class="d-inline-block lighter-text-color mt-3">{{ site.copyright }}</b>
                 <span class="d-inline-block lighter-text-color my-3">
                     With
-                    <a class="gray-link-color" target="_blank"
+                    <a class="gray-link-color" rel="noopener" target="_blank"
                        href="https://github.com/Hyperzsb/natalia-theme">Natalia</a>,
                     a theme powered by
-                    <a class="gray-link-color" target="_blank" href="https://jekyllrb.com/">Jekyll</a>
+                    <a class="gray-link-color" rel="noopener" target="_blank"
+                       href="https://jekyllrb.com/">Jekyll</a>
                     and
-                    <a class="gray-link-color" target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
+                    <a class="gray-link-color" rel="noopener" target="_blank"
+                       href="https://getbootstrap.com/">Bootstrap</a>
                 </span>
             </div>
         </div>
