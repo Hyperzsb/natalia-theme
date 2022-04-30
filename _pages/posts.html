@@ -3,7 +3,7 @@ layout: default
 title: Posts
 permalink: /posts/index.html
 ---
-<div class="container-fluid">
+<main class="container-fluid">
     <div class="row justify-content-center py-5">
         <div class="col-lg-6">
             <h1 class="d-block m-3 fw-bold text-center font-josefin-sans">
@@ -16,7 +16,7 @@ permalink: /posts/index.html
     {% assign resorted_posts = top_posts | concat: nontop_posts %}
     {% for post in resorted_posts %}
     <div
-            {% if post == resorted_posts.last %}
+            {% if post== resorted_posts.last %}
             class="row justify-content-center px-1 px-lg-3 pt-3 pb-5 "
             {% else %}
             class="row justify-content-center px-1 p-lg-3"
@@ -48,4 +48,4 @@ permalink: /posts/index.html
         </div>
     </div>
     {% endfor %}
-</div>
+</main>

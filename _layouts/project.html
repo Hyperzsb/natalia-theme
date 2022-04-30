@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="container-fluid">
+<main class="container-fluid">
     <div class="row justify-content-center py-5 custom-bg-image"
          {% if page.logo.src %}
          style="background-image: url('{{ site.baseUrl }}{{ page.logo.src }}')"
@@ -23,16 +23,16 @@ layout: default
                 <div class="row row-cols-1 row-cols-lg-2 justify-content-center">
                     {% if page.repo %}
                     <div class="col pt-3">
-                        <a class="btn rounded-pill btn-outline-primary w-75"
-                           href="{{ page.repo }}" target="_blank" role="button">
+                        <a class="btn rounded-pill btn-outline-primary w-75" role="button"
+                           rel="noopener" target="_blank" href="{{ page.repo }}">
                             <i class="bi bi-github">&nbsp;View in GitHub</i>
                         </a>
                     </div>
                     {% endif %}
                     {% if page.demo %}
                     <div class="col pt-3">
-                        <a class="btn rounded-pill btn-outline-primary w-75"
-                           href="{{ page.demo }}" target="_blank" role="button">
+                        <a class="btn rounded-pill btn-outline-primary w-75" role="button"
+                           role="button" target="_blank" href="{{ page.demo }}">
                             <i class="bi bi-binoculars-fill">&nbsp;View Live Demo</i>
                         </a>
                     </div>
@@ -49,4 +49,4 @@ layout: default
             </div>
         </div>
     </div>
-</div>
+</main>
