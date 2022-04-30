@@ -79,6 +79,7 @@ a {
 #article-progress-bar {
   width: 0;
   height: 0.25rem;
+  transition: width 0.25s ease-out 0s;
 }
 
 .custom-nav-item {
@@ -231,7 +232,6 @@ a {
     left: 0;
     right: 0;
     backdrop-filter: blur(3px);
-    background-color: rgba(248, 249, 250, 0.6);
     z-index: 0;
   }
 

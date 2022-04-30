@@ -183,6 +183,14 @@ body {
   }
 }
 
+/* Project styles */
+
+.custom-bg-image {
+  &::before {
+    background-color: rgba($base-color-3, 0.6);
+  }
+}
+
 /* Markdown color style */
 
 .markdown {
