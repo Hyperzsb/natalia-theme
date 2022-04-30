@@ -1,7 +1,7 @@
 ---
 title: JetBrains - 常用插件
 date: 2021-03-03
-last_update: 2022-04-04
+last_update: 2022-04-30
 tags: tools
 toc: true
 comment: true
@@ -31,6 +31,10 @@ top: false
 
 [IDE Settings Sync](https://plugins.jetbrains.com/plugin/15525-ide-settings-sync) 可以向 JetBrains 服务器同步你 IDE 的 UI 设置和插件设置。当然，前提是你需要登录你的 JetBrains 账户。
 
+### IdeaVim
+
+[IdeaVim](https://plugins.jetbrains.com/plugin/164-ideavim) 是一个 Vim 模拟插件，支持多种 Vim 特性，包括常规模式、插入模式和可视化模式；Motion keys；删除和更改；标记；正则表达式；Vim 插件等等。
+
 ### Key Promoter X
 
 [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x) 可以在用户频繁使用鼠标进行某一操作后，提示用户相应操作对应的快捷键，以提高用户的编码效率和使用体验。
@@ -50,6 +54,10 @@ top: false
 ### Statistic
 
 [Statistic](https://plugins.jetbrains.com/plugin/4509-statistic) 可以统计你项目的各类文件的代码行数。尽管有些不足，但总体值得一试。
+
+### TeXiFy IDEA
+
+[TeXiFy IDEA](https://plugins.jetbrains.com/plugin/9473-texify-idea) 用以支持 $\LaTeX$ 的高亮、补全和格式化功能。相当强大，是本地编写 $\LaTeX$ 文档的好帮手。
 
 ### .ignore
 
