@@ -4,6 +4,7 @@
 [![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.1-blue?logo=bootstrap)](https://getbootstrap.com/)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/a324b4e67c05427ab07b487ae3611fd7)](https://www.codacy.com/gh/Hyperzsb/natalia-theme/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Hyperzsb/natalia-theme&amp;utm_campaign=Badge_Grade)
+[![GitHub Pages](https://github.com/Hyperzsb/natalia-theme/actions/workflows/pages/pages-build-deployment/badge.svg?branch=github-pages)](https://github.com/Hyperzsb/natalia-theme/actions/workflows/pages/pages-build-deployment)
 
 Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered
 by [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/).
