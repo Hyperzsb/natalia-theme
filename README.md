@@ -3,6 +3,8 @@
 ![Jekyll Version](https://img.shields.io/badge/jekyll-4.2-blue?logo=jekyll)
 ![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.1-blue?logo=bootstrap)
 
+[![GitHub Pages](https://github.com/Hyperzsb/natalia-theme/actions/workflows/pages/pages-build-deployment/badge.svg?branch=github-pages)](https://github.com/Hyperzsb/natalia-theme/actions/workflows/pages/pages-build-deployment)
+
 Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered
 by [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/).
 
