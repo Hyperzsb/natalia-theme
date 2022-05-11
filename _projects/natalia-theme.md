@@ -9,15 +9,8 @@ pinned: true
 excerpt_separator: <!--more-->
 ---
 
-[![Jekyll Version](https://img.shields.io/badge/jekyll-4.2-blue?logo=jekyll)](https://jekyllrb.com/)
-[![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.1-blue?logo=bootstrap)](https://getbootstrap.com/)
-
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/a324b4e67c05427ab07b487ae3611fd7)](https://www.codacy.com/gh/Hyperzsb/natalia-theme/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Hyperzsb/natalia-theme&amp;utm_campaign=Badge_Grade)
-
 Natalia is a flat, content-focused, easy-to-use template portfolio and blog theme powered
 by [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/).
-
-<!--more-->
 
 ## Special Notes
 
@@ -47,15 +40,17 @@ Every developer 🧑🏼‍💻 needs an awesome place to exhibit their unique e
 Natalia may be a good choice for you to build up your own portfolio and blog site in a few minutes, and deliver your ideas in a friendly way.
 Out of the box, easy configuration, and free customization.
 
-Natalia is mainly developed on [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/), but lots of JavaScript libraries, Ruby gems, and third-party APIs are used as well (in lexicographical order):
+Natalia is mainly developed on [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/), but lots of JavaScript libraries, Ruby gems, Liquid templates, and third-party APIs are used as well (in lexicographical order):
 
 - [EmailJS](https://www.emailjs.com/)
 - [Gitalk](https://github.com/gitalk/gitalk)
 - [Google Fonts](https://fonts.google.com/)
 - [HighlightJS](https://github.com/highlightjs/highlight.js/)
+- [jekyll-anchor-headings](https://github.com/allejo/jekyll-anchor-headings)
 - [jekyll-feed](https://github.com/jekyll/jekyll-feed)
 - [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag)
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [jekyll-toc](https://github.com/allejo/jekyll-toc)
 - [jemoji](https://github.com/jekyll/jemoji)
 - [Lodash](https://github.com/lodash/lodash)
 - [MathJax](https://github.com/mathjax/MathJax)
@@ -88,6 +83,10 @@ Natalia also supports awesome features provided by third-party libraries:
 - Clear site **analysis** with the help of [Microsoft Clarity](https://clarity.microsoft.com/) which enable the global monitoring and statistic of your site.
   Totally free and easy to use.
 
+Many other features are included in Natalia as well, such as the global **dark mode**.
+
+To find all the Natalia's features, please refer to the [CHANGELOG](https://github.com/Hyperzsb/natalia-theme/blob/master/CHANGELOG.md).
+
 ### Coming soon
 
 Natalia is far from a perfect project right now. Quite a few features are about to be considered:
@@ -95,8 +94,9 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 - Group projects and posts by tags in standalone pages.
 - Add more components to the portfolio home page, such as detailed self-introduction, personal experiences, and programming skills.
 - Maybe add a timeline to the posts page.
-- Improve the appearance and behavior of the project detail page. Although it is really unsatisfying right now 😵, I have no inspiration to improve it (I am an expert in UI & UX). If someone has some good ideas, please tell me!
 - Improve the appearance and behavior of the contact page. Maybe add more components to provide more information and contact methods.
+
+You can find all the Natalia's scheduled backlogs from [here](https://github.com/Hyperzsb/natalia-theme/projects/1).
 
 ## User Guide
 
