@@ -1,7 +1,7 @@
 ---
 title: Linux - 自定义你的 Terminal
 date: 2022-08-31
-last_update:
+last_update: 2022-09-02
 tags: linux
 toc: true
 comment: true
@@ -16,7 +16,8 @@ Terminal（终端）对于每一个开发者来说都是日常学习和工作中
 ## Emulators
 
 > "A terminal emulator, or terminal application, is a computer program that emulates a video terminal within some other display architecture."
-> From Wikipedia
+> 
+> *From Wikipedia*
 
 所谓终端模拟器（Terminal Emulator），就是一个可以让用户使用各种命令行命令或程序，同系统进行交互的接口（Interface）或应用（Application）。Windows系统的Cmd和PowerShell、以及Linux和macOS系统的Terminal，就是典型的Emulator。
 
@@ -28,6 +29,7 @@ Terminal（终端）对于每一个开发者来说都是日常学习和工作中
 ### Alacritty
 
 > Homepage: [Alacritty](https://alacritty.org/)
+> 
 > GitHub Repo: [alacritty/alacritty](https://github.com/alacritty/alacritty)
 
 Alacritty是一款现代化的终端模拟器，在默认的基本设置外，提供了灵活的自定义配置选项。通过集成其他应用程序，而不是重新实现它们，Alacritty提供了许多有着强大性能的特性。
@@ -80,6 +82,7 @@ Fluent Terminal是一个基于UWP和Web技术的、面向Windows平台的终端�
 ### Hyper
 
 > Homepage: [Hyper](https://hyper.is/)
+> 
 > GitHub Repo: [vercel/hyper](https://github.com/vercel/hyper)
 
 Hyper的目标是为命令行界面用户创建一个基于开放网络标准的、漂亮的、可扩展的终端模拟器。Hyper关注于速度、稳定性以及为扩展作者开发正确的API。
@@ -101,6 +104,7 @@ Hyper的目标是为命令行界面用户创建一个基于开放网络标准的
 ### iTerm2
 
 > Homepage: [iTerm2](https://iterm2.com/)
+> 
 > GitHub Repo: [gnachman/iTerm2](https://github.com/gnachman/iTerm2)
 
 iTerm2是Terminal的替代品和iTerm的继承者。iTerm2将终端带进了现代时代，具有你从来不知道的，却一直想要的功能。
@@ -118,6 +122,7 @@ iTerm2是Terminal的替代品和iTerm的继承者。iTerm2将终端带进了现�
 ### Tabby
 
 > Homepage: [Tabby](https://tabby.sh/)
+> 
 > GitHub Repo: [Eugeny/tabby](https://github.com/Eugeny/tabby)
 
 Tabby（前身是Terminus）是一个高度可配置的终端模拟器，SSH和串行客户端。
@@ -139,6 +144,7 @@ Tabby（前身是Terminus）是一个高度可配置的终端模拟器，SSH和�
 ### Warp
 
 > Homepage: [Warp](https://www.warp.dev/)
+> 
 > GitHub Repo: [warpdotdev/Warp](https://github.com/warpdotdev/Warp)
 
 Warp是一款基于GPU加速的终端模拟器，凭借其快速的特性，可以提高你和你的团队的生产力。
@@ -160,6 +166,7 @@ Warp是一款基于GPU加速的终端模拟器，凭借其快速的特性，可�
 ### Wez's Terminal
 
 > Homepage: [Wez's Terminal](https://wezfurlong.org/wezterm/)
+> 
 > GitHub Repo: [wez/wezterm](https://github.com/wez/wezterm)
 
 Wez's Terminal是一款跨平台的、GPU加速的终端模拟器和复用器。
