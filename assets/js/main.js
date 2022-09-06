@@ -126,7 +126,7 @@ function enableSmoothScrollOfLinksInMarkdown() {
         for (let link of links) {
             link.addEventListener("click", function (ev) {
                 window.scrollTo({
-                    top: (document.getElementById(link.attributes["href"].value.substr(1)).offsetTop - header.offsetHeight),
+                    top: (document.getElementById(decodeURI(link.attributes["href"].value.slice(1))).offsetTop - header.offsetHeight),
                     behavior: "smooth"
                 });
                 ev.preventDefault();
@@ -145,7 +145,7 @@ function enableSmoothScrollOfLinksInMarkdown() {
         for (let link of links) {
             link.addEventListener("click", function (ev) {
                 window.scrollTo({
-                    top: (document.getElementById(link.attributes["href"].value.slice(1)).offsetTop - header.offsetHeight),
+                    top: (document.getElementById(decodeURI(link.attributes["href"].value.slice(1))).offsetTop - header.offsetHeight),
                     behavior: "smooth"
                 });
                 ev.preventDefault();
@@ -175,7 +175,7 @@ function enableSyncOfHeadingsInToc() {
         let index = 0;
         for (let i = links.length - 1; i >= 0; i--) {
             index = i;
-            let headingTop = document.getElementById(links.item(i).attributes["href"].value.slice(1)).offsetTop;
+            let headingTop = document.getElementById(decodeURI(links.item(i).attributes["href"].value.slice(1))).offsetTop;
             if (headingTop <= scrollTop + 100) {
                 break;
             }
