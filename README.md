@@ -31,7 +31,7 @@ As the project is in its early stage, this documentation will update gradually i
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
+## Introduction <small><sup>[Top ⥣](#table-of-contents)</sup></small>
 
 Every developer 🧑🏼‍💻 needs an awesome place to exhibit their unique efforts and inspirations, bringing them all over the world 🌏.
 Natalia may be a good choice for you to build up your own portfolio and blog site in a few minutes, and deliver your ideas in a friendly way.
@@ -55,7 +55,7 @@ Natalia is mainly developed on [Jekyll](https://jekyllrb.com/) and [Bootstrap](h
 
 Natalia is born in the free world of open-source software.
 
-## Features
+## Features <small><sup>[Top ⥣](#table-of-contents)</sup></small>
 
 ### Already here
 
@@ -95,7 +95,7 @@ Natalia is far from a perfect project right now. Quite a few features are about 
 
 You can find all the Natalia's scheduled backlogs from [here](https://github.com/Hyperzsb/natalia-theme/projects/1).
 
-## User Guide
+## User Guide <small><sup>[Top ⥣](#table-of-contents)</sup></small>
 
 ### Customization
 
@@ -185,7 +185,7 @@ As Natalia is developed atop [Jekyll](https://jekyllrb.com/), you can easily dep
 
 Here is a live demo of deploying Natalia using GitHub Pages: [demo](https://github.hyperzsb.tech/natalia-theme).
 
-## Troubleshooting
+## Troubleshooting <small><sup>[Top ⥣](#table-of-contents)</sup></small>
 
 - **Invalid Ruby version**
 
@@ -206,10 +206,10 @@ To deal with this problem, just modify the `baseUrl` field to the corresponding 
 Additionally, for senior users, you can just config redirect rules on your Apache and Nginx servers (if you deploy your sites manually); or you can just add some rewrite/redirect rules to your service providers (if you deploy your sites using some hosting services). No need to modify the `_config.yaml` file.
 It is a more complicated way, but may offer more flexibility.
 
-## Contributing
+## Contributing <small><sup>[Top ⥣](#table-of-contents)</sup></small>
 
 Natalia welcomes any contributions from anyone! Please make Natalia a better tool for every developer!
 
-## License
+## License <small><sup>[Top ⥣](#table-of-contents)</sup></small>
 
 This project is under [MIT License](https://github.com/Hyperzsb/natalia-theme/blob/master/LICENSE).
