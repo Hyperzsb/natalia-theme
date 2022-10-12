@@ -29,6 +29,7 @@ a {
   font-family: "Josefin Sans", "Noto Serif SC", sans-serif;
 }
 
+/*
 .font-titillium-web {
   font-family: "Titillium Web", "Noto Serif SC", sans-serif;
 }
@@ -36,6 +37,7 @@ a {
 .font-ubuntu {
   font-family: "Ubuntu", "Noto Serif SC", sans-serif;
 }
+*/
 
 .font-noto-serif-simplified-chinese {
   font-family: "Noto Serif SC", sans-serif;
@@ -141,6 +143,14 @@ a {
   * {
     z-index: 1;
   }
+}
+
+.theme-button {
+  transition: color 0.25s ease-out 0.1s;
+}
+
+.theme-icon {
+  height: 1.5rem;
 }
 
 /* Home styles */
