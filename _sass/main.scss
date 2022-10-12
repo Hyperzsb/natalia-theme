@@ -145,6 +145,14 @@ a {
   }
 }
 
+.theme-button {
+  transition: color 0.25s ease-out 0.1s;
+}
+
+.theme-icon {
+  height: 1.5rem;
+}
+
 /* Home styles */
 
 .custom-introduction {
