@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.8](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.7...v1.1.0-beta.8) (2022-09-02)
+
+
+### Bug Fixes
+
+* **main.js:** fix a bug caused by the unknown behavior of encoding ([49510e9](https://github.com/Hyperzsb/natalia-theme/commit/49510e91d84058180606d53e4907a1d933061e6e))
+
 ## [1.1.0-beta.7](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.6...v1.1.0-beta.7) (2022-04-28)
 
 
