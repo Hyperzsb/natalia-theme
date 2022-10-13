@@ -37,10 +37,10 @@ permalink: /projects/index.html
             <a class="d-block link-color my-3" href="{{ site.baseUrl }}{{ project.url }}">
                 <h2 class="fw-bold">{{ project.name }}</h2>
             </a>
-            {% if project.tags !=0 %}
-            <div class="my-3">
+            {% if project.tags.size !=0 %}
+            <div class="my-3 pt-3">
                 {% for tag in project.tags %}
-                <span class="badge bg-secondary">{{ tag }}</span>
+                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}
@@ -51,10 +51,10 @@ permalink: /projects/index.html
             <a class="d-block link-color my-3" href="{{ site.baseUrl }}{{ project.url }}">
                 <h2 class="fw-bold">{{ project.name }}</h2>
             </a>
-            {% if project.tags !=0 %}
-            <div class="my-3">
+            {% if project.tags.size !=0 %}
+            <div class="my-3 pt-3">
                 {% for tag in project.tags %}
-                <span class="badge bg-secondary">{{ tag }}</span>
+                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}

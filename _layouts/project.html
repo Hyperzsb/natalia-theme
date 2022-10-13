@@ -13,10 +13,10 @@ layout: default
                     {{ page.name }}
                 </h1>
             </div>
-            {% if page.tags != 0 %}
-            <div class="py-2">
+            {% if page.tags.size != 0 %}
+            <div class="pt-3 pb-2">
                 {% for tag in page.tags %}
-                <span class="badge bg-secondary">{{ tag }}</span>
+                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}

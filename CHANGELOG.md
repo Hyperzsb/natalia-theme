@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.9](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.8...v1.1.0-beta.9) (2022-10-12)
+
+
+### Features
+
+* **fonts:** reduce the number of used fonts ([ac5ced9](https://github.com/Hyperzsb/natalia-theme/commit/ac5ced91a7ea9576bd3eb7d2358b495d6d2053d2))
+* **theme:** change dark theme logic to improve performance ([7a75e78](https://github.com/Hyperzsb/natalia-theme/commit/7a75e78ca67ea808660d03906bb50d52581db49a))
+
 ## [1.1.0-beta.8](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.7...v1.1.0-beta.8) (2022-09-02)
 
 
