@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.10](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.9...v1.1.0-beta.10) (2022-10-13)
+
+
+### Features
+
+* **style:** change the styles of headers and footers to be more clear ([120d533](https://github.com/Hyperzsb/natalia-theme/commit/120d5336624b5263a89e2d97608e7f1f551574cc))
+* **style:** improve styles of badges ([8dd8d47](https://github.com/Hyperzsb/natalia-theme/commit/8dd8d47a61f94389ae5bc217537ad7dfa2f3c95d))
+
+
+### Bug Fixes
+
+* **style:** fix a minor color bug and remove useless files and elements ([a1c2ed7](https://github.com/Hyperzsb/natalia-theme/commit/a1c2ed7a9a0d33014a3a1f32779cc8b90fdcc87e))
+* **style:** fix style bug of project images ([61f6275](https://github.com/Hyperzsb/natalia-theme/commit/61f62751ad4af7769afd058809679498b3fdcb21))
+
 ## [1.1.0-beta.9](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.8...v1.1.0-beta.9) (2022-10-12)
 
 

@@ -7,7 +7,7 @@ permalink: /posts/index.html
     <div class="row justify-content-center py-5">
         <div class="col-lg-6">
             <div class="m-3 text-center">
-                <h1 class="fw-bold font-josefin-sans">
+                <h1 class="fw-bold font-josefin-sans" id="all-my-posts">
                     All My Posts
                 </h1>
             </div>
@@ -30,7 +30,7 @@ permalink: /posts/index.html
                 <i class="bi bi-pin-angle me-3"></i>
                 {% endif %}
                 <a class="link-color" href="{{ site.baseUrl }}{{ post.url }}">
-                    <h2 class="fw-bold">{{ post.title }}</h2>
+                    <h2 class="fw-bold" id="{{ post.title | downcase | split: " " | join: "-" }}">{{ post.title }}</h2>
                 </a>
             </div>
             <p class="d-block text-center lighter-text-color my-3">
