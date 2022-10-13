@@ -4,7 +4,7 @@ title: Home
 permalink: /index.html
 ---
 <main class="container-fluid">
-    <div class="row justify-content-center py-5">
+    <div class="row justify-content-center py-3 py-lg-5">
         <div class="col-lg-6 order-1 order-lg-0 px-0 my-lg-5 text-center custom-introduction">
             <div class="m-3">
                 <h1 class="fw-bold font-josefin-sans">
@@ -19,6 +19,24 @@ permalink: /index.html
             <img src="{{ site.baseUrl }}/assets/images/logo.png" alt="Portrait" title="{{ site.name }}">
         </div>
     </div>
+    {% if site.biographies.size != 0 %}
+    <div class="row justify-content-center pt-3 pb-5">
+        <div class="col-10 d-flex justify-content-around align-items-center">
+            <div class="d-none d-lg-inline-block w-50 border-top me-5"></div>
+            <div class="d-inline-block">
+                <h2 class="font-lobster">Biography</h2>
+            </div>
+            <div class="d-none d-lg-inline-block w-50 border-top ms-5"></div>
+        </div>
+    </div>
+    {% for biography in site.biographies %}
+    <div class="row justify-content-center mx-0 mx-lg-5 mb-1 mb-lg-3 px-0 px-lg-5 pt-2 pb-4">
+        <div class="d-flex flex-column justify-content-center align-items-center markdown">
+            {{ biography.content | markdownify }}
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
     {% assign pinned_projects = site.projects | where: 'pinned', true %}
     {% if pinned_projects.size != 0 %}
     <div class="row justify-content-center pt-3 pb-5">

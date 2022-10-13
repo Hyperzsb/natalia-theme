@@ -87,6 +87,8 @@ plugins:
 
 # Definition of custom collections. For more details about collections, please refer to https://jekyllrb.com/docs/collections/
 collections:
+  biographies:
+    output: false
   # The collection of "pages" currently includes the Home page, the Projects page, the Posts page, the Contact page, and the 404 page inside the `_pages` directory
   # You can add more custom pages if you want, but remember to add the permalinks of your custom pages to the `navigation` section of this file if they are top-level pages to enable navigation
   pages:
