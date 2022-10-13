@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.10...v1.1.0) (2022-10-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **home:** add a biography section
+
+Signed-off-by: Shaobo ZHANG <hyperzsb@qq.com>
+
+### Features
+
+* **headings:** add anchors to headings for potential references ([20c19aa](https://github.com/Hyperzsb/natalia-theme/commit/20c19aa1ae05089bd96f922b9e571e6e7c97ad69))
+* **home:** add a biography section ([7d467c0](https://github.com/Hyperzsb/natalia-theme/commit/7d467c0ffbaedfa3f35ec17223956c9175d78504))
+
 ## [1.1.0-beta.10](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.9...v1.1.0-beta.10) (2022-10-13)
 
 
