@@ -17,10 +17,10 @@ layout: default
                     {% endif %}
                 </p>
             </div>
-            {% if page.tags !=0 %}
-            <div class="m-3">
+            {% if page.tags.size !=0 %}
+            <div class="m-3 pt-3">
                 {% for tag in page.tags %}
-                <span class="badge bg-secondary">{{ tag }}</span>
+                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}

@@ -39,10 +39,10 @@ permalink: /posts/index.html
                 &nbsp;(Last Update on {{ post.last_update | date_to_string }})
                 {% endif %}
             </p>
-            {% if post.tags !=0 %}
-            <div class="my-3 text-center">
+            {% if post.tags.size !=0 %}
+            <div class="my-3 pt-3 text-center">
                 {% for tag in post.tags %}
-                <span class="badge bg-secondary">{{ tag }}</span>
+                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}

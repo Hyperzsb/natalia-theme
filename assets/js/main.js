@@ -16,9 +16,12 @@ function changeNavbarShadow() {
                 fromAbove = false;
                 threshold -= offset;
             }
-            if (!classList.contains("custom-navbar-shadow-color")) {
-                classList.add("custom-navbar-shadow-color");
+            if (!classList.contains("custom-navbar-border")) {
+                classList.add("custom-navbar-border");
             }
+            // if (!classList.contains("custom-navbar-shadow-color")) {
+            //     classList.add("custom-navbar-shadow-color");
+            // }
             // if (classList.contains("p-4")) {
             //     //classList.replace("p-4", "p-2");
             //     classList.remove("p-4");
@@ -28,9 +31,12 @@ function changeNavbarShadow() {
                 fromAbove = true;
                 threshold += offset;
             }
-            if (classList.contains("custom-navbar-shadow-color")) {
-                classList.remove("custom-navbar-shadow-color");
+            if (classList.contains("custom-navbar-border")) {
+                classList.remove("custom-navbar-border");
             }
+            // if (classList.contains("custom-navbar-shadow-color")) {
+            //     classList.remove("custom-navbar-shadow-color");
+            // }
             // if (!classList.contains("p-4")) {
             //     //classList.replace("p-2", "p-4");
             //     classList.add("p-4");
