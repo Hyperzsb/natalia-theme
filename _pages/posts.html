@@ -40,9 +40,9 @@ permalink: /posts/index.html
                 {% endif %}
             </p>
             {% if post.tags.size !=0 %}
-            <div class="my-3 pt-3 text-center">
+            <div class="d-flex flex-row flex-wrap justify-content-center gap-2 my-2 pt-3 text-center">
                 {% for tag in post.tags %}
-                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
+                <span class="d-block m-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}

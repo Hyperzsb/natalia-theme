@@ -18,9 +18,9 @@ layout: default
                 </p>
             </div>
             {% if page.tags.size !=0 %}
-            <div class="m-3 pt-3">
+            <div class="d-flex flex-row flex-wrap justify-content-center gap-2 m-2 pt-3">
                 {% for tag in page.tags %}
-                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
+                <span class="d-block m-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}

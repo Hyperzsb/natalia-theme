@@ -38,9 +38,9 @@ permalink: /projects/index.html
                 <h2 class="fw-bold" id="{{ project.name | downcase | split: " " | join: "-" }}">{{ project.name }}</h2>
             </a>
             {% if project.tags.size !=0 %}
-            <div class="my-3 pt-3">
+            <div class="d-flex flex-row flex-wrap justify-content-start gap-2 my-2 pt-3">
                 {% for tag in project.tags %}
-                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
+                <span class="d-block m-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}
@@ -52,9 +52,9 @@ permalink: /projects/index.html
                 <h2 class="fw-bold" id="{{ project.name | downcase | split: " " | join: "-" }}">{{ project.name }}</h2>
             </a>
             {% if project.tags.size !=0 %}
-            <div class="my-3 pt-3">
+            <div class="d-flex flex-row flex-wrap justify-content-start gap-2 my-2 pt-3">
                 {% for tag in project.tags %}
-                <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
+                <span class="d-block m-1 p-2 badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </div>
             {% endif %}
