@@ -51,10 +51,10 @@ permalink: /index.html
                             <h3 class="fw-bold">{{ project.name }}</h3>
                         </a>
                     </div>
-                    {% if project.tags !=0 %}
-                    <div class="my-1">
+                    {% if project.tags.size !=0 %}
+                    <div class="my-1 pt-3">
                         {% for tag in project.tags %}
-                        <span class="badge bg-secondary">{{ tag }}</span>
+                        <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
@@ -95,9 +95,9 @@ permalink: /index.html
                     </div>
                     <div class="my-1 lighter-text-color">{{ post.date | date_to_string }}</div>
                     {% if post.tags.size !=0 %}
-                    <div class="my-1 d-flex">
+                    <div class="my-1 pt-3">
                         {% for tag in post.tags %}
-                        <span class="d-inline-block badge mx-1 bg-secondary">{{ tag }}</span>
+                        <span class="mx-1 p-2 badge bg-secondary">{{ tag }}</span>
                         {% endfor %}
                     </div>
                     {% endif %}
