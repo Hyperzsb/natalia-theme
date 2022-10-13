@@ -6,17 +6,18 @@
 
 :root {
   --base-color-1: #ced4da;
-  --base-color-2: #e9ecef;
+  --base-color-2: #f1f3f5;
   --base-color-3: #f8f9fa;
   --shadow-color-1: #adb5bd;
   --shadow-color-2: #dee2e6;
+  --border-color-1: #ced4da;
+  --border-color-2: #dee2e6;
   --link-color-1: #087f5b;
   --link-color-2: #0ca678;
   --link-color-3: #20c997;
   --text-color-1: #212529;
   --text-color-2: #495057;
   --text-color-3: #868e96;
-  --text-color-4: #adb5bd;
   --info-color: #1c7ed6;
   --warning-color: #f59f00;
   --danger-color: #f03e3e;
@@ -24,14 +25,18 @@
 
 [data-theme="dark"] {
   --base-color-1: #adb5bd;
-  --base-color-2: #495057;
+  --base-color-2: #343a40;
   --base-color-3: #212529;
   --shadow-color-1: #868e96;
   --shadow-color-2: #343a40;
+  --border-color-1: #495057;
+  --border-color-2: #495057;
+  --link-color-1: #12b886;
+  --link-color-2: #38d9a9;
+  --link-color-3: #96f2d7;
   --text-color-1: #e9ecef;
   --text-color-2: #ced4da;
   --text-color-3: #adb5bd;
-  --text-color-4: #868e96;
 }
 
 /* General color style */
@@ -128,12 +133,21 @@ body {
 
 /* Header color style */
 
+//.custom-navbar {
+//  background-color: rgba(var(--base-color-3), .75);
+//}
+//
+//.custom-navbar-shadow-color {
+//  box-shadow: 0 10px 20px var(--shadow-color-2);
+//}
+
 .custom-navbar {
-  background-color: rgba(var(--base-color-3), .75);
+  background-color: var(--base-color-3);
+  border-color: var(--base-color-3);
 }
 
-.custom-navbar-shadow-color {
-  box-shadow: 0 10px 20px var(--shadow-color-2);
+.custom-navbar-border {
+  border-bottom: var(--border-color-1) solid 1px;
 }
 
 #article-progress-bar {
@@ -174,12 +188,17 @@ body {
 
 /* Footer color style */
 
-.custom-footer {
-  background-color: var(--base-color-3);
+//.custom-footer {
+//  background-color: var(--base-color-3);
+//
+//  &::before {
+//    box-shadow: 0 -10px 20px var(--shadow-color-2);
+//  }
+//}
 
-  &::before {
-    box-shadow: 0 -10px 20px var(--shadow-color-2);
-  }
+.custom-footer {
+  background-color: var(--base-color-2);
+  border-top: var(--border-color-2) solid 1px;
 }
 
 /* Home color style */
