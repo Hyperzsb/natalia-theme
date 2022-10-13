@@ -72,6 +72,8 @@ plugins:
   - jemoji
 
 collections:
+  biographies:
+    output: false
   pages:
     output: true
   projects:

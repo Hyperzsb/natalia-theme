@@ -9,7 +9,7 @@ layout: default
     >
         <div class="col-lg-6 text-center">
             <div class="py-3">
-                <h1 class="fw-bold font-josefin-sans">
+                <h1 class="fw-bold font-josefin-sans" id="{{ page.name | downcase | split: " " | join: "-" }}">
                     {{ page.name }}
                 </h1>
             </div>
