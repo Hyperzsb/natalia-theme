@@ -220,7 +220,15 @@ body {
 
 .custom-bg-image {
   &::before {
-    background-color: rgba(var(--base-color-3), 0.6);
+    background-color: rgba(#f8f9fa, 0.6);
+  }
+}
+
+[data-theme="dark"] {
+  .custom-bg-image {
+    &::before {
+      background-color: rgba(#212529, 0.6);
+    }
   }
 }
 
