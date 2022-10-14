@@ -133,6 +133,7 @@ a {
 
 .custom-footer {
   position: relative;
+  margin-top: 5rem;
 
   &::before {
     position: absolute;
@@ -154,7 +155,7 @@ a {
 }
 
 .theme-icon {
-  height: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* Home styles */

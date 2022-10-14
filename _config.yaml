@@ -10,12 +10,24 @@ introduction:
   sub: I am a free developer 👨‍💻 (also still a student 👨‍🎓) from China 🇨🇳. I have great interests in Web Fullstack, Blockchain, Web 3, DevOps, and other state-of-the-art technologies 🛠.
 # Your social media details displaying on the footer (if not applicable, leave it blank)
 socialMedia:
+  # Your email address, e.g. <host name>@<domain name>
   email: hyperzsb@qq.com
-  twitter: hyperzsb
-  facebook:
-  instagram:
-  youtube: UCpFjl9dlLOTEa99rKV7trrQ
+  # Your facebook id, e.g. <userid>
+  facebook: hyperzsb
+  # Your GitHub id, e.g. <userid>
   github: Hyperzsb
+  # Your Instagram id, e.g. <userid>
+  instagram:
+  # Your Linkedin user identifier, e.g. <firstname>-<lastname>-<integer identifier>
+  linkedin: shaobo-zhang-584716252
+  # Your stackoverflow user identifier, e.g. <integer identifier>/<username>
+  stackoverflow:
+  # Your Twitter id, e.g. <userid>
+  twitter: hyperzsb
+  # Your WhatsApp phone number; e.g. if your phone number is +1 123 456, just put 1123456 here
+  whatsapp:
+  # Please use your channel ID instead of your username
+  youtube:
 # Copyright details displaying on the footer
 copyright: 2022 © hyperzsb
 
@@ -53,8 +65,11 @@ clarity:
   projectID:
 # Miscellaneous settings
 setting:
+  # Show a loading modal when loading of pages is not completed
+  # If you do not want to use the loading modal, just set it to false
   enableLoadingModal: true
-  # Dark mode has not developed completely yet. Please do not turn it on
+  # Enable a dark theme option at the end of the page (supporting auto-detection of system theme)
+  # If you do not want to use the dark theme, just set it to false
   enableDarkMode: true
 # Timezone setting
 timezone: Asia/Shanghai
@@ -74,6 +89,7 @@ plugins:
   - jemoji
 
 collections:
+  # The collection of "biography" currently includes a section called "Biography" in the home page
   biographies:
     output: false
   pages:
