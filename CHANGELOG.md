@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0...v1.2.0) (2022-10-14)
+
+
+### Features
+
+* **footer:** add more social media options ([1dd4930](https://github.com/Hyperzsb/natalia-theme/commit/1dd4930da792043c1bbf46861e9ebdb477efce85))
+
+
+### Bug Fixes
+
+* **style:** fix broken badge styles ([d1d0317](https://github.com/Hyperzsb/natalia-theme/commit/d1d0317d7fecc2484ac9c4822fac93dd9b48ff7d))
+
 ## [1.1.0](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0-beta.10...v1.1.0) (2022-10-13)
 
 
