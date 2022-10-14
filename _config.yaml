@@ -11,12 +11,12 @@ introduction:
 # Your social media details displaying on the footer (if not applicable, leave it blank)
 socialMedia:
   email: hyperzsb@qq.com
-  twitter: hyperzsb
   facebook:
+  github: Hyperzsb
   instagram:
+  twitter: hyperzsb
   # Please use your channel ID instead of your username
   youtube: UCpFjl9dlLOTEa99rKV7trrQ
-  github: Hyperzsb
 # Copyright details displaying on the footer
 copyright: 2022 © hyperzsb
 
@@ -64,8 +64,11 @@ clarity:
 
 # Miscellaneous settings
 setting:
+  # Show a loading modal when loading of pages is not completed
+  # If you do not want to use the loading modal, just set it to false
   enableLoadingModal: true
-  # Dark mode has not developed completely yet. Please do not turn it on
+  # Enable a dark theme option at the end of the page (supporting auto-detection of system theme)
+  # If you do not want to use the dark theme, just set it to false
   enableDarkMode: true
 # Timezone setting
 timezone: Asia/Shanghai
@@ -87,6 +90,7 @@ plugins:
 
 # Definition of custom collections. For more details about collections, please refer to https://jekyllrb.com/docs/collections/
 collections:
+  # The collection of "biography" currently includes a section called "Biography" in the home page
   biographies:
     output: false
   # The collection of "pages" currently includes the Home page, the Projects page, the Posts page, the Contact page, and the 404 page inside the `_pages` directory
