@@ -10,13 +10,24 @@ introduction:
   sub: I am a free developer 👨‍💻 (also still a student 👨‍🎓) from China 🇨🇳. I have great interests in Web Fullstack, Blockchain, Web 3, DevOps, and other state-of-the-art technologies 🛠.
 # Your social media details displaying on the footer (if not applicable, leave it blank)
 socialMedia:
+  # Your email address, e.g. <host name>@<domain name>
   email: hyperzsb@qq.com
-  facebook:
+  # Your facebook id, e.g. <userid>
+  facebook: hyperzsb
+  # Your GitHub id, e.g. <userid>
   github: Hyperzsb
+  # Your Instagram id, e.g. <userid>
   instagram:
+  # Your Linkedin user identifier, e.g. <firstname>-<lastname>-<integer identifier>
+  linkedin: shaobo-zhang-584716252
+  # Your stackoverflow user identifier, e.g. <integer identifier>/<username>
+  stackoverflow:
+  # Your Twitter id, e.g. <userid>
   twitter: hyperzsb
+  # Your WhatsApp phone number; e.g. if your phone number is +1 123 456, just put 1123456 here
+  whatsapp:
   # Please use your channel ID instead of your username
-  youtube: UCpFjl9dlLOTEa99rKV7trrQ
+  youtube:
 # Copyright details displaying on the footer
 copyright: 2022 © hyperzsb
 

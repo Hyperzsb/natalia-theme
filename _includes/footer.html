@@ -8,16 +8,16 @@
                     <i class="bi bi-envelope-fill"></i>
                 </a>
                 {% endif %}
-                {% if site.socialMedia.twitter %}
-                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
-                   href="https://twitter.com/{{ site.socialMedia.twitter }}">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                {% endif %}
                 {% if site.socialMedia.facebook %}
                 <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
                    href="https://facebook.com/{{ site.socialMedia.facebook }}">
                     <i class="bi bi-facebook"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.github %}
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
+                   href="https://github.com/{{ site.socialMedia.github }}">
+                    <i class="bi bi-github"></i>
                 </a>
                 {% endif %}
                 {% if site.socialMedia.instagram %}
@@ -26,16 +26,34 @@
                     <i class="bi bi-instagram"></i>
                 </a>
                 {% endif %}
+                {% if site.socialMedia.linkedin %}
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
+                   href="https://www.linkedin.com/in/{{ site.socialMedia.linkedin }}">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.stackoverflow %}
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
+                   href="https://stackoverflow.com/users/{{ site.socialMedia.stackoverflow }}">
+                    <i class="bi bi-stack-overflow"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.twitter %}
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
+                   href="https://twitter.com/{{ site.socialMedia.twitter }}">
+                    <i class="bi bi-twitter"></i>
+                </a>
+                {% endif %}
+                {% if site.socialMedia.whatsapp %}
+                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
+                   href="https://wa.me/{{ site.socialMedia.whatsapp }}">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                {% endif %}
                 {% if site.socialMedia.youtube %}
                 <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
                    href="https://youtube.com/channel/{{ site.socialMedia.youtube }}">
                     <i class="bi bi-youtube"></i>
-                </a>
-                {% endif %}
-                {% if site.socialMedia.github %}
-                <a class="gray-icon-color p-3 fs-4" rel="noopener" target="_blank"
-                   href="https://github.com/{{ site.socialMedia.github }}">
-                    <i class="bi bi-github"></i>
                 </a>
                 {% endif %}
             </div>
