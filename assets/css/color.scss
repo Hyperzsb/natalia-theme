@@ -4,6 +4,7 @@
 @import "main";
 @import "markdown";
 @import "toc";
+@import "gitalk";
 
 :root {
   --base-color-1: #ced4da;
@@ -40,7 +41,7 @@
   --text-color-3: #adb5bd;
 }
 
-/* General color style */
+/* General color styles */
 
 body {
   background-color: var(--base-color-3);
@@ -126,13 +127,21 @@ body {
   }
 }
 
-/* Loading modal color style */
+input[type=text],
+input[type=email],
+textarea,
+{
+  color: var(--text-color-1) !important;
+  background-color: var(--base-color-2) !important;
+}
+
+/* Loading modal color styles */
 
 .loading-modal {
   background-color: var(--base-color-3);
 }
 
-/* Header color style */
+/* Header color styles */
 
 //.custom-navbar {
 //  background-color: rgba(var(--base-color-3), .75);
@@ -187,7 +196,7 @@ body {
   color: var(--link-color-1);
 }
 
-/* Footer color style */
+/* Footer color styles */
 
 //.custom-footer {
 //  background-color: var(--base-color-3);
@@ -202,7 +211,7 @@ body {
   border-top: var(--border-color-2) solid 1px;
 }
 
-/* Home color style */
+/* Home color styles */
 
 .custom-float-card {
   background-color: var(--base-color-3);
@@ -217,7 +226,7 @@ body {
   }
 }
 
-/* Project styles */
+/* Project color styles */
 
 .custom-bg-image {
   &::before {
@@ -233,7 +242,7 @@ body {
   }
 }
 
-/* Markdown color style */
+/* Markdown color styles */
 
 .markdown {
   h1,
@@ -313,6 +322,8 @@ body {
   }
 }
 
+/* TOC color styles */
+
 .toc {
   a {
     color: var(--link-color-1);
@@ -325,5 +336,32 @@ body {
   .current-heading {
     border-color: var(--link-color-2);
     color: var(--link-color-2);
+  }
+}
+
+/* Gitalk color styles */
+
+.gt-container {
+  a {
+    color: var(--link-color-1) !important;
+
+    &:hover, &:active {
+      color: var(--link-color-2) !important;
+    }
+  }
+
+  .gt-header-preview {
+    color: var(--text-color-1) !important;
+    background-color: var(--base-color-2) !important;
+  }
+
+  .gt-comment-content {
+    background-color: var(--base-color-2) !important;
+    color: var(--text-color-1) !important;
+
+    &:hover {
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+    }
   }
 }

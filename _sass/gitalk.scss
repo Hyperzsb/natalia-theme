@@ -1,0 +1,22 @@
+.gt-container {
+  font-family: "Noto Serif SC", sans-serif !important;
+
+  textarea {
+    transition: none !important;
+  }
+
+  .gt-header-controls-tip {
+    .gt-svg {
+      display: none !important;
+    }
+  }
+
+  .markdown-body {
+    font-family: "Noto Serif SC", sans-serif !important;
+  }
+
+  .gt-comment-content:hover {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
