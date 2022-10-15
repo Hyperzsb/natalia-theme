@@ -354,14 +354,4 @@ textarea,
     color: var(--text-color-1) !important;
     background-color: var(--base-color-2) !important;
   }
-
-  .gt-comment-content {
-    background-color: var(--base-color-2) !important;
-    color: var(--text-color-1) !important;
-
-    &:hover {
-      -webkit-box-shadow: none !important;
-      box-shadow: none !important;
-    }
-  }
 }
