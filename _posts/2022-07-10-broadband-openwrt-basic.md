@@ -7,6 +7,7 @@ toc: true
 comment: true
 pinned: false
 top: false
+published: false
 ---
 
 最近在研究利用家庭宽带部署个人服务器，发现软路由的部署与配置是极其重要的一环。在对软路由进行了基本的了解后，打算使用著名的OpenWrt软路由系统来完成所需任务。
