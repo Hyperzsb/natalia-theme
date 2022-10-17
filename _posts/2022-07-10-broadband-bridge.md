@@ -7,6 +7,7 @@ toc: true
 comment: true
 pinned: false
 top: false
+published: false
 ---
 
 最近打算把闲置的设备利用起来，通过家庭宽带部署一个私人小服务器，用于进行学习和开发。但是想要能够访问家庭网络中的服务器，需要获取公网IP或者进行内网穿透。
