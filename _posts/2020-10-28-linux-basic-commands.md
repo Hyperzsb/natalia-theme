@@ -1,7 +1,7 @@
 ---
 title: Linux - 基本命令
 date: 2020-10-28
-last_update:
+last_update: 2022-10-18
 tags: linux
 toc: true
 comment: true
@@ -23,7 +23,7 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ getconf LONG_BIT
     64
     $ file /bin/ls
@@ -32,7 +32,7 @@ top: false
 
   - CentOS
 
-    ```shell
+    ```bash
     $ getconf LONG_BIT
     64
     $ file /bin/ls
@@ -43,14 +43,14 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ uname -a
     Linux iZ2zehx4vggo1gk4clxdy2Z 4.15.0-48-generic #51-Ubuntu SMP Wed Apr 3 08:28:49 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
     ```
 
   - CentOS
 
-    ```shell
+    ```bash
     $ uname -a
     Linux iz2zefu8x0w8a73lncvuicz 3.10.0-1127.13.1.el7.x86_64 #1 SMP Tue Jun 23 15:46:38 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
     ```
@@ -59,14 +59,14 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ cat /proc/version
     Linux version 4.15.0-48-generic (buildd@lgw01-amd64-036) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #51-Ubuntu SMP Wed Apr 3 08:28:49 UTC 2019
     ```
 
   - CentOS
 
-    ```shell
+    ```bash
     $ cat /proc/version
     Linux version 3.10.0-1127.13.1.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-39) (GCC) ) #1 SMP Tue Jun 23 15:46:38 UTC 2020
     ```
@@ -75,7 +75,7 @@ top: false
 
   - Ubuntu
 
-    ```sh
+    ```bash
     $ lsmod
     Module                  Size  Used by
     btrfs                1122304  0
@@ -89,7 +89,7 @@ top: false
 
   - CentOS
 
-    ```shell
+    ```bash
     $ lsmod
     Module                  Size  Used by
     xt_nat                 12681  6 
@@ -104,7 +104,7 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ lsb_release -a
     LSB Version:    core-9.20170808ubuntu1-noarch:security-9.20170808ubuntu1-noarch
     Distributor ID: Ubuntu
@@ -117,7 +117,7 @@ top: false
 
   - CentOS
 
-    ```shell
+    ```bash
     $ lsb_release -a
     LSB Version:    :core-4.1-amd64:core-4.1-noarch
     Distributor ID: CentOS
@@ -132,14 +132,14 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ uptime
      11:12:30 up 47 days, 49 min,  1 user,  load average: 0.00, 0.00, 0.00
     ```
 
   - CentOS
 
-    ```shell
+    ```bash
     $ uptime
      11:13:14 up 68 days,  1:24,  1 user,  load average: 0.00, 0.01, 0.05
     ```
@@ -150,7 +150,7 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     # 基本信息
     $ lscpu
     Architecture:        x86_64
@@ -210,7 +210,7 @@ top: false
 
   - CentOS
 
-    ```shell
+    ```bash
     # 基本信息
     $ lscpu
     Architecture:          x86_64
@@ -271,7 +271,7 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ free -m
                   total        used        free      shared  buff/cache   available
     Mem:           1993         560          96           1        1336        1249
@@ -328,7 +328,7 @@ top: false
 
   - CentOS
 
-    ```shell
+    ```bash
     $ free -m
                   total        used        free      shared  buff/cache   available
     Mem:           7551        1541        2715           0        3294        5711
@@ -387,7 +387,7 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ lsblk
     NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
     vda    252:0    0  40G  0 disk 
@@ -426,7 +426,7 @@ top: false
 
   - CentOS
 
-    ```shell
+    ```bash
     $ lsblk
     NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
     vda    253:0    0  40G  0 disk 
@@ -467,7 +467,7 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ lspci -tv
     -[0000:00]-+-00.0  Intel Corporation 440FX - 82441FX PMC [Natoma]
                +-01.0  Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
@@ -483,7 +483,7 @@ top: false
 
   - CentOS
 
-    ```shell
+    ```bash
     $ lspci -tv
     -[0000:00]-+-00.0  Intel Corporation 440FX - 82441FX PMC [Natoma]
                +-01.0  Intel Corporation 82371SB PIIX3 ISA [Natoma/Triton II]
@@ -501,13 +501,53 @@ top: false
 
   - Ubuntu
 
-    ```shell
+    ```bash
     $ lsusb -tv
     /:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=uhci_hcd/2p, 12M
         |__ Port 1: Dev 2, If 0, Class=Human Interface Device, Driver=usbhid, 12M
     ```
 
+## 系统配置
+
+### 设置默认 Shell
+
+查看当前 Shell：
+
+```bash
+$ echo $SHELL
+```
+
+查看用户默认 Shell：
+
+```bash
+$ cat /etc/passwd | grep $(whoami)
+```
+
+列举所有可用 Shell：
+
+```bash
+$ cat /etc/shells
+```
+
+使用 `usermod` 命令更改默认 Shell：
+
+```bash
+$ sudo usermod --shell /usr/bin/fish <username>
+```
+
+使用 `chsh` 命令更改默认 Shell：
+
+```bash
+$ chsh -s /usr/bin/fish <username>
+```
+
+{: .warning-blockquote}
+> 除此之外，我们也可以通过直接修改 `/etc/passwd` 对应的字段来修改默认 Shell，但是直接对该文件进行修改可能会带来一些风险。
+
 ## 常用工具
+
+{: .info-blockquote}
+> 我们也可以使用一些 CLI 的 Cheatsheet 工具，来获取这些常用工具的基本用法。具体可以参考我的另一篇[文章](https://hyperzsb.io/posts/your-own-terminal/)。
 
 ### 压缩 / 解压缩
 
@@ -515,13 +555,13 @@ top: false
 
   - 压缩
 
-    ```shell
+    ```bash
     $ zip demo.zip ./demo_a ./demo_b
     ```
 
   - 解压
 
-    ```shell
+    ```bash
     $ unzip demo.zip
     ```
 
@@ -531,13 +571,13 @@ top: false
 
   - 压缩
 
-    ```shell
+    ```bash
     $ tar -cvf demo.tar ./demo_a ./demo_b
     ```
 
   - 解压
 
-    ```shell
+    ```bash
     $ tar -xvf demo.tar
     ```
 
@@ -547,13 +587,13 @@ top: false
 
   - 压缩
 
-    ```shell
+    ```bash
     $ tar -zcvf demo.tar.gz ./demo_a ./demo_b
     ```
 
   - 解压
 
-    ```shell
+    ```bash
     $ tar -zxvf demo.tar.gz
     ```
 
@@ -572,13 +612,13 @@ Linux 平台有很多用于处理图片的工具，例如`ImageMagick`、`jpegop
 
   - 本地 apt 安装：
 
-    ```shell
+    ```bash
     $ apt install imagemagick
     ```
 
   - 官网下载即用型二进制文件：
 
-    ```shell
+    ```bash
     $ wget https://download.imagemagick.org/ImageMagick/download/binaries/magick
     ```
 
@@ -588,7 +628,7 @@ Linux 平台有很多用于处理图片的工具，例如`ImageMagick`、`jpegop
 
   - 转换格式：
 
-    ```shell
+    ```bash
     $ convert xxx.jpeg xxx.png
     ```
 
@@ -605,7 +645,7 @@ Linux 平台有很多用于处理图片的工具，例如`ImageMagick`、`jpegop
 
   - 批量压缩图片：
 
-    ```shell
+    ```bash
     # 压缩当前目录下所有后缀名包含在列表中的图片
     $ find ./ -regex '.*\(jpg\|JPG\|png\|PNG\|jpeg\)' -size +50k -exec convert -resize 100x100 {} {} \;
     ```
@@ -614,14 +654,14 @@ Linux 平台有很多用于处理图片的工具，例如`ImageMagick`、`jpegop
 
 - SSH 连接远程主机：
 
-  ```shell
+  ```bash
   $ ssh root@112.113.114.115 # 以 root 用户身份登陆 112.113.114.115 IP 对应的远程主机
   $ ssh user@myhost.com # 以 user 用户身份登陆 myhost.com 域名对应的远程主机
   ```
 
 - 向（从）远程主机复制文件：
 
-  ```shell
+  ```bash
   $ scp ~/myfile.txt root@112.113.114.115:/root/CopyFiles/ # 将本机主目录下的 myfile.txt 复制到以 root 身份登陆的 112.113.114.115 IP 对应的远程主机的 /root/CopyFiles/ 目录下
   $ scp user@myhost.com:/home/user/myfile.txt ~/CopyFiles/ # 将以 root 身份登陆的 112.113.114.115 IP 对应的远程主机的 /home/user/myfile.txt 复制到本机主目录的 CopyFiles 目录下
   ```
