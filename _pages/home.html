@@ -8,7 +8,7 @@ permalink: /index.html
         <div class="col-lg-6 order-1 order-lg-0 my-1 my-lg-5 text-center custom-introduction">
             <div class="p-2">
                 <h1 class="fw-bold font-josefin-sans" id="{{ site.name | downcase | split: " " | join: "-" }}">
-                    {{ site.introduction.main }}
+                {{ site.introduction.main }}
                 </h1>
             </div>
             <div class="p-2">
@@ -16,7 +16,12 @@ permalink: /index.html
             </div>
         </div>
         <div class="col-lg-4 order-0 order-lg-1 my-1 my-lg-5 custom-logo">
-            <img src="{{ site.baseUrl }}/assets/images/logo.png" alt="Portrait" title="{{ site.name }}">
+            <picture>
+                <source type="image/webp" srcset="{{ site.baseUrl }}/assets/images/logo.webp">
+                <source type="image/png" srcset="{{ site.baseUrl }}/assets/images/logo.png">
+                <img src="{{ site.baseUrl }}/assets/images/logo.png" alt="Avatar" title="{{ site.name }}"
+                     height="350" width="350">
+            </picture>
         </div>
     </div>
     {% if site.biographies.size != 0 %}
@@ -56,18 +61,26 @@ permalink: /index.html
                     {% if project.logo.src %}
                     <a href="{{ site.baseUrl }}{{ project.url }}">
                         {% if project.logo.internal %}
-                        <img src="{{ site.baseUrl }}{{ project.logo.src }}" class="card-img-top"
-                             alt="Logo of {{ project.name }}" title="{{ project.name }}">
+                        <picture>
+                            <source type="image/webp" srcset="{{ site.baseUrl }}{{ project.logo.src }}">
+                            <img src="{{ site.baseUrl }}{{ project.logo.src }}" alt="Logo of {{ project.name }}"
+                                 title="{{ project.name }}" class="card-img-top">
+                        </picture>
                         {% else %}
-                        <img src="{{ project.logo.src }}" class="card-img-top"
-                             alt="Logo of {{ project.name }}" title="{{ project.name }}">
+                        <picture>
+                            <source type="image/webp" srcset="{{ project.logo.src }}">
+                            <img src="{{ project.logo.src }}" alt="Logo of {{ project.name }}"
+                                 title="{{ project.name }}" class="card-img-top">
+                        </picture>
                         {% endif %}
                     </a>
                     {% endif %}
                     <div class="card-body d-flex flex-column justify-content-start align-items-center p-3">
                         <div class="mt-2 text-center">
                             <a class="link-color" href="{{ site.baseUrl }}{{ project.url }}">
-                                <h3 class="fw-bold" id="{{ project.name | downcase | split: " " | join: "-" }}">{{ project.name }}</h3>
+                                <h3 class="fw-bold" id="{{ project.name | downcase | split: " " | join: "-" }}">
+                                    {{ project.name }}
+                                </h3>
                             </a>
                         </div>
                         {% if project.tags.size !=0 %}
@@ -111,7 +124,9 @@ permalink: /index.html
                     <div class="card-body d-flex flex-column justify-content-start align-items-center p-3">
                         <div class="mt-2 text-center">
                             <a class="link-color" href="{{ site.baseUrl }}{{ post.url }}">
-                                <h3 class="fw-bold" id="{{ post.title | downcase | split: " " | join: "-" }}">{{ post.title }}</h3>
+                                <h3 class="fw-bold" id="{{ post.title | downcase | split: " " | join: "-" }}">
+                                    {{ post.title }}
+                                </h3>
                             </a>
                         </div>
                         <div class="mt-3 lighter-text-color">{{ post.date | date_to_string }}</div>
