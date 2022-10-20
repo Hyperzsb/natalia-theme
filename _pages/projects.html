@@ -19,11 +19,17 @@ permalink: /projects/index.html
         <div class="col-lg-4">
             <a href="{{ site.baseUrl }}{{ project.url }}">
                 {% if project.logo.internal %}
-                <img src="{{ site.baseUrl }}{{ project.logo.src }}" class="rounded img-fluid"
-                     alt="Logo of {{ project.name }}" title="{{ project.name }}">
+                <picture>
+                    <source type="image/webp" srcset="{{ site.baseUrl }}{{ project.logo.src }}">
+                    <img src="{{ site.baseUrl }}{{ project.logo.src }}" alt="Logo of {{ project.name }}"
+                         title="{{ project.name }}" class="card-img-top">
+                </picture>
                 {% else %}
-                <img src="{{ project.logo.src }}" class="rounded img-fluid"
-                     alt="Logo of {{ project.name }}" title="{{ project.name }}">
+                <picture>
+                    <source type="image/webp" srcset="{{ project.logo.src }}">
+                    <img src="{{ project.logo.src }}" alt="Logo of {{ project.name }}"
+                         title="{{ project.name }}" class="card-img-top">
+                </picture>
                 {% endif %}
             </a>
         </div>

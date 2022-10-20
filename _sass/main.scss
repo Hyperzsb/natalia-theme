@@ -168,17 +168,11 @@ a {
 }
 
 .custom-logo {
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   border-radius: 0.5rem;
-
-  & img {
-    display: block;
-    height: 100%;
-  }
 }
 
 .custom-float-card {

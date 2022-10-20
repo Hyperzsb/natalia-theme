@@ -2,7 +2,7 @@
 name: Project 1
 description: This is the Project 1 for testing. This is the description of the project.
 logo: 
-  src: /assets/images/project-1-logo.jpg
+  src: /assets/images/project-1-logo.webp
   internal: true
 repo: https://github.com/hyperzsb/natalia-theme
 demo: https://github.com/hyperzsb/natalia-theme
