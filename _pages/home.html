@@ -20,7 +20,7 @@ permalink: /index.html
                 <source type="image/webp" srcset="{{ site.baseUrl }}/assets/images/logo.webp">
                 <source type="image/png" srcset="{{ site.baseUrl }}/assets/images/logo.png">
                 <img src="{{ site.baseUrl }}/assets/images/logo.png" alt="Avatar" title="{{ site.name }}"
-                     height="350" width="350">
+                     height="350" width="350" loading="lazy">
             </picture>
         </div>
     </div>
@@ -64,13 +64,13 @@ permalink: /index.html
                         <picture>
                             <source type="image/webp" srcset="{{ site.baseUrl }}{{ project.logo.src }}">
                             <img src="{{ site.baseUrl }}{{ project.logo.src }}" alt="Logo of {{ project.name }}"
-                                 title="{{ project.name }}" class="card-img-top">
+                                 title="{{ project.name }}" class="card-img-top" loading="lazy">
                         </picture>
                         {% else %}
                         <picture>
                             <source type="image/webp" srcset="{{ project.logo.src }}">
                             <img src="{{ project.logo.src }}" alt="Logo of {{ project.name }}"
-                                 title="{{ project.name }}" class="card-img-top">
+                                 title="{{ project.name }}" class="card-img-top" loading="lazy">
                         </picture>
                         {% endif %}
                     </a>
