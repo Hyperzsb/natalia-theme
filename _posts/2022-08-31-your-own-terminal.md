@@ -1,7 +1,7 @@
 ---
 title: Linux - 自定义你的 Terminal
 date: 2022-08-31
-last_update: 2022-11-07
+last_update: 2022-11-15
 tags: linux
 toc: true
 comment: true
@@ -11,14 +11,14 @@ top: false
 
 Terminal（终端）对于每一个开发者来说都是日常学习和工作中不可或缺的工具，我们需要通过各种 CLI 工具来完成各种任务。因此，配置一个强大、便捷和美观的 Terminal 将有助于提高我们的工作效率，更好地完成工作。在本篇博客中，我将介绍一些常见的 Emulator、Shell、Prompt、Tool，以及如何使用这些工具，配置一个属于你自己的 Terminal。
 
-*由于Terminal相关的各类 Emulator、Shell、Prompt、Tool 种类繁多，且作者目前写作时间有限，该博客将**缓慢地**逐渐完善。:cry:*
+*由于 Terminal 相关的 Emulator、Shell、Prompt、Tool 种类繁多，且作者目前写作时间有限，该博客将**缓慢地**逐渐完善。:cry:*
 
 {: .info-blockquote}
 > 若各位读者发现了本文中的错误，或对作者对于某些工具的评价持反对态度，请不吝赐教。
 
-## Tl;DR
+## TL;DR
 
-如果你是 macOS 的忠实用户，那么我推荐你使用 [iTerm2](#iterm2) 作为你的 Emulator，使用 [Zsh](#zsh) 作为你的默认 Shell，并通过 [Oh My Zsh](#oh-my-zsh) 来管理和自定义你的 Prompt 和 Plugin，并安装 [autojump](#autojump)、[bat](#bat)、[bottom](#bottom)、[cheat](#cheat)、[dust](#dust)、[exa](#exa)、[fig](#fig)、[fzf](#fzf)、[zellij](#zellij) 等 Plugin 来提高你的工作效率。
+如果你是 macOS 的忠实用户，那么我推荐你使用 [iTerm2](#iterm2) 作为你的 Emulator，使用 [Zsh](#zsh) 作为你的默认 Shell，并通过 [Oh My Zsh](#oh-my-zsh) 来管理和自定义你的 Prompt 和 Tool，并安装 [autojump](#autojump)、[bat](#bat)、[bottom](#bottom)、[broot](#broot)、[cheat](#cheat)、[dust](#dust)、[exa](#exa)、[fig](#fig)、[fzf](#fzf)、[zellij](#zellij) 等 Tool 来提高你的工作效率。
 
 ## Emulators
 
@@ -31,9 +31,9 @@ Terminal（终端）对于每一个开发者来说都是日常学习和工作中
 在这一部分，我将介绍一些被开发者广为使用且颇受好评的 Emulator，对于我曾使用过的Emulator，我也会对其使用体验进行简要评价。对于各系统内置的 Emulator，相信大家都有亲身使用的体会，在此就不再赘述。
 
 {: .info-blockquote}
-> 在之后的内容中，对于Terminal和Emulator的使用不做严格的区分，均代指各类终端模拟器应用程序。
+> 在之后的内容中，对于 Terminal 和 Emulator 的使用不做严格的区分，均代指各类终端模拟器应用程序。
 > 
-> 同时，各Emulator的介绍和其他部分的内容均摘自其仓库或主页。
+> 此外，各 Emulator 的相关内容均摘自其仓库或主页。
 
 ### Alacritty
 
@@ -95,13 +95,13 @@ ConEmu 是一个带有选项卡的 Windows 控制台模拟器，它将多个控�
 
 **功能亮点：**
 
-作为一个较为古老（可能是针对于 Windows XP 以及 Windows 7 而开发的）的项目，ConEmu 本身并没有很多特别新奇和亮眼的特性。但是，它为用户提供了基本的 Emulator 所需要的功能。
+作为一个较为古老（可能是针对于 Windows XP 以及 Windows 7 而开发的）的项目，在用户提供了基本的 Emulator 所需要的功能之外，ConEmu 本身并没有很多特别新奇和亮眼的特性。
 
 ### cool-retro-term
 
 > GitHub Repo：[Swordfish90/cool-retro-term](https://github.com/Swordfish90/cool-retro-term/)
 
-cool-retro-term 是一种模拟在旧式CRT显示器上运行终端的 Emulator。是一种美观的、可定制的、轻量化的终端模拟器。
+cool-retro-term 是一种模拟在旧式 CRT 显示器上运行终端的 Emulator。是一种美观的、可定制的、轻量化的终端模拟器。
 
 **基本信息：**
 
@@ -110,7 +110,7 @@ cool-retro-term 是一种模拟在旧式CRT显示器上运行终端的 Emulator�
 
 **功能亮点：**
 
-cool-retro-term 的主要亮点就是可以模拟终端模拟器运行在旧式CRT显示器上的效果，是一个很有创意的 Emulator。对于喜欢复古风的读者，可以一试。
+cool-retro-term 的主要亮点就是可以模拟终端模拟器运行在旧式 CRT 显示器上的效果，是一个很有创意的 Emulator。对于喜欢复古风的读者，可以一试。
 
 ### Fluent Terminal
 
@@ -146,7 +146,7 @@ Fluent Terminal 是一个基于 UWP 和 Web 技术的、面向 Windows 平台的
 > 
 > GitHub Repo: [vercel/hyper](https://github.com/vercel/hyper/)
 
-Hyper 的目标是为命令行界面用户创建一个基于开放网络标准的、漂亮的、可扩展的终端模拟器。Hyper 关注于速度、稳定性以及为扩展作者开发正确的 API。
+Hyper 的目标是为命令行界面用户创建一个基于开源 Web 标准的、漂亮的、可扩展的终端模拟器。Hyper 关注于速度、稳定性以及为扩展作者开发正确的 API。
 
 **基本信息：**
 
@@ -156,7 +156,9 @@ Hyper 的目标是为命令行界面用户创建一个基于开放网络标准�
 
 **功能亮点：**
 
-*TBD*
+由于 Hyper 是基于 Web 技术开发的，它为用户提供了灵活多样的插件、主题支持，用户可以直接通过命令行来安装、管理所需的插件和主题。
+
+同时，Hyper 还为开发者提供了相应的 API 进行插件的开发和定制。
 
 **使用体验：**
 
@@ -220,6 +222,8 @@ iTerm2 是 Terminal 的替代品和 iTerm 的继承者。iTerm2 将终端带进�
 
 **使用体验：**
 
+在使用了 iTerm2 之后，作者抛弃了之前使用了很久的 Hyper，因为 iTerm2 提供了太多 Hyper 所不具备的功能。
+
 *TBD*
 
 ### Tabby
@@ -228,7 +232,7 @@ iTerm2 是 Terminal 的替代品和 iTerm 的继承者。iTerm2 将终端带进�
 > 
 > GitHub Repo: [Eugeny/tabby](https://github.com/Eugeny/tabby/)
 
-Tabby（前身是 Terminus ）是一个高度可配置的终端模拟器，SSH 和串行客户端。
+Tabby（前身是 Terminus）是一个高度可配置的终端模拟器，SSH 和串行客户端。
 
 **基本信息：**
 
@@ -238,9 +242,22 @@ Tabby（前身是 Terminus ）是一个高度可配置的终端模拟器，SSH �
 
 **功能亮点：**
 
-*TBD*
+- 集成了 SSH 和 Telnet 客户端，以及相应的连接管理器。
+- 集成了串行终端。
+- 提供了多种主题和配色方案。
+- 提供了可配置的快捷键绑定。
+- 支持面板切分。
+- 提供了选项卡记忆功能。
+- 支持包括 PowerShell、WSL、Git-Bash、Cygwin、MSYS2、Cmder、以及 CMD 在内的多种 Shell。
+- 支持使用 Zmodem 在 SSH 会话中进行文件传递。
+- 支持包括双宽字在内的所有 Unicode 编码。
+- 具有良好的快速输出性能。
+- 通过 Clink 在 Windows 平台上提供了良好的 Shell 使用体验。
+- 集成了用于处理 SSH 密钥和凭据的加密容器。
 
 **使用体验：**
+
+类似 Hyper 和 iTerm2，Tabby 也是一个值得深度体验和发掘的 Emulator。
 
 *TBD*
 
@@ -282,7 +299,16 @@ Wez's Terminal 是一款跨平台的、GPU 加速的终端模拟器和复用器�
 
 **功能亮点：**
 
-*TBD*
+- 在本地或远程主机上，提供了支持原生鼠标和回滚操作的复用终端面板、选项卡和窗口。
+- 支持连字、彩色表情符号和备用字体，具有真彩色和动态配色方案。
+- 支持超链接。
+- 提供了可搜索的回滚操作支持。
+- 支持使用鼠标和键盘进行选择和黏贴。
+- 在 vim 和 tmux 中提供了 SGR 风格的鼠标回报。
+- 支持包括下划线、双下划线、斜体、粗体、删除线在内的多种字体渲染。
+- 支持通过配置文件进行配置和热加载。
+- 支持面板切分。
+- 支持串行终端。
 
 ### Windows Terminal
 
@@ -302,7 +328,7 @@ Windows Terminal 是一款广为赞誉的、面向 Windows 平台的终端模拟
 
 **使用体验：**
 
-*TBD*
+作为 Windows 平台首屈一指的 Emulator，很难有其他的产品能同 Windows Terminal 相提并论，将其称之为对其他产品的降维打击也不为过。
 
 ### Other
 
