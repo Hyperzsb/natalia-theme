@@ -22,13 +22,13 @@ permalink: /projects/index.html
                 <picture>
                     <source type="image/webp" srcset="{{ site.baseUrl }}{{ project.logo.src }}">
                     <img src="{{ site.baseUrl }}{{ project.logo.src }}" alt="Logo of {{ project.name }}"
-                         title="{{ project.name }}" class="card-img-top">
+                         title="{{ project.name }}" class="card-img-top" loading="lazy">
                 </picture>
                 {% else %}
                 <picture>
                     <source type="image/webp" srcset="{{ project.logo.src }}">
                     <img src="{{ project.logo.src }}" alt="Logo of {{ project.name }}"
-                         title="{{ project.name }}" class="card-img-top">
+                         title="{{ project.name }}" class="card-img-top" loading="lazy">
                 </picture>
                 {% endif %}
             </a>

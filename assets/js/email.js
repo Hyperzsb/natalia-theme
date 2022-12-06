@@ -1,6 +1,6 @@
 import {getScriptParameter, addOnloadFunction} from "./utils.js"
 
-/* Functions for the dark mode */
+/* Functions for the email */
 
 // Enable EmailJS
 function enableEmailJS() {
