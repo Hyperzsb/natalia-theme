@@ -17,7 +17,7 @@ permalink: /projects/index.html
     <div class="row justify-content-center my-5">
         {% if project.logo.src %}
         <div class="col-lg-4">
-            <a href="{{ site.baseUrl }}{{ project.url }}">
+            <a aria-label="Learn more about project {{ project.name }}" href="{{ site.baseUrl }}{{ project.url }}">
                 {% if project.logo.internal %}
                 <picture>
                     <source type="image/webp" srcset="{{ site.baseUrl }}{{ project.logo.src }}">
@@ -34,7 +34,8 @@ permalink: /projects/index.html
             </a>
         </div>
         <div class="col-lg-6">
-            <a class="d-block link-color my-3" href="{{ site.baseUrl }}{{ project.url }}">
+            <a class="d-block link-color my-3" aria-label="Learn more about project {{ project.name }}"
+               href="{{ site.baseUrl }}{{ project.url }}">
                 <h2 class="fw-bold" id="{{ project.name | downcase | split: " " | join: "-" }}">{{ project.name }}</h2>
             </a>
             {% if project.tags.size !=0 %}
@@ -48,7 +49,8 @@ permalink: /projects/index.html
         </div>
         {% else %}
         <div class="col-lg-10">
-            <a class="d-block link-color my-3" href="{{ site.baseUrl }}{{ project.url }}">
+            <a class="d-block link-color my-3" aria-label="Learn more about project {{ project.name }}"
+               href="{{ site.baseUrl }}{{ project.url }}">
                 <h2 class="fw-bold" id="{{ project.name | downcase | split: " " | join: "-" }}">{{ project.name }}</h2>
             </a>
             {% if project.tags.size !=0 %}

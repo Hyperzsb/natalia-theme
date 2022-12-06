@@ -59,7 +59,7 @@ permalink: /index.html
             <div class="col px-1 py-3 p-lg-3">
                 <div class="card h-100 text-center custom-float-card custom-float-card-color">
                     {% if project.logo.src %}
-                    <a href="{{ site.baseUrl }}{{ project.url }}">
+                    <a aria-label="Learn more about project {{ project.name }}" href="{{ site.baseUrl }}{{ project.url }}">
                         {% if project.logo.internal %}
                         <picture>
                             <source type="image/webp" srcset="{{ site.baseUrl }}{{ project.logo.src }}">
@@ -77,7 +77,8 @@ permalink: /index.html
                     {% endif %}
                     <div class="card-body d-flex flex-column justify-content-start align-items-center p-3">
                         <div class="mt-2 text-center">
-                            <a class="link-color" href="{{ site.baseUrl }}{{ project.url }}">
+                            <a class="link-color" aria-label="Learn more about project {{ project.name }}"
+                               href="{{ site.baseUrl }}{{ project.url }}">
                                 <h3 class="fw-bold" id="{{ project.name | downcase | split: " " | join: "-" }}">
                                     {{ project.name }}
                                 </h3>
@@ -99,7 +100,8 @@ permalink: /index.html
     </div>
     <div class="row justify-content-center my-5">
         <div class="col-10 col-lg-2 py-3">
-            <a class="d-block btn rounded-pill btn-outline-primary" href="{{ site.baseUrl }}/projects" role="button">
+            <a class="d-block btn rounded-pill btn-outline-primary" role="button"
+               aria-label="View all projects" href="{{ site.baseUrl }}/projects">
                 <i class="bi bi-arrow-right">&nbsp;View All Projects</i>
             </a>
         </div>
@@ -123,7 +125,7 @@ permalink: /index.html
                 <div class="card h-100 custom-float-card custom-float-card-color">
                     <div class="card-body d-flex flex-column justify-content-start align-items-center p-3">
                         <div class="mt-2 text-center">
-                            <a class="link-color" href="{{ site.baseUrl }}{{ post.url }}">
+                            <a class="link-color" aria-label="Read more about post {{ post.title }}" href="{{ site.baseUrl }}{{ post.url }}">
                                 <h3 class="fw-bold" id="{{ post.title | downcase | split: " " | join: "-" }}">
                                     {{ post.title }}
                                 </h3>
@@ -146,7 +148,8 @@ permalink: /index.html
     </div>
     <div class="row justify-content-center my-5">
         <div class="col-10 col-lg-2 py-3">
-            <a class="d-block btn rounded-pill btn-outline-primary" href="{{ site.baseUrl }}/posts" role="button">
+            <a class="d-block btn rounded-pill btn-outline-primary" role="button"
+               aria-label="View all posts" href="{{ site.baseUrl }}/posts">
                 <i class="bi bi-arrow-right">&nbsp;View All Posts</i>
             </a>
         </div>
