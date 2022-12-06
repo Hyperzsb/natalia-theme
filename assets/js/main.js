@@ -1,86 +1,6 @@
 import {addOnloadFunction} from "./utils.js"
 
-/* Functions for the header's behavior */
-
-// Display and hide the shadow of the navbar when scrolling
-function changeNavbarShadow() {
-    let threshold = 10;
-    let offset = 10;
-    let fromAbove = true;
-
-    return () => {
-        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        let classList = document.getElementById("navbar").classList;
-        if (scrollTop > threshold) {
-            if (fromAbove) {
-                fromAbove = false;
-                threshold -= offset;
-            }
-            if (!classList.contains("custom-navbar-border")) {
-                classList.add("custom-navbar-border");
-            }
-            // if (!classList.contains("custom-navbar-shadow-color")) {
-            //     classList.add("custom-navbar-shadow-color");
-            // }
-            // if (classList.contains("p-4")) {
-            //     //classList.replace("p-4", "p-2");
-            //     classList.remove("p-4");
-            // }
-        } else {
-            if (!fromAbove) {
-                fromAbove = true;
-                threshold += offset;
-            }
-            if (classList.contains("custom-navbar-border")) {
-                classList.remove("custom-navbar-border");
-            }
-            // if (classList.contains("custom-navbar-shadow-color")) {
-            //     classList.remove("custom-navbar-shadow-color");
-            // }
-            // if (!classList.contains("p-4")) {
-            //     //classList.replace("p-2", "p-4");
-            //     classList.add("p-4");
-            // }
-        }
-    };
-}
-
-// Add the event listener of "scroll" to window object
-window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 100));
-
-// Display and update the progress bar of the article
-function updateProgressBar() {
-    let progressBar = document.getElementById("article-progress-bar");
-    if (progressBar) {
-        let scrollHeight = document.documentElement.scrollHeight;
-        let widowHeight = window.screen.height;
-        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        let progress = (scrollTop / (scrollHeight - widowHeight) * 100).toFixed(2);
-        if (progress <= 100) {
-            progressBar.style.width = progress.toString() + "%";
-        } else {
-            progressBar.style.width = "100%";
-        }
-    }
-}
-
-// Add the event listener of "scroll" to window object
-window.addEventListener("scroll", _.throttle(updateProgressBar, 100));
-
-
-// Change the icon of the toggler of the navbar when in mobile mode.
-function changeNavbarTogglerIcon() {
-    document.getElementById("navbar-toggler").addEventListener("click", function () {
-        let classList = this.firstElementChild.classList;
-        if (classList.contains("bi-arrows-expand")) {
-            classList.replace("bi-arrows-expand", "bi-arrows-collapse");
-        } else {
-            classList.replace("bi-arrows-collapse", "bi-arrows-expand");
-        }
-    });
-}
-
-/* Functions for the modal's behavior */
+/* Functions for the loading modal */
 
 // Show and hide the modal and the main content
 document.onreadystatechange = () => {
@@ -119,6 +39,71 @@ document.onreadystatechange = () => {
             }
         });
     }
+}
+
+/* Functions for the header's behavior */
+
+// Display and hide the shadow of the navbar when scrolling
+function changeNavbarShadow() {
+    let threshold = 10;
+    let offset = 10;
+    let fromAbove = true;
+
+    return () => {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let classList = document.getElementById("navbar").classList;
+        if (scrollTop > threshold) {
+            if (fromAbove) {
+                fromAbove = false;
+                threshold -= offset;
+            }
+            if (!classList.contains("custom-navbar-border")) {
+                classList.add("custom-navbar-border");
+            }
+        } else {
+            if (!fromAbove) {
+                fromAbove = true;
+                threshold += offset;
+            }
+            if (classList.contains("custom-navbar-border")) {
+                classList.remove("custom-navbar-border");
+            }
+        }
+    };
+}
+
+// Add the event listener of "scroll" to window object
+window.addEventListener("scroll", _.throttle(changeNavbarShadow(), 100));
+
+// Display and update the progress bar of the article
+function updateProgressBar() {
+    let progressBar = document.getElementById("article-progress-bar");
+    if (progressBar) {
+        let scrollHeight = document.documentElement.scrollHeight;
+        let widowHeight = window.screen.height;
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        let progress = (scrollTop / (scrollHeight - widowHeight) * 100).toFixed(2);
+        if (progress <= 100) {
+            progressBar.style.width = progress.toString() + "%";
+        } else {
+            progressBar.style.width = "100%";
+        }
+    }
+}
+
+// Add the event listener of "scroll" to window object
+window.addEventListener("scroll", _.throttle(updateProgressBar, 100));
+
+// Change the icon of the toggler of the navbar when in mobile mode.
+function changeNavbarTogglerIcon() {
+    document.getElementById("navbar-toggler").addEventListener("click", function () {
+        let classList = this.firstElementChild.classList;
+        if (classList.contains("bi-arrows-expand")) {
+            classList.replace("bi-arrows-expand", "bi-arrows-collapse");
+        } else {
+            classList.replace("bi-arrows-collapse", "bi-arrows-expand");
+        }
+    });
 }
 
 /* Functions for the contents' behavior rendered from Markdown */
@@ -161,7 +146,6 @@ function enableSmoothScrollOfLinksInMarkdown() {
 }
 
 // Add titles to links in the toc
-
 function addTitlesToHeadingsInToc() {
     let tocContainer = document.getElementById("toc");
     if (tocContainer) {
