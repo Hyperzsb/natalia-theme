@@ -26,7 +26,7 @@ layout: default
                     {% if page.repo %}
                     <div class="col pt-3">
                         <a class="btn rounded-pill btn-outline-primary w-75" role="button"
-                           rel="noopener" target="_blank" href="{{ page.repo }}">
+                           rel="noopener" target="_blank" aria-label="Learn more in GitHub" href="{{ page.repo }}">
                             <i class="bi bi-github">&nbsp;View in GitHub</i>
                         </a>
                     </div>
@@ -34,7 +34,7 @@ layout: default
                     {% if page.demo %}
                     <div class="col pt-3">
                         <a class="btn rounded-pill btn-outline-primary w-75" role="button"
-                           role="button" target="_blank" href="{{ page.demo }}">
+                           role="button" target="_blank" aria-label="View the live demo" href="{{ page.demo }}">
                             <i class="bi bi-binoculars-fill">&nbsp;View Live Demo</i>
                         </a>
                     </div>
