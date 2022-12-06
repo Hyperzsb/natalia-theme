@@ -23,7 +23,7 @@ permalink: /posts/index.html
                 {% if post.top == true %}
                 <i class="bi bi-pin-angle me-3"></i>
                 {% endif %}
-                <a class="link-color" href="{{ site.baseUrl }}{{ post.url }}">
+                <a class="link-color" aria-label="Read more about post {{ post.title }}" href="{{ site.baseUrl }}{{ post.url }}">
                     <h2 class="fw-bold" id="{{ post.title | downcase | split: " " | join: "-" }}">{{ post.title }}</h2>
                 </a>
             </div>
