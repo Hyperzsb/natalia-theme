@@ -20,7 +20,7 @@ As the project is in its early stage, this documentation will update gradually i
 - [Features](#features)
   - [Already here](#already-here)
   - [Coming soon](#coming-soon)
-- [User Guide](#user-Guide)
+- [User Guide](#user-guide)
   - [Customization](#customization)
     - [Personal information settings](#personal-information-settings)
     - [Basic building and deploying settings](#basic-building-and-deploying-settings)
@@ -107,9 +107,8 @@ All the customization can be made just inside the `_config.yaml` file, but you c
 There is some information you can add to Natalia in the section `Personal information settings` of the `_config.yaml` file.
 You can add your name, your description, and your social media accounts & channels.
 
-> Natalia currently only supports Email, Twitter, Facebook, Instagram, YouTube, and GitHub.
-> But it is quite simple to add more social media like Stack Overflow or Vimeo to Natalia by yourself.
-> Just need a few Web skills.
+> Natalia currently supports Email, Facebook, GitHub, Instagram, Linkedin, Stack Overflow, Twitter, WhatsApp, and YouTube.
+> And it is quite simple to add more social media like Vimeo to Natalia by yourself with a few Web skills.
 
 Additionally, you can also edit the base title of windows and the copyright information in the footer.
 
