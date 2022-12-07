@@ -1,7 +1,7 @@
 ---
 title: Git - SSL_ERROR_SYSCALL 问题解决
 date: 2021-03-29
-last_update: 2022-04-17
+last_update: 2022-12-07
 tags: github
 toc: true
 comment: true
