@@ -16,11 +16,11 @@ As the project is in its early stage, this documentation will update gradually i
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
+- [Introduction](#introduction-top-)
+- [Features](#features-top-)
   - [Already here](#already-here)
   - [Coming soon](#coming-soon)
-- [User Guide](#user-guide)
+- [User Guide](#user-guide-top-)
   - [Customization](#customization)
     - [Personal information settings](#personal-information-settings)
     - [Basic building and deploying settings](#basic-building-and-deploying-settings)
@@ -28,9 +28,9 @@ As the project is in its early stage, this documentation will update gradually i
   - [Deploy](#deploying)
     - [Deploy manually](#deploying-manually)
     - [Deploy using GitHub Pages](#deploying-using-github-pages)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
+- [Troubleshooting](#troubleshooting-top-)
+- [Contributing](#contributing-top-)
+- [License](#license-top-)
 
 ## Introduction <small><sup>[Top ⥣](#table-of-contents)</sup></small>
 
