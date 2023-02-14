@@ -25,17 +25,17 @@ layout: default
                 <div class="row row-cols-1 row-cols-lg-2 justify-content-center">
                     {% if page.repo %}
                     <div class="col pt-3">
-                        <a class="btn rounded-pill btn-outline-primary w-75" role="button"
-                           rel="noopener" target="_blank" aria-label="Learn more in GitHub" href="{{ page.repo }}">
-                            <i class="bi bi-github">&nbsp;View in GitHub</i>
+                        <a class="custom-btn w-75" role="button" rel="noopener" target="_blank"
+                           aria-label="Learn more in GitHub" href="{{ page.repo }}">
+                            <span><i class="bi bi-github me-2"></i>GitHub</span>
                         </a>
                     </div>
                     {% endif %}
                     {% if page.demo %}
                     <div class="col pt-3">
-                        <a class="btn rounded-pill btn-outline-primary w-75" role="button"
-                           role="button" target="_blank" aria-label="View the live demo" href="{{ page.demo }}">
-                            <i class="bi bi-binoculars-fill">&nbsp;View Live Demo</i>
+                        <a class="custom-btn w-75" role="button" rel="noopener" target="_blank"
+                           aria-label="View the live demo" href="{{ page.demo }}">
+                            <span><i class="bi bi-film me-2"></i>Live Demo</span>
                         </a>
                     </div>
                     {% endif %}

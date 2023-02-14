@@ -29,18 +29,68 @@ a {
   font-family: "Josefin Sans", "Noto Serif SC", sans-serif;
 }
 
-/*
-.font-titillium-web {
-  font-family: "Titillium Web", "Noto Serif SC", sans-serif;
-}
-
-.font-ubuntu {
-  font-family: "Ubuntu", "Noto Serif SC", sans-serif;
-}
-*/
-
 .font-noto-serif-simplified-chinese {
   font-family: "Noto Serif SC", sans-serif;
+}
+
+.custom-btn {
+  &, & *, & :before, & :after, &:before, &:after {
+    border: 0 solid;
+    box-sizing: border-box;
+  }
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.8rem 3rem;
+  overflow: hidden;
+  position: relative;
+
+  &:-moz-focusring {
+    outline: auto;
+  }
+
+  & span {
+    display: block;
+    position: relative;
+    transition: transform 0.25s ease;
+  }
+
+  &:after, &:before {
+    --tilt: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: clip-path 0.25s ease, background-color 0.25s ease;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &:after {
+    --thickness: 5px;
+    height: calc(100% - var(--thickness) * 2);
+    left: var(--thickness);
+    top: var(--thickness);
+    width: calc(100% - var(--thickness) * 2);
+  }
+
+  &:hover {
+    span {
+      transform: translateX(-20px);
+    }
+
+    &:after, &:before {
+      clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 50%, calc(100% - var(--tilt)) 100%, 0 100%);
+    }
+  }
 }
 
 /* Modal style */
@@ -58,25 +108,6 @@ a {
 }
 
 /* Header styles */
-
-//.custom-navbar {
-//  transition: box-shadow 0.25s;
-//
-//  &::before {
-//    position: absolute;
-//    content: '';
-//    top: 0;
-//    bottom: 0;
-//    left: 0;
-//    right: 0;
-//    backdrop-filter: blur(10px);
-//    z-index: -1;
-//  }
-//
-//  * {
-//    z-index: 0;
-//  }
-//}
 
 .custom-navbar {
   transition: border-bottom-color 0.2s;

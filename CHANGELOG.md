@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/Hyperzsb/natalia-theme/compare/v1.2.0...v1.2.1) (2022-12-07)
+
+
+### Features
+
+* **a11y:** improve the a11y by adding some labels to links ([1e97914](https://github.com/Hyperzsb/natalia-theme/commit/1e979149283476f7e16382ccc04dc6ba1e32a082))
+* **gitalk:** update gitalk styles to fit dark theme ([0903d88](https://github.com/Hyperzsb/natalia-theme/commit/0903d883ffba60e0c0e1896e790a3376580ec6a3))
+
+
+### Bug Fixes
+
+* **style:** fix an alignment bug of the home page ([68baea3](https://github.com/Hyperzsb/natalia-theme/commit/68baea3ebf921cb96c939e59e92fa12a16841f08))
+* **style:** fix broken styles of external links ([432ae20](https://github.com/Hyperzsb/natalia-theme/commit/432ae201516dbc00e4273b40664112d23c875d0d))
+
 ## [1.2.0](https://github.com/Hyperzsb/natalia-theme/compare/v1.1.0...v1.2.0) (2022-10-14)
 
 
