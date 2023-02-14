@@ -29,16 +29,6 @@ a {
   font-family: "Josefin Sans", "Noto Serif SC", sans-serif;
 }
 
-/*
-.font-titillium-web {
-  font-family: "Titillium Web", "Noto Serif SC", sans-serif;
-}
-
-.font-ubuntu {
-  font-family: "Ubuntu", "Noto Serif SC", sans-serif;
-}
-*/
-
 .font-noto-serif-simplified-chinese {
   font-family: "Noto Serif SC", sans-serif;
 }
@@ -58,25 +48,6 @@ a {
 }
 
 /* Header styles */
-
-//.custom-navbar {
-//  transition: box-shadow 0.25s;
-//
-//  &::before {
-//    position: absolute;
-//    content: '';
-//    top: 0;
-//    bottom: 0;
-//    left: 0;
-//    right: 0;
-//    backdrop-filter: blur(10px);
-//    z-index: -1;
-//  }
-//
-//  * {
-//    z-index: 0;
-//  }
-//}
 
 .custom-navbar {
   transition: border-bottom-color 0.2s;
