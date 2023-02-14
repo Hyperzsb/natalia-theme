@@ -111,11 +111,28 @@ body {
   }
 }
 
-.custom-button {
-  color: var(--text-color-1);
+.custom-btn {
+  background-color: transparent;
+  color: var(--link-color-1);
 
-  &:before {
-    background-color: var(--link-color-3);
+  &:before, &:after {
+    background: var(--link-color-1);
+  }
+
+  &:after {
+    background: var(--base-color-3);
+  }
+
+  &:hover, &:active {
+    color: var(--link-color-2);
+
+    &:before, &:after {
+      background: var(--link-color-2);
+    }
+
+    &:after {
+      background: var(--base-color-3);
+    }
   }
 }
 
